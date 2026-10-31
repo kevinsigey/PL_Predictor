@@ -81,10 +81,11 @@ mean goals per team-match over all strictly earlier fixtures.
 - **Control (C0), the primary comparator:** P plus `log(f_o)`. This is the
   "overall rate plus opponent weakness" bar the question must clear.
 - **Candidate arms:** C0 plus one of `z_A`, `z_B`.
-- Model: the same balanced logistic regression, Platt-calibrated on the last training
-  season (`player_ratio_search._binary_predict`). Every design column, baseline and
-  candidate, is winsorised at the training-fold 0.5th and 99.5th percentiles
-  identically in each arm.
+- Model: **unweighted logistic regression** (sklearn `LogisticRegression`, standardised
+  inputs, `max_iter=1000`), fitted on all training rows of the fold, with no class
+  weights and no Platt step. Every design column, baseline and candidate, is
+  winsorised at the training-fold 0.5th and 99.5th percentiles identically in each arm.
+  *Amendment 1 (below) explains why this replaces the ratio search's balanced + Platt model.*
 
 Four candidate comparisons:
 
@@ -131,3 +132,14 @@ and must not present a non-pass as evidence of no effect.
 - Research module only: `src/pl_predictor/evaluate/player_opponent_effect.py`.
 - Seasons 2020-21 and 2021-22 are never used as rows. 2026-27 is excluded.
 - The 2025-26 caveat above is reported in the findings, not hidden.
+
+## Amendment 1 (2026-10-31, before any analysis code was run)
+
+The ratio-search model calibrates on the last training season, which needs at least
+two training seasons. Fold 2023-24 has only one eligible training season (2022-23),
+because 2020-21 and 2021-22 are history-only. A held-out calibration season is
+therefore impossible in that fold. The model is changed to a plain unweighted
+logistic regression fitted on all training rows, for every arm alike. Unweighted
+maximum-likelihood logistic fits are calibrated on average in-sample, so no
+calibration step is needed. This amendment was made before any analysis code was
+run and before any outcome was read. The 2025-26 caveat above still applies.
