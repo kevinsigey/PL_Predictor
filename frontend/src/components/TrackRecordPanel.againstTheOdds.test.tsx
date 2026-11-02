@@ -33,9 +33,8 @@ const base: TrackRecordResponse = {
       over_under_2_5: { pct_correct: 1 / 3, n_resolved: 3 },
       btts: { pct_correct: 1, n_resolved: 3 },
     },
-    pre_kickoff: null,
     per_pick: [],
-  } as TrackRecordResponse["summary"],
+  },
   biggest_upsets: [],
   gameweeks: [],
 };
