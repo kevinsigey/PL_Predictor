@@ -1222,6 +1222,83 @@ def get_calibration() -> dict:
         conn.close()
 
 
+def get_validation_calibration() -> dict:
+    """RPS/Brier/ignorance of the recorded 1X2 probabilities, for the public
+    /calibration surface (see routes.get_calibration's PUBLIC_MODE branch).
+
+    The population is the counted one -- fixtures whose pick was recorded
+    before kickoff (`_made_before_kickoff`, derived from the row's own
+    timestamps, so backfilled after-the-fact rows exclude themselves) with a
+    complete home/draw/away triple. That is deliberately NOT the live path's
+    holdout-season validation frame: computing that frame on the public
+    host is what PUBLIC_MODE exists to prevent, and the snapshot build's
+    one attempt to bake it hung the build. These numbers answer a slightly
+    different, still honest question -- how well calibrated are the picks
+    this site actually published -- over the same fixtures the track
+    record counts.
+
+    `bookmaker` is None: no bookmaker probability is stored alongside a
+    recorded pick, so there is nothing honest to report here (the
+    bookmaker comparison lives in evaluate/calibration.py's live path,
+    where closing odds exist). `naive` is the same fixed 46/25/29 split
+    the live path uses, scored on the same fixtures.
+    """
+    from collections import defaultdict
+
+    import numpy as np
+    import penaltyblog as pb
+
+    conn = _connect()
+    try:
+        rows = conn.execute(
+            "SELECT event_id, outcome_name, predicted_prob, actual_outcome, snapshotted_at, commence_time "
+            "FROM predictions WHERE resolved = 1 AND market = '1x2'"
+        ).fetchall()
+    finally:
+        conn.close()
+
+    order = ["home_win", "draw", "away_win"]
+    fixtures: dict[str, dict] = defaultdict(dict)
+    timing: dict[str, tuple] = {}
+    for event_id, outcome, prob, actual, snapshotted_at, commence_time in rows:
+        fixtures[event_id][outcome] = (prob, actual)
+        timing[event_id] = (snapshotted_at, commence_time)
+
+    probs, outcomes = [], []
+    for event_id, by_outcome in fixtures.items():
+        if set(by_outcome) != set(order):
+            continue
+        if not _made_before_kickoff(*timing[event_id]):
+            continue
+        probs.append([by_outcome[name][0] for name in order])
+        outcomes.append(next(i for i, name in enumerate(order) if by_outcome[name][1] == 1))
+
+    if not probs:
+        return {
+            "model": {"rps": None, "brier": None, "ignorance": None, "n_matches": 0},
+            "bookmaker": None,
+            "naive": {"rps": None, "brier": None, "n_matches": 0},
+        }
+
+    probs_arr = np.array(probs)
+    outcomes_arr = np.array(outcomes)
+    naive_arr = np.tile([0.46, 0.25, 0.29], (len(probs), 1))
+    return {
+        "model": {
+            "rps": float(pb.metrics.rps_average(probs_arr, outcomes_arr)),
+            "brier": float(pb.metrics.multiclass_brier_score(probs_arr, outcomes_arr)),
+            "ignorance": float(pb.metrics.ignorance_score(probs_arr, outcomes_arr)),
+            "n_matches": len(probs),
+        },
+        "bookmaker": None,
+        "naive": {
+            "rps": float(pb.metrics.rps_average(naive_arr, outcomes_arr)),
+            "brier": float(pb.metrics.multiclass_brier_score(naive_arr, outcomes_arr)),
+            "n_matches": len(probs),
+        },
+    }
+
+
 def get_biggest_upsets(limit: int = 5) -> list[dict]:
     """Genuine 1x2 upsets only — the side that actually happened, ranked by
     how unlikely the model said it was. Deliberately not "biggest squared
