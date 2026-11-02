@@ -22,7 +22,9 @@ const whole = (x: number) => `${Math.round(x * 100)}%`;
 
 type Line = { key: string; label: string; correct: number; n: number; beside: Tally | null };
 
-/** One counted-record line: "5 of 10", and a bar showing the range that sample allows. */
+/** One counted-record line, led by the rate: the percentage is the big
+ * figure (it is what a reader compares), the count it came from rides
+ * beside it, and the bar shows the range that sample allows. */
 function TallyLine({ line, lead, moment }: { line: Line; lead?: boolean; moment: Moment }) {
   const range = wilsonInterval(line.correct, line.n);
   const rate = line.n > 0 ? line.correct / line.n : null;
@@ -32,11 +34,11 @@ function TallyLine({ line, lead, moment }: { line: Line; lead?: boolean; moment:
       className="grid grid-cols-[minmax(7rem,9rem)_1fr] items-center gap-x-4 gap-y-1 sm:grid-cols-[minmax(7rem,9rem)_8rem_1fr]"
     >
       <span className={lead ? "font-pr-display text-sm font-semibold text-pr-text" : "text-sm text-pr-text-dim"}>{line.label}</span>
-      <span className={`tabular-nums ${lead ? "font-pr-display text-3xl font-semibold" : "text-lg font-semibold"} text-pr-text`}>
-        {line.correct}
-        <span className="text-pr-text-faint"> of </span>
-        {line.n}
-        {rate != null && <span className="ml-2 text-sm font-normal text-pr-text-dim">{whole(rate)}</span>}
+      <span className={`tabular-nums ${lead ? "font-pr-display text-3xl font-semibold" : "text-xl font-semibold"} text-pr-text`}>
+        {rate != null ? whole(rate) : "—"}
+        <span className="ml-2 text-sm font-normal text-pr-text-dim">
+          {line.correct} of {line.n}
+        </span>
       </span>
       <div className="col-span-2 sm:col-span-1">
         {range ? (

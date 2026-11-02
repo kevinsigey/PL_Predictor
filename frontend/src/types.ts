@@ -659,10 +659,40 @@ export interface GameweekGroup {
   fixtures: GameweekResult[];
 }
 
+/** The against-the-odds block: the value-bet ledger's own graded record
+ * (backend: value_bet_ledger.get_value_bet_summary). Absent/null on
+ * snapshots built before the block existed. */
+export interface ValueBetSummary {
+  n_flagged: number;
+  n_resolved: number;
+  n_pending: number;
+  wins: number;
+  losses: number;
+  /** Percent (0-100) over settled bets; null until one settles. */
+  win_rate: number | null;
+  /** Mean flagged price over settled bets; null until one settles. */
+  average_odds: number | null;
+  /** Simulated return under the ledger's default staking; null until the
+   * staking replay actually places a bet. */
+  roi_pct: number | null;
+  profit_units: number | null;
+  n_staked: number;
+  staking: string;
+  first_flagged_at: string | null;
+  last_flagged_at: string | null;
+}
+
 export interface TrackRecordResponse {
   summary: TrackRecordSummary;
   biggest_upsets: BiggestUpset[];
   gameweeks: GameweekGroup[];
+  value_bets?: ValueBetSummary | null;
+}
+
+export interface SnapshotMetaResponse {
+  generated_at: string | null;
+  source: string;
+  model_fingerprint?: string | null;
 }
 
 export interface ManifestResponse {

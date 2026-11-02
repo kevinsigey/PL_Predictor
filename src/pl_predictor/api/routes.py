@@ -1899,8 +1899,10 @@ def get_calibration():
         # build already has locally, no training frame involved. The
         # question it answers is how well calibrated the picks this site
         # actually published are; the holdout-season question stays with
-        # the live path. bookmaker is null there: no bookmaker probability
-        # is stored with a recorded pick.
+        # the live path. The bookmaker series there is scored from the
+        # prices stored with each recorded pick since 2026-11, so it
+        # stays null until enough recorded picks carry odds — it is never
+        # reconstructed for picks recorded without them.
         return _public_snapshot().get(
             "calibration", {"model": [], "bookmaker": [], "naive": [], "season": None}
         )
@@ -2345,7 +2347,7 @@ def get_projected_table():
 def get_hub_track_record():
     if PUBLIC_MODE:
         return _public_snapshot().get("hub", {}).get(
-            "track_record", {"summary": {}, "biggest_upsets": [], "gameweeks": []}
+            "track_record", {"summary": {}, "biggest_upsets": [], "gameweeks": [], "value_bets": None}
         )
     summary = tracking_store.get_track_record()
     summary["calibration"] = tracking_store.get_calibration()
@@ -2353,6 +2355,9 @@ def get_hub_track_record():
         "summary": summary,
         "biggest_upsets": tracking_store.get_biggest_upsets(),
         "gameweeks": tracking_store.get_results_by_gameweek(),
+        # The against-the-odds block: the value-bet ledger's own graded
+        # record (see tracking/value_bet_ledger.py::get_value_bet_summary).
+        "value_bets": value_bet_ledger.get_value_bet_summary(),
     }
 
 

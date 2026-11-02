@@ -45,6 +45,36 @@ MARKET_SPEC = [
 
 _RESULT_TO_1X2 = {"H": "home_win", "D": "draw", "A": "away_win"}
 
+# (market, outcome_name) -> the value-bet table's side name, whose
+# `{side}_price` column carries the best bookmaker decimal price for that
+# outcome (odds/value_bets.py). Mirrors value_bet_ledger._SIDE_TO_MARKET.
+_SIDE_BY_MARKET_OUTCOME = {
+    ("1x2", "home_win"): "home_win",
+    ("1x2", "draw"): "draw",
+    ("1x2", "away_win"): "away_win",
+    ("totals_2_5", "over"): "over_2_5",
+    ("totals_2_5", "under"): "under_2_5",
+    ("btts", "yes"): "btts_yes",
+}
+
+
+def _recorded_bookmaker_odds(fixture: pd.Series, market: str, outcome_name: str) -> float | None:
+    """The bookmaker price for one outcome at record time, or None.
+
+    Only a real, usable decimal price counts: a missing column (the
+    backfill table carries no prices), a NaN, or a price at or below 1.0
+    (not a price a bet could be struck at) all store NULL rather than a
+    number that would later pose as an odd.
+    """
+    side = _SIDE_BY_MARKET_OUTCOME.get((market, outcome_name))
+    if side is None:
+        return None
+    price = fixture.get(f"{side}_price")
+    if price is None or pd.isna(price):
+        return None
+    price = float(price)
+    return price if price > 1.0 else None
+
 PLAYER_REVIEW_GOAL_THRESHOLD = 0.35
 PLAYER_REVIEW_ASSIST_THRESHOLD = 0.25
 PLAYER_REVIEW_CONTRIBUTION_THRESHOLD = 0.30
@@ -236,6 +266,15 @@ def _connect() -> sqlite3.Connection:
     for col, col_type in (("gameweek", "INTEGER"), ("predicted_scoreline", "TEXT")):
         if col not in existing_cols:
             conn.execute(f"ALTER TABLE predictions ADD COLUMN {col} {col_type}")
+    # bookmaker_odds: the best bookmaker decimal price for this row's own
+    # outcome on the value-bet table at the moment the pick was first
+    # recorded (see record_predictions). It is what makes a bookmaker
+    # series possible at all on the public /calibration surface
+    # (get_validation_calibration). NULL on every row recorded before this
+    # column existed and on backfilled rows (the backfill table carries no
+    # prices): odds are never reconstructed after the fact.
+    if "bookmaker_odds" not in existing_cols:
+        conn.execute("ALTER TABLE predictions ADD COLUMN bookmaker_odds REAL")
     conn.execute(
         """
         CREATE TABLE IF NOT EXISTS fixture_market_predictions (
@@ -441,7 +480,13 @@ def record_predictions(table: pd.DataFrame, model_trained_at: str | None = None,
     value-bet table already built by `odds/value_bets.py`, or the
     equivalent shape `backfill_missing_predictions` builds). Already-logged
     (event_id, market, outcome_name) rows are left untouched — this is safe
-    to call on every fixtures request."""
+    to call on every fixtures request.
+
+    Each row also stores the bookmaker price for its own outcome as the
+    table stands at this first recording (`bookmaker_odds`), so the pick
+    keeps the line it was actually published against. The backfill shape
+    carries no prices, so its rows store NULL — the distinction stays
+    visible in the data rather than being papered over."""
     if table.empty:
         return 0
 
@@ -463,6 +508,7 @@ def record_predictions(table: pd.DataFrame, model_trained_at: str | None = None,
                     model_trained_at,
                     int(backfilled),
                     predicted_scoreline,
+                    _recorded_bookmaker_odds(fixture, market, outcome_name),
                 )
             )
 
@@ -471,8 +517,9 @@ def record_predictions(table: pd.DataFrame, model_trained_at: str | None = None,
             """
             INSERT OR IGNORE INTO predictions
                 (event_id, team_home, team_away, market, outcome_name, predicted_prob,
-                 commence_time, snapshotted_at, model_trained_at, backfilled, predicted_scoreline)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                 commence_time, snapshotted_at, model_trained_at, backfilled, predicted_scoreline,
+                 bookmaker_odds)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """,
             rows,
         )
@@ -1222,6 +1269,24 @@ def get_calibration() -> dict:
         conn.close()
 
 
+def _devig_1x2(prices: list[float]) -> list[float] | None:
+    """Shin de-vig of a 1X2 price triple into implied probabilities, in
+    home/draw/away order -- the same method the live pipeline uses for the
+    implied probabilities behind its edges (odds/value_bets.py). None when
+    penaltyblog's solver fails on the triple: such a fixture simply has no
+    usable bookmaker line, and is left out of the bookmaker series rather
+    than scored under a different de-vig than its neighbours."""
+    import penaltyblog as pb
+
+    try:
+        implied = pb.implied.calculate_implied(
+            prices, method="shin", market_names=["home_win", "draw", "away_win"]
+        )
+    except ValueError:
+        return None
+    return [float(implied.get_probability_by_name(name)) for name in ("home_win", "draw", "away_win")]
+
+
 def get_validation_calibration() -> dict:
     """RPS/Brier/ignorance of the recorded 1X2 probabilities, for the public
     /calibration surface (see routes.get_calibration's PUBLIC_MODE branch).
@@ -1237,11 +1302,14 @@ def get_validation_calibration() -> dict:
     this site actually published -- over the same fixtures the track
     record counts.
 
-    `bookmaker` is None: no bookmaker probability is stored alongside a
-    recorded pick, so there is nothing honest to report here (the
-    bookmaker comparison lives in evaluate/calibration.py's live path,
-    where closing odds exist). `naive` is the same fixed 46/25/29 split
-    the live path uses, scored on the same fixtures.
+    `bookmaker` scores the de-vigged prices stored with the picks
+    themselves (`bookmaker_odds`, written by record_predictions since
+    2026-11) over the subset of the counted fixtures whose three rows all
+    carry a price, with its own n. It stays None until such a fixture
+    exists: rows recorded before odds were stored, and backfilled rows,
+    carry NULL and are never given a reconstructed price. `naive` is the
+    same fixed 46/25/29 split the live path uses, scored on the same
+    fixtures.
     """
     from collections import defaultdict
 
@@ -1251,7 +1319,7 @@ def get_validation_calibration() -> dict:
     conn = _connect()
     try:
         rows = conn.execute(
-            "SELECT event_id, outcome_name, predicted_prob, actual_outcome, snapshotted_at, commence_time "
+            "SELECT event_id, outcome_name, predicted_prob, actual_outcome, snapshotted_at, commence_time, bookmaker_odds "
             "FROM predictions WHERE resolved = 1 AND market = '1x2'"
         ).fetchall()
     finally:
@@ -1259,25 +1327,46 @@ def get_validation_calibration() -> dict:
 
     order = ["home_win", "draw", "away_win"]
     fixtures: dict[str, dict] = defaultdict(dict)
+    fixture_odds: dict[str, dict] = defaultdict(dict)
     timing: dict[str, tuple] = {}
-    for event_id, outcome, prob, actual, snapshotted_at, commence_time in rows:
+    for event_id, outcome, prob, actual, snapshotted_at, commence_time, odds in rows:
         fixtures[event_id][outcome] = (prob, actual)
+        fixture_odds[event_id][outcome] = odds
         timing[event_id] = (snapshotted_at, commence_time)
 
     probs, outcomes = [], []
+    book_probs, book_outcomes = [], []
     for event_id, by_outcome in fixtures.items():
         if set(by_outcome) != set(order):
             continue
         if not _made_before_kickoff(*timing[event_id]):
             continue
         probs.append([by_outcome[name][0] for name in order])
-        outcomes.append(next(i for i, name in enumerate(order) if by_outcome[name][1] == 1))
+        outcome_idx = next(i for i, name in enumerate(order) if by_outcome[name][1] == 1)
+        outcomes.append(outcome_idx)
+        prices = [fixture_odds[event_id].get(name) for name in order]
+        if all(price is not None for price in prices):
+            devigged = _devig_1x2([float(price) for price in prices])
+            if devigged is not None:
+                book_probs.append(devigged)
+                book_outcomes.append(outcome_idx)
 
     if not probs:
         return {
             "model": {"rps": None, "brier": None, "ignorance": None, "n_matches": 0},
             "bookmaker": None,
             "naive": {"rps": None, "brier": None, "n_matches": 0},
+        }
+
+    bookmaker = None
+    if book_probs:
+        book_arr = np.array(book_probs)
+        book_outcomes_arr = np.array(book_outcomes)
+        bookmaker = {
+            "rps": float(pb.metrics.rps_average(book_arr, book_outcomes_arr)),
+            "brier": float(pb.metrics.multiclass_brier_score(book_arr, book_outcomes_arr)),
+            "ignorance": float(pb.metrics.ignorance_score(book_arr, book_outcomes_arr)),
+            "n_matches": len(book_probs),
         }
 
     probs_arr = np.array(probs)
@@ -1290,7 +1379,7 @@ def get_validation_calibration() -> dict:
             "ignorance": float(pb.metrics.ignorance_score(probs_arr, outcomes_arr)),
             "n_matches": len(probs),
         },
-        "bookmaker": None,
+        "bookmaker": bookmaker,
         "naive": {
             "rps": float(pb.metrics.rps_average(naive_arr, outcomes_arr)),
             "brier": float(pb.metrics.multiclass_brier_score(naive_arr, outcomes_arr)),
