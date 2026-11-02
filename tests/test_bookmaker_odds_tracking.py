@@ -184,7 +184,7 @@ def _flag(db, event_id, price, model_prob, commence_time, resolved, won):
         "INSERT INTO value_bets (event_id, team_home, team_away, market, outcome_name, model_prob,"
         " implied_prob, price, edge, commence_time, snapshotted_at, resolved, won,"
         " actual_goals_home, actual_goals_away, resolved_at)"
-        " VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+        " VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
         (
             event_id, "H", "A", "1x2", "home_win", model_prob, 0.40, price, 0.10,
             commence_time, commence_time, resolved, won,
