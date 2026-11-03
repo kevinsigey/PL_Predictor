@@ -30,6 +30,10 @@ PUBLIC_MODE = os.getenv("PUBLIC_MODE", "false").lower() == "true"
 # a running process actually stays current.
 PUBLIC_SNAPSHOT_PATH = DATA_DIR / "public_snapshot.json"
 
+# Per-fixture probability history, built from the snapshot's git history by
+# scripts/build_pick_history.py and served by /api/fixtures/{event_id}/pick-history.
+PICK_HISTORY_PATH = DATA_DIR / "pick_history.json"
+
 # A running public-deployment process polls this raw-file URL (see
 # api/routes.py::refresh_public_snapshot_from_remote) instead of relying on
 # a full redeploy to pick up each new snapshot — the GitHub Actions refresh

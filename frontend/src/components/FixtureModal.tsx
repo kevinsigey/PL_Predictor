@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import type { Explanation, MatchupContext } from "../predictor-ui";
 import { FixtureExplainer, SignalRows, kickoff, type Signal } from "../predictor-ui";
 import { panelFacts } from "../predictor-ui/lib/panelFacts";
-import type { FixtureDetail, FixturePlayerReview, FixturePlayers, FixturePostMatch, FixtureValueBetSnapshot, TrackRecordSummary } from "../types";
+import type { FixtureDetail, FixturePlayerReview, FixturePlayers, FixturePostMatch, FixtureValueBetSnapshot, PickHistoryPoint, TrackRecordSummary } from "../types";
 import {
   fetchSignals,
   api,
@@ -11,6 +11,7 @@ import { TeamBadge } from "./TeamBadge";
 import { ScorelineHeatmap } from "./ScorelineHeatmap";
 import { FormStrip } from "./FormStrip";
 import { GlossaryDisclosure } from "./GlossaryDisclosure";
+import { PickSparkline } from "./PickSparkline";
 import { MarketBar } from "./MarketBar";
 import { ModelTopCalls, PlayerScorerList } from "./PlayerScorerList";
 import { GLOSSARY } from "../lib/glossary";
@@ -175,6 +176,9 @@ export function FixtureModal({ eventId, onClose, explain, loadContext, sport = "
   const [playerReviewError, setPlayerReviewError] = useState<string | null>(null);
   const [playerReviewLoading, setPlayerReviewLoading] = useState(false);
   const [recordSummary, setRecordSummary] = useState<TrackRecordSummary | null>(null);
+  // The pick's probability over time. Empty until it lands, and stays empty on
+  // any failure: the sparkline is an extra, so a missing history draws nothing.
+  const [pickHistory, setPickHistory] = useState<PickHistoryPoint[]>([]);
   // Spec §4's signal rows. `[]` and never null once settled, and `[]` is also what
   // every failure leaves behind -- see the effect below.
   const [signals, setSignals] = useState<Signal[]>([]);
@@ -438,6 +442,20 @@ export function FixtureModal({ eventId, onClose, explain, loadContext, sport = "
 
   useEffect(() => {
     let cancelled = false;
+    setPickHistory([]);
+    api
+      .pickHistory(eventId)
+      .then((response) => {
+        if (!cancelled) setPickHistory(response.points);
+      })
+      .catch(() => {});
+    return () => {
+      cancelled = true;
+    };
+  }, [eventId]);
+
+  useEffect(() => {
+    let cancelled = false;
     api
       .trackRecord()
       .then((response) => {
@@ -562,6 +580,9 @@ export function FixtureModal({ eventId, onClose, explain, loadContext, sport = "
                       fixtureId={eventId}
                       extras={{ tiles: panel.tiles, segments: panel.segments, legend: panel.legend, record: record ?? undefined, moment: "kickoff" }}
                     />
+                  )}
+                  {resolved && pickHistory.length > 1 && (
+                    <PickSparkline points={pickHistory} side={resolved.side} label={resolved.label} />
                   )}
                   {detail.data_confidence === "new" && (
                     <div className="flex items-center gap-2 rounded-pr bg-pr-panel px-3 py-2 text-sm text-pr-text-dim">

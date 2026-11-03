@@ -36,6 +36,7 @@ vi.mock("../api/client", () => ({
   api: {
     fixtureDetail: vi.fn(),
     fixturePlayers: vi.fn(),
+    pickHistory: vi.fn(),
     fixturePlayerReview: vi.fn(),
     trackRecord: vi.fn(),
   },
@@ -99,6 +100,7 @@ const envelope = (signals: unknown[]) =>
 function mockApi(fixture: FixtureDetail = detail) {
   vi.mocked(api.fixtureDetail).mockResolvedValue(fixture);
   vi.mocked(api.fixturePlayers).mockResolvedValue({ home_players: [], away_players: [] });
+  vi.mocked(api.pickHistory).mockResolvedValue({ event_id: "", points: [] });
   vi.mocked(api.fixturePlayerReview).mockResolvedValue(null);
   vi.mocked(api.trackRecord).mockResolvedValue(trackRecord);
 }

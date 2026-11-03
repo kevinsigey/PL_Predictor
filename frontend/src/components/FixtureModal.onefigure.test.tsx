@@ -44,6 +44,7 @@ vi.mock("../api/client", () => ({
   api: {
     fixtureDetail: vi.fn(),
     fixturePlayers: vi.fn(),
+    pickHistory: vi.fn(),
     fixturePlayerReview: vi.fn(),
     trackRecord: vi.fn(),
   },
@@ -120,6 +121,7 @@ afterEach(() => {
 async function openModal(fixture: FixtureDetail, explain = vi.fn().mockReturnValue(new Promise(() => {}))) {
   vi.mocked(api.fixtureDetail).mockResolvedValue(fixture);
   vi.mocked(api.fixturePlayers).mockResolvedValue({ home_players: [], away_players: [] });
+  vi.mocked(api.pickHistory).mockResolvedValue({ event_id: "", points: [] });
   vi.mocked(api.fixturePlayerReview).mockResolvedValue(null);
   vi.mocked(api.trackRecord).mockResolvedValue(trackRecord);
   const out = render(<FixtureModal eventId="e1" onClose={() => {}} explain={explain} />);

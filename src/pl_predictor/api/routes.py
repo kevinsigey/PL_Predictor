@@ -41,6 +41,7 @@ from ..config import (
     PUBLIC_MODE,
     PUBLIC_REFRESH_COOLDOWN_SECONDS,
     PUBLIC_SNAPSHOT_PATH,
+    PICK_HISTORY_PATH,
     PUBLIC_SNAPSHOT_REFRESH_URL,
     SPORTSBOOK_CACHE_TTL_SECONDS,
 )
@@ -1225,6 +1226,28 @@ def _fixture_actual_stats(matches_df: pd.DataFrame, home: str, away: str, kickof
         if home_value is not None or away_value is not None:
             home_stats[label], away_stats[label] = home_value, away_value
     return FixtureActualStats(home=home_stats, away=away_stats)
+
+
+_pick_history_events: dict | None = None
+
+
+def _pick_history() -> dict:
+    """data/pick_history.json's `events`, read once. A missing or unreadable file
+    is an empty history, so the sparkline simply does not draw."""
+    global _pick_history_events
+    if _pick_history_events is None:
+        try:
+            _pick_history_events = json.loads(PICK_HISTORY_PATH.read_text()).get("events", {})
+        except (OSError, ValueError, AttributeError):
+            _pick_history_events = {}
+    return _pick_history_events
+
+
+@router.get("/fixtures/{event_id}/pick-history")
+def fixture_pick_history(event_id: str) -> dict:
+    """The model's three-way probabilities for one fixture at each snapshot
+    where they changed, oldest first. `points` is empty when none were recorded."""
+    return {"event_id": event_id, "points": _pick_history().get(event_id, [])}
 
 
 @router.get("/fixtures/{event_id}", response_model=FixtureDetail)
