@@ -32,6 +32,8 @@ export interface FixtureSummary {
   // tracking uses plain marginal argmax, see backend outcomes.py).
   predicted_result: "home_win" | "draw" | "away_win";
   draw_signal: boolean;
+  draw_risk: boolean;
+  draw_risk_flag?: boolean;
   is_fallback_prediction: boolean;
   data_confidence: "new" | "limited" | "established" | null;
   // Derived from the scoreline model's own home/away goal expectations
@@ -67,6 +69,7 @@ export interface CurrentGameweekFixture {
   // (see outcomes.py::predicted_result) -- informational only, not used
   // for accuracy tracking.
   draw_signal: boolean;
+  draw_risk?: boolean;
   hit: boolean | null;
   backfilled: boolean;
   // DERIVED per read by the backend from this pick's own `snapshotted_at` vs
@@ -656,10 +659,40 @@ export interface GameweekGroup {
   fixtures: GameweekResult[];
 }
 
+/** The against-the-odds block: the value-bet ledger's own graded record
+ * (backend: value_bet_ledger.get_value_bet_summary). Absent/null on
+ * snapshots built before the block existed. */
+export interface ValueBetSummary {
+  n_flagged: number;
+  n_resolved: number;
+  n_pending: number;
+  wins: number;
+  losses: number;
+  /** Percent (0-100) over settled bets; null until one settles. */
+  win_rate: number | null;
+  /** Mean flagged price over settled bets; null until one settles. */
+  average_odds: number | null;
+  /** Simulated return under the ledger's default staking; null until the
+   * staking replay actually places a bet. */
+  roi_pct: number | null;
+  profit_units: number | null;
+  n_staked: number;
+  staking: string;
+  first_flagged_at: string | null;
+  last_flagged_at: string | null;
+}
+
 export interface TrackRecordResponse {
   summary: TrackRecordSummary;
   biggest_upsets: BiggestUpset[];
   gameweeks: GameweekGroup[];
+  value_bets?: ValueBetSummary | null;
+}
+
+export interface SnapshotMetaResponse {
+  generated_at: string | null;
+  source: string;
+  model_fingerprint?: string | null;
 }
 
 export interface ManifestResponse {

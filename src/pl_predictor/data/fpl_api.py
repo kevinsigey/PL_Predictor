@@ -478,4 +478,19 @@ def _normalize_history(df: pd.DataFrame) -> pd.DataFrame:
     for col in NUMERIC_STRING_COLS:
         if col in df.columns:
             df[col] = pd.to_numeric(df[col], errors="coerce")
+    if "kickoff_time" in df.columns:
+        # FPL pre-creates a history row for the current gameweek's fixture
+        # before it is played: 0 minutes, 0 starts, kickoff still in the
+        # future. The training archives never contain such a row, and
+        # counting it as a played match poisons every serving consumer of
+        # this frame -- it dilutes the starts/minutes windows and zeroes
+        # the start streak in current_start_features, and because it sorts
+        # as the player's "most recent match" it also hides the real
+        # last XI from rank_team_players' recent-starters fallback. That
+        # is exactly the state of the two teams playing the gameweek's
+        # last fixture, i.e. the next match a reader opens. A zero-minute
+        # row whose kickoff has passed (an unused substitute in a played
+        # match) is a real negative example and stays.
+        kickoff = pd.to_datetime(df["kickoff_time"], errors="coerce", utc=True)
+        df = df[kickoff.isna() | (kickoff <= pd.Timestamp.now(tz="UTC"))].reset_index(drop=True)
     return df

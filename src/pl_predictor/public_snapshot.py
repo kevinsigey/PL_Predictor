@@ -296,9 +296,27 @@ def build_snapshot(previous: dict | None = None) -> dict:
         print(f"  ! skipped FPL snapshot: {exc}")
         fpl = {"projections": {"players": []}, "optimal_xi": {}, "squad": {}}
 
+    # Validation metrics for /calibration's PUBLIC_MODE branch, computed
+    # from the tracking store's counted recorded picks (see
+    # tracking/store.py::get_validation_calibration). This is NOT the live
+    # path's build_training_frame holdout computation -- that is what hung
+    # this build twice (see routes.get_calibration's comment); the recorded
+    # picks are already in the local tracking DB this build populates.
+    try:
+        calibration = {
+            **routes.tracking_store.get_validation_calibration(),
+            "season": routes._current_season_label(),
+        }
+    except Exception as exc:  # noqa: BLE001 - calibration should not block a fixture deploy
+        print(f"  ! skipped calibration ({exc}); keeping the previous snapshot's")
+        calibration = previous.get(
+            "calibration", {"model": [], "bookmaker": [], "naive": [], "season": None}
+        )
+
     return {
         "generated_at": pd.Timestamp.now(tz="UTC").isoformat(),
         "model_fingerprint": model_fingerprint,
+        "calibration": calibration,
         "current_gameweek": current_gameweek,
         "min_gameweek": min_gameweek,
         "max_gameweek": max_gameweek,
