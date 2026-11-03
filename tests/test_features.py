@@ -17,7 +17,7 @@ def matches():
 @pytest.fixture(scope="module")
 def matches_full():
     """Enough seasons for venue-split forward-fill to have data to propagate."""
-    return load_training_data(seasons=["2021-2022", "2022-2023", "2023-2024"])
+    return load_training_data(seasons=["2018-2019", "2019-2020", "2020-2021", "2021-2022", "2022-2023", "2023-2024"])
 
 
 def test_rolling_form_first_match_is_nan(matches):
@@ -53,8 +53,8 @@ def test_venue_split_columns_are_not_constant(matches_full, no_other_competition
     long frame by `was_home`. Cross-venue columns must now carry real
     signal."""
     df, feature_cols = build_training_frame(matches_df=matches_full)
-    cross = [c for c in feature_cols if ("_away_last_" in c and c.startswith("home_"))
-             or ("_home_last_" in c and c.startswith("away_"))]
+    cross = [c for c in feature_cols if "_away_last_" in c and c.startswith("home_")
+             or "_home_last_" in c and c.startswith("away_")]
     assert cross, "expected cross-venue feature columns to exist"
     for c in cross:
         assert df[c].nunique(dropna=True) > 1, f"{c} is constant in training"
