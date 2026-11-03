@@ -10,7 +10,7 @@ import {
 import { TeamBadge } from "./TeamBadge";
 import { ScorelineHeatmap } from "./ScorelineHeatmap";
 import { FormStrip } from "./FormStrip";
-import { InfoTooltip } from "./InfoTooltip";
+import { GlossaryDisclosure } from "./GlossaryDisclosure";
 import { MarketBar } from "./MarketBar";
 import { ModelTopCalls, PlayerScorerList } from "./PlayerScorerList";
 import { GLOSSARY } from "../lib/glossary";
@@ -586,19 +586,19 @@ export function FixtureModal({ eventId, onClose, explain, loadContext, sport = "
                 )}
 
                 <section id="fx-scores" aria-label="Scores" className="scroll-mt-32">
-                  <h2 className="mb-3 flex items-center gap-1.5 font-display text-xl tracking-wide text-pr-text">
-                    Scoreline probability
-                    <InfoTooltip text={GLOSSARY.scorelineGrid} align="left" />
-                  </h2>
+                  <h2 className="mb-1 font-display text-xl tracking-wide text-pr-text">Scoreline probability</h2>
+                  <div className="mb-3"><GlossaryDisclosure text={GLOSSARY.scorelineGrid} label="How to read the scoreline grid" /></div>
                   <ScorelineHeatmap grid={detail.score_grid} homeTeam={detail.team_home} awayTeam={detail.team_away} topScorelines={detail.top_scorelines} />
                 </section>
 
                 <section id="fx-players" aria-label="Players" className="flex scroll-mt-32 flex-col gap-4">
-                  <h2 className="flex items-center gap-1.5 font-display text-xl tracking-wide text-pr-text">
-                    Likely scorers &amp; assists
-                    <InfoTooltip text={GLOSSARY.anytimeScorer} align="left" />
-                    <InfoTooltip text={GLOSSARY.playerAvailability} align="left" />
-                  </h2>
+                  <div className="flex flex-col gap-1">
+                    <h2 className="font-display text-xl tracking-wide text-pr-text">Likely scorers &amp; assists</h2>
+                    <div className="flex flex-wrap gap-x-5 gap-y-1">
+                      <GlossaryDisclosure text={GLOSSARY.anytimeScorer} label="What is the scorer chance?" />
+                      <GlossaryDisclosure text={GLOSSARY.playerAvailability} label="What does availability mean?" />
+                    </div>
+                  </div>
                   {playersError && <p className="text-sm text-loss">{playersError}</p>}
                   {!players && !playersError && <p className="text-sm text-pr-text-faint">Loading player predictions…</p>}
                   {players && (
@@ -660,7 +660,7 @@ export function FixtureModal({ eventId, onClose, explain, loadContext, sport = "
                         <MarketBar
                           label={
                             <span className="inline-flex items-center gap-1.5">
-                              {detail.team_home} to score 2+ <InfoTooltip text={GLOSSARY.teamTwoPlus} align="right" />
+                              {detail.team_home} to score 2+
                             </span>
                           }
                           prob={detail.home_2plus_prob}
@@ -670,11 +670,14 @@ export function FixtureModal({ eventId, onClose, explain, loadContext, sport = "
                         <MarketBar
                           label={
                             <span className="inline-flex items-center gap-1.5">
-                              {detail.team_away} to score 2+ <InfoTooltip text={GLOSSARY.teamTwoPlus} align="right" />
+                              {detail.team_away} to score 2+
                             </span>
                           }
                           prob={detail.away_2plus_prob}
                         />
+                      )}
+                      {(hasNumber(detail.home_2plus_prob) || hasNumber(detail.away_2plus_prob)) && (
+                        <GlossaryDisclosure text={GLOSSARY.teamTwoPlus} label="What is 'to score 2+'?" />
                       )}
                       {detail.predicted_margin !== null && (
                         <div className="flex items-center justify-between rounded-pr bg-pr-panel px-3 py-2 text-sm">
@@ -760,6 +763,12 @@ export function FixtureModal({ eventId, onClose, explain, loadContext, sport = "
                 )}
                 {!(detail.post_match && !detail.actual_stats) && (
                   <p className="mt-2 text-sm text-pr-text-faint">{detail.actual_stats ? "Final team totals reported by the match-data feed. Possession is shown whenever the source provides it." : "Rest is fixture congestion; the other rows are each team&apos;s rolling per-match profile, not live betting lines."}</p>
+                )}
+                {!detail.post_match && (
+                  <div className="mt-2 flex flex-wrap gap-x-5 gap-y-1">
+                    <GlossaryDisclosure text={GLOSSARY.expectedGoals} label="What is xG?" />
+                    <GlossaryDisclosure text={GLOSSARY.setPieceShare} label="What is set-piece xG?" />
+                  </div>
                 )}
               </section>
 
