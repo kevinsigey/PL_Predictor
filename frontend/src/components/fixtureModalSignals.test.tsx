@@ -126,7 +126,9 @@ describe("PL's absence row on the fixture modal", () => {
   it("asks for the signals when an upcoming fixture opens", async () => {
     vi.mocked(fetchSignals).mockResolvedValue(envelope([ABSENCE]));
     await openModal();
-    expect(fetchSignals).toHaveBeenCalledWith("e1");
+    // The signal request is an effect that runs after the flow has painted, so
+    // wait for it rather than reading the spy in the same tick it renders.
+    await waitFor(() => expect(fetchSignals).toHaveBeenCalledWith("e1"));
   });
 
   it("renders the row the endpoint sent", async () => {
