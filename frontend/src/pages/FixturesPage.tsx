@@ -4,6 +4,7 @@ import type { CurrentGameweekResponse } from "../types";
 import { FixtureModal } from "../components/FixtureModal";
 import { CurrentGameweekSection } from "../components/CurrentGameweekSection";
 import { PUBLIC_MODE } from "../lib/publicMode";
+import { fixtureHash, fixtureIdFromHash } from "../lib/fixtureLink";
 import { ErrorState, Skeleton } from "../predictor-ui";
 
 export function FixturesPage() {
@@ -13,7 +14,23 @@ export function FixturesPage() {
   // An admin refresh failing is not the gameweek failing to load: keep the
   // two apart so each says what went wrong and retries the right thing.
   const [actionError, setActionError] = useState<string | null>(null);
-  const [selected, setSelected] = useState<string | null>(null);
+  // The open fixture is the URL's `#fixture/<id>`, so a link opens it and Back
+  // and Forward walk through it. The hash is the one source of truth.
+  const [selected, setSelected] = useState<string | null>(() => fixtureIdFromHash(window.location.hash));
+  useEffect(() => {
+    const onHash = () => setSelected(fixtureIdFromHash(window.location.hash));
+    window.addEventListener("hashchange", onHash);
+    return () => window.removeEventListener("hashchange", onHash);
+  }, []);
+  const openFixture = (eventId: string) => {
+    window.location.hash = fixtureHash(eventId);
+  };
+  // Closing replaces the fixture's history entry instead of adding one, so Back
+  // does not reopen a fixture the reader just closed.
+  const closeFixture = () => {
+    setSelected(null);
+    window.history.replaceState(null, "", "#fixtures");
+  };
   const [busy, setBusy] = useState<string | null>(null);
   // undefined = "current gameweek" (server decides); once the user
   // navigates, this pins to whichever gameweek they're browsing.
@@ -95,10 +112,10 @@ export function FixturesPage() {
       {loading && !gameweek ? (
         <Skeleton label="Loading fixtures…" />
       ) : (
-        gameweek && <CurrentGameweekSection data={gameweek} onSelect={setSelected} onNavigate={navigate} />
+        gameweek && <CurrentGameweekSection data={gameweek} onSelect={openFixture} onNavigate={navigate} />
       )}
 
-      {selected && <FixtureModal eventId={selected} onClose={() => setSelected(null)} explain={api.explain} loadContext={api.loadContext} />}
+      {selected && <FixtureModal eventId={selected} onClose={closeFixture} explain={api.explain} loadContext={api.loadContext} />}
     </div>
   );
 }

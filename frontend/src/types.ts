@@ -252,6 +252,23 @@ export interface PlayerPrediction {
   expected_saves: number;
 }
 
+/** One point in a fixture's probability history: the model's three-way odds and,
+ *  where a live price existed, the market's de-vigged implied odds. */
+export interface PickHistoryPoint {
+  t: string;
+  p_home: number;
+  p_draw: number;
+  p_away: number;
+  m_home: number | null;
+  m_draw: number | null;
+  m_away: number | null;
+}
+
+export interface PickHistory {
+  event_id: string;
+  points: PickHistoryPoint[];
+}
+
 export interface FixturePlayers {
   home_players: PlayerPrediction[];
   away_players: PlayerPrediction[];
