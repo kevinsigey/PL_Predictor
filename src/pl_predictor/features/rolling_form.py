@@ -151,35 +151,55 @@ def latest_form(matches_df: pd.DataFrame) -> pd.DataFrame:
     return pd.DataFrame.from_dict(rows, orient="index")
 
 
+def _add_venue_form(long_df: pd.DataFrame) -> tuple[pd.DataFrame, list[str]]:
+    """Venue-specific form columns `home_last_*` / `away_last_*`.
+
+    A row at venue V uses the team's pre-match rolling form over its V matches
+    (shift(1) within venue). The other venue's column carries the rolling form
+    as of the team's most recent *completed* match at that venue, forward-filled
+    in team/date order. That match is strictly earlier than the row, so the
+    row's own result is never used.
+    """
+    team = long_df["team"]
+    is_home = long_df["was_home"].astype(bool)
+    grouped = long_df.groupby(["team", "was_home"], sort=False)
+    new_cols: dict[str, np.ndarray] = {}
+    cols: list[str] = []
+    for feat in BASE_STATS:
+        if feat not in long_df.columns:
+            continue
+        for w in LAG_WINDOWS:
+            pre = grouped[feat].transform(lambda s, w=w: s.shift(1).rolling(w, min_periods=1).mean())
+            post = grouped[feat].transform(lambda s, w=w: s.rolling(w, min_periods=1).mean())
+            for venue, mask in (("home", is_home), ("away", ~is_home)):
+                carried = (
+                    pd.Series(np.where(mask, post, np.nan), index=long_df.index)
+                    .groupby(team, sort=False)
+                    .ffill()
+                )
+                col = f"{venue}_last_{w}_{feat}"
+                new_cols[col] = np.where(mask, pre, carried)
+                cols.append(col)
+    return pd.concat([long_df, pd.DataFrame(new_cols, index=long_df.index)], axis=1), cols
+
+
 def build_rolling_form(matches_df: pd.DataFrame) -> tuple[pd.DataFrame, list[str]]:
     """Returns a team-match long frame with rolling-form columns:
     - `last_{3,5,10}_{stat}`: overall form (all matches, home or away)
-    - `home_last_{3,5,10}_{stat}`: form computed only from that team's home
-      matches (NaN on away rows / before the team's first home match)
-    - `away_last_{3,5,10}_{stat}`: same, away matches only
+    - `home_last_{3,5,10}_{stat}`: form from that team's home matches. On home
+      rows it is the pre-match value; on away rows it is the form after the
+      team's latest completed home match (NaN before their first home match)
+    - `away_last_{3,5,10}_{stat}`: same, with the roles of home and away swapped
 
-    All rolling windows use shift(1) so a row's features never include that
-    row's own match outcome.
+    Overall columns use shift(1), so a row's features never include that row's
+    own match outcome. Venue columns carry only results from strictly earlier
+    matches.
     """
     long_df = to_team_perspective(matches_df)
 
     long_df, overall_cols = _add_rolling(long_df, ["team"], prefix="")
-    long_df, home_cols = _add_rolling(long_df, ["team", "was_home"], prefix="split_")
-
-    # split_ columns mix in both was_home=True and was_home=False groups;
-    # relabel into home_/away_ and null out the irrelevant side per row.
-    feature_cols = list(overall_cols)
-    relabeled_cols = {}
-    for col in home_cols:
-        stat = col[len("split_") :]
-        home_col, away_col = f"home_{stat}", f"away_{stat}"
-        relabeled_cols[home_col] = np.where(long_df["was_home"], long_df[col], np.nan)
-        relabeled_cols[away_col] = np.where(~long_df["was_home"], long_df[col], np.nan)
-        feature_cols += [home_col, away_col]
-    long_df = long_df.drop(columns=home_cols)
-    long_df = pd.concat([long_df, pd.DataFrame(relabeled_cols, index=long_df.index)], axis=1)
-
-    return long_df, feature_cols
+    long_df, venue_cols = _add_venue_form(long_df)
+    return long_df, list(overall_cols) + venue_cols
 
 
 _RESULT_LETTER = {3: "W", 1: "D", 0: "L"}

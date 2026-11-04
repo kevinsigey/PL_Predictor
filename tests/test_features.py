@@ -14,6 +14,12 @@ def matches():
     return load_training_data(seasons=["2022-2023", "2023-2024"])
 
 
+@pytest.fixture(scope="module")
+def matches_full():
+    """Enough seasons for venue-split forward-fill to have data to propagate."""
+    return load_training_data(seasons=["2018-2019", "2019-2020", "2020-2021", "2021-2022", "2022-2023", "2023-2024"])
+
+
 def test_rolling_form_first_match_is_nan(matches):
     long_df, feature_cols = build_rolling_form(matches)
     first_rows = long_df.sort_values("date").groupby("team", sort=False).head(1)
@@ -38,6 +44,20 @@ def test_no_lookahead_in_training_frame(matches, no_other_competitions):
     # the feature isn't silently constant / a copy of a post-match value)
     assert df["elo_home"].nunique() > 1
     assert df[feature_cols].shape[1] == len(feature_cols)
+
+
+def test_venue_split_columns_are_not_constant(matches_full, no_other_competitions):
+    """Regression guard for the venue-split bug: a team's form at the
+    opposite venue used to be NaN on every training row (and therefore a
+    constant zero after fillna), because the rolling-form join filtered the
+    long frame by `was_home`. Cross-venue columns must now carry real
+    signal."""
+    df, feature_cols = build_training_frame(matches_df=matches_full)
+    cross = [c for c in feature_cols if "_away_last_" in c and c.startswith("home_")
+             or "_home_last_" in c and c.startswith("away_")]
+    assert cross, "expected cross-venue feature columns to exist"
+    for c in cross:
+        assert df[c].nunique(dropna=True) > 1, f"{c} is constant in training"
 
 
 def test_cold_start_confidence_present(matches, no_other_competitions):
@@ -410,3 +430,60 @@ def test_an_out_of_range_date_raises_rather_than_silently_corrupting():
     # The unreadable-date contract it does have: a genuinely unparseable cell is
     # dropped, so a `NaT` key can never reach the right side of a left merge.
     assert len(drop_unmatchable(pd.DataFrame({"date": ["2024-08-17", "not-a-date"]}))) == 1
+
+
+def _venue_matches(away_results, home_goals_for_current=5):
+    """Team A's matches in date order. `away_results` is a list of A's goals scored
+    in successive away games (A conceding 0 each time). A then plays one home match
+    on the final date, with `home_goals_for_current` goals for A."""
+    rows = []
+    day = pd.Timestamp("2024-01-06")
+    for gf in away_results:
+        rows.append({"date": day, "season": "2023-2024", "team_home": "B", "team_away": "A",
+                     "goals_home": 0, "goals_away": gf})
+        day += pd.Timedelta(days=7)
+    rows.append({"date": day, "season": "2023-2024", "team_home": "A", "team_away": "D",
+                 "goals_home": home_goals_for_current, "goals_away": 0})
+    return pd.DataFrame(rows), day
+
+
+def _team_row(long_df, team, date):
+    return long_df[(long_df["team"] == team) & (long_df["date"] == date)].iloc[0]
+
+
+def test_venue_carry_uses_latest_completed_away_match_after_one_away_game():
+    """After one away match, A's next home row must see that match's post-match
+    form (goals_for=1 over the one away game), not NaN and not the pre-match value."""
+    matches, home_day = _venue_matches([1])
+    long_df, _ = build_rolling_form(matches)
+    row = _team_row(long_df, "A", home_day)
+    assert row["away_last_3_goals_for"] == 1.0
+    # Its own venue has no prior home match, so the pre-match value stays NaN.
+    assert np.isnan(row["home_last_3_goals_for"])
+
+
+def test_venue_carry_uses_latest_completed_away_match_after_two_away_games():
+    """After away games scoring 1 then 0, the home row sees the post-match mean
+    over both (0.5), including the most recent away result. The pre-match value
+    (1.0) would exclude it, which is the lag this guards against."""
+    matches, home_day = _venue_matches([1, 0])
+    long_df, _ = build_rolling_form(matches)
+    row = _team_row(long_df, "A", home_day)
+    assert row["away_last_3_goals_for"] == pytest.approx(0.5)
+
+
+def test_venue_carry_never_uses_the_current_match_result():
+    """The no-lookahead check: changing the goals scored in the match a row is
+    about must not change that row's features. Compare every feature column on
+    the home row across two versions of that match."""
+    away_results = [1, 0]
+    matches_a, home_day = _venue_matches(away_results, home_goals_for_current=5)
+    matches_b, _ = _venue_matches(away_results, home_goals_for_current=0)
+    long_a, feature_cols = build_rolling_form(matches_a)
+    long_b, _ = build_rolling_form(matches_b)
+    row_a = _team_row(long_a, "A", home_day)
+    row_b = _team_row(long_b, "A", home_day)
+    np.testing.assert_array_equal(
+        row_a[feature_cols].to_numpy(dtype=float),
+        row_b[feature_cols].to_numpy(dtype=float),
+    )
