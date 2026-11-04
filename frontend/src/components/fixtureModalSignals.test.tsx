@@ -36,6 +36,7 @@ vi.mock("../api/client", () => ({
   api: {
     fixtureDetail: vi.fn(),
     fixturePlayers: vi.fn(),
+    pickHistory: vi.fn(),
     fixturePlayerReview: vi.fn(),
     trackRecord: vi.fn(),
   },
@@ -99,6 +100,7 @@ const envelope = (signals: unknown[]) =>
 function mockApi(fixture: FixtureDetail = detail) {
   vi.mocked(api.fixtureDetail).mockResolvedValue(fixture);
   vi.mocked(api.fixturePlayers).mockResolvedValue({ home_players: [], away_players: [] });
+  vi.mocked(api.pickHistory).mockResolvedValue({ event_id: "", points: [] });
   vi.mocked(api.fixturePlayerReview).mockResolvedValue(null);
   vi.mocked(api.trackRecord).mockResolvedValue(trackRecord);
 }
@@ -124,7 +126,9 @@ describe("PL's absence row on the fixture modal", () => {
   it("asks for the signals when an upcoming fixture opens", async () => {
     vi.mocked(fetchSignals).mockResolvedValue(envelope([ABSENCE]));
     await openModal();
-    expect(fetchSignals).toHaveBeenCalledWith("e1");
+    // The signal request is an effect that runs after the flow has painted, so
+    // wait for it rather than reading the spy in the same tick it renders.
+    await waitFor(() => expect(fetchSignals).toHaveBeenCalledWith("e1"));
   });
 
   it("renders the row the endpoint sent", async () => {

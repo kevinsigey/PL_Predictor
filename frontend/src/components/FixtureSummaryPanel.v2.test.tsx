@@ -35,6 +35,7 @@ vi.mock("../api/client", () => ({
   api: {
     fixtureDetail: vi.fn(),
     fixturePlayers: vi.fn(),
+    pickHistory: vi.fn(),
     fixturePlayerReview: vi.fn(),
     trackRecord: vi.fn(),
   },
@@ -184,6 +185,7 @@ async function show(pick?: PickRef, fx: FixtureSummary = fixture(), factors?: Fa
   const explain = vi.fn().mockResolvedValue(v2(pick, factors));
   vi.mocked(api.fixtureDetail).mockResolvedValue(modalDetail(fx));
   vi.mocked(api.fixturePlayers).mockResolvedValue({ home_players: [], away_players: [] });
+  vi.mocked(api.pickHistory).mockResolvedValue({ event_id: "", points: [] });
   vi.mocked(api.fixturePlayerReview).mockResolvedValue(null);
   vi.mocked(api.trackRecord).mockResolvedValue(noRecordYet as never);
   const out = render(<FixtureModal eventId="e1" onClose={() => {}} explain={explain} />);
@@ -430,6 +432,7 @@ describe("the flow stands alone when the explainer is unreachable", () => {
     const explain = vi.fn().mockRejectedValue(new Error("unreachable"));
     vi.mocked(api.fixtureDetail).mockResolvedValue(modalDetail(fixture()));
     vi.mocked(api.fixturePlayers).mockResolvedValue({ home_players: [], away_players: [] });
+    vi.mocked(api.pickHistory).mockResolvedValue({ event_id: "", points: [] });
     vi.mocked(api.fixturePlayerReview).mockResolvedValue(null);
     vi.mocked(api.trackRecord).mockResolvedValue(noRecordYet as never);
     render(<FixtureModal eventId="e1" onClose={() => {}} explain={explain} />);

@@ -14,6 +14,7 @@ import type {
   FPLTransfersResponse,
   ManifestHistoryResponse,
   ManifestResponse,
+  PickHistory,
   ProjectedTableResponse,
   RankingsResponse,
   PlayerHubResponse,
@@ -172,6 +173,8 @@ export const api = {
     get<CurrentGameweekResponse>(gameweek ? `/fixtures/gameweek?gameweek=${gameweek}` : "/fixtures/gameweek"),
   fixtureDetail: (eventId: string) => get<FixtureDetail>(`/fixtures/${eventId}`),
   fixturePlayers: (eventId: string) => get<FixturePlayers>(`/fixtures/${eventId}/players`),
+  /** The model's probabilities over time for one fixture; `points` is empty when none were recorded. */
+  pickHistory: (eventId: string) => get<PickHistory>(`/fixtures/${eventId}/pick-history`),
   fixturePlayerReview: (eventId: string) => get<FixturePlayerReview | null>(`/fixtures/${eventId}/player-review`),
   manifest: (force = false) => get<ManifestResponse>("/manifest", force),
   manifestHistory: (force = false) => get<ManifestHistoryResponse>("/manifest/history", force),

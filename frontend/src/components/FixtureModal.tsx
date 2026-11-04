@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import type { Explanation, MatchupContext } from "../predictor-ui";
 import { FixtureExplainer, SignalRows, kickoff, type Signal } from "../predictor-ui";
 import { panelFacts } from "../predictor-ui/lib/panelFacts";
-import type { FixtureDetail, FixturePlayerReview, FixturePlayers, FixturePostMatch, FixtureValueBetSnapshot, TrackRecordSummary } from "../types";
+import type { FixtureDetail, FixturePlayerReview, FixturePlayers, FixturePostMatch, FixtureValueBetSnapshot, PickHistoryPoint, TrackRecordSummary } from "../types";
 import {
   fetchSignals,
   api,
@@ -10,7 +10,8 @@ import {
 import { TeamBadge } from "./TeamBadge";
 import { ScorelineHeatmap } from "./ScorelineHeatmap";
 import { FormStrip } from "./FormStrip";
-import { InfoTooltip } from "./InfoTooltip";
+import { GlossaryDisclosure } from "./GlossaryDisclosure";
+import { PickSparkline } from "./PickSparkline";
 import { MarketBar } from "./MarketBar";
 import { ModelTopCalls, PlayerScorerList } from "./PlayerScorerList";
 import { GLOSSARY } from "../lib/glossary";
@@ -175,6 +176,9 @@ export function FixtureModal({ eventId, onClose, explain, loadContext, sport = "
   const [playerReviewError, setPlayerReviewError] = useState<string | null>(null);
   const [playerReviewLoading, setPlayerReviewLoading] = useState(false);
   const [recordSummary, setRecordSummary] = useState<TrackRecordSummary | null>(null);
+  // The pick's probability over time. Empty until it lands, and stays empty on
+  // any failure: the sparkline is an extra, so a missing history draws nothing.
+  const [pickHistory, setPickHistory] = useState<PickHistoryPoint[]>([]);
   // Spec §4's signal rows. `[]` and never null once settled, and `[]` is also what
   // every failure leaves behind -- see the effect below.
   const [signals, setSignals] = useState<Signal[]>([]);
@@ -438,6 +442,20 @@ export function FixtureModal({ eventId, onClose, explain, loadContext, sport = "
 
   useEffect(() => {
     let cancelled = false;
+    setPickHistory([]);
+    api
+      .pickHistory(eventId)
+      .then((response) => {
+        if (!cancelled) setPickHistory(response.points);
+      })
+      .catch(() => {});
+    return () => {
+      cancelled = true;
+    };
+  }, [eventId]);
+
+  useEffect(() => {
+    let cancelled = false;
     api
       .trackRecord()
       .then((response) => {
@@ -563,6 +581,9 @@ export function FixtureModal({ eventId, onClose, explain, loadContext, sport = "
                       extras={{ tiles: panel.tiles, segments: panel.segments, legend: panel.legend, record: record ?? undefined, moment: "kickoff" }}
                     />
                   )}
+                  {resolved && pickHistory.length > 1 && (
+                    <PickSparkline points={pickHistory} side={resolved.side} label={resolved.label} />
+                  )}
                   {detail.data_confidence === "new" && (
                     <div className="flex items-center gap-2 rounded-pr bg-pr-panel px-3 py-2 text-sm text-pr-text-dim">
                       <span className="rounded-pr bg-pr-panel-2 px-1.5 py-0.5 font-semibold text-pr-text-dim">new team</span>
@@ -586,19 +607,19 @@ export function FixtureModal({ eventId, onClose, explain, loadContext, sport = "
                 )}
 
                 <section id="fx-scores" aria-label="Scores" className="scroll-mt-32">
-                  <h2 className="mb-3 flex items-center gap-1.5 font-display text-xl tracking-wide text-pr-text">
-                    Scoreline probability
-                    <InfoTooltip text={GLOSSARY.scorelineGrid} align="left" />
-                  </h2>
+                  <h2 className="mb-1 font-display text-xl tracking-wide text-pr-text">Scoreline probability</h2>
+                  <div className="mb-3"><GlossaryDisclosure text={GLOSSARY.scorelineGrid} label="How to read the scoreline grid" /></div>
                   <ScorelineHeatmap grid={detail.score_grid} homeTeam={detail.team_home} awayTeam={detail.team_away} topScorelines={detail.top_scorelines} />
                 </section>
 
                 <section id="fx-players" aria-label="Players" className="flex scroll-mt-32 flex-col gap-4">
-                  <h2 className="flex items-center gap-1.5 font-display text-xl tracking-wide text-pr-text">
-                    Likely scorers &amp; assists
-                    <InfoTooltip text={GLOSSARY.anytimeScorer} align="left" />
-                    <InfoTooltip text={GLOSSARY.playerAvailability} align="left" />
-                  </h2>
+                  <div className="flex flex-col gap-1">
+                    <h2 className="font-display text-xl tracking-wide text-pr-text">Likely scorers &amp; assists</h2>
+                    <div className="flex flex-wrap gap-x-5 gap-y-1">
+                      <GlossaryDisclosure text={GLOSSARY.anytimeScorer} label="What is the scorer chance?" />
+                      <GlossaryDisclosure text={GLOSSARY.playerAvailability} label="What does availability mean?" />
+                    </div>
+                  </div>
                   {playersError && <p className="text-sm text-loss">{playersError}</p>}
                   {!players && !playersError && <p className="text-sm text-pr-text-faint">Loading player predictions…</p>}
                   {players && (
@@ -660,7 +681,7 @@ export function FixtureModal({ eventId, onClose, explain, loadContext, sport = "
                         <MarketBar
                           label={
                             <span className="inline-flex items-center gap-1.5">
-                              {detail.team_home} to score 2+ <InfoTooltip text={GLOSSARY.teamTwoPlus} align="right" />
+                              {detail.team_home} to score 2+
                             </span>
                           }
                           prob={detail.home_2plus_prob}
@@ -670,11 +691,14 @@ export function FixtureModal({ eventId, onClose, explain, loadContext, sport = "
                         <MarketBar
                           label={
                             <span className="inline-flex items-center gap-1.5">
-                              {detail.team_away} to score 2+ <InfoTooltip text={GLOSSARY.teamTwoPlus} align="right" />
+                              {detail.team_away} to score 2+
                             </span>
                           }
                           prob={detail.away_2plus_prob}
                         />
+                      )}
+                      {(hasNumber(detail.home_2plus_prob) || hasNumber(detail.away_2plus_prob)) && (
+                        <GlossaryDisclosure text={GLOSSARY.teamTwoPlus} label="What is 'to score 2+'?" />
                       )}
                       {detail.predicted_margin !== null && (
                         <div className="flex items-center justify-between rounded-pr bg-pr-panel px-3 py-2 text-sm">
@@ -760,6 +784,12 @@ export function FixtureModal({ eventId, onClose, explain, loadContext, sport = "
                 )}
                 {!(detail.post_match && !detail.actual_stats) && (
                   <p className="mt-2 text-sm text-pr-text-faint">{detail.actual_stats ? "Final team totals reported by the match-data feed. Possession is shown whenever the source provides it." : "Rest is fixture congestion; the other rows are each team&apos;s rolling per-match profile, not live betting lines."}</p>
+                )}
+                {!detail.post_match && (
+                  <div className="mt-2 flex flex-wrap gap-x-5 gap-y-1">
+                    <GlossaryDisclosure text={GLOSSARY.expectedGoals} label="What is xG?" />
+                    <GlossaryDisclosure text={GLOSSARY.setPieceShare} label="What is set-piece xG?" />
+                  </div>
                 )}
               </section>
 
