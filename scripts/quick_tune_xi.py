@@ -13,7 +13,7 @@ for xi in (0.0010, 0.0018, 0.0030):
             rps_vals.append(_evaluate(m, f["val_df"])["rps"])
         except Exception as exc:
             print(f"xi={xi} fold error: {exc}")
-    if len(rps_vals) == len(folds):
+    if folds and len(rps_vals) == len(folds):
         avg = sum(rps_vals) / len(rps_vals)
         print(f"xi={xi} RPS_mean={avg:.5f} (folds={len(rps_vals)})")
     else:

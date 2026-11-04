@@ -295,7 +295,7 @@ def main():
         f"- **Data source**: OUR MODEL's predicted probabilities (not bookmaker odds) from public_snapshot.json: "
         f"`fixtures_by_gameweek` (1X2 probs + actuals) joined with `fixture_detail_by_event_id` (O/U 2.5, BTTS).\n"
         f"- **Sample**: n={n} finished fixtures with model predictions and actual results (2026-08 to 2026-10).\n"
-        f"- **Probabilities sum to 1**: 1X2 probs sum to 1.000 for all fixtures.\n\n"
+        f"- **Probabilities sum to 1**: 1X2 probs sum to 1 within ±{PROB_SUM_TOL:.2f} for all fixtures.\n\n"
         f"## Per-market results (paired-bootstrap 95% CIs, {N_BOOT} resamples)\n\n"
         f"| Market | Metric | Value | 95% CI | Reading |\n"
         f"|--------|--------|-------|--------|---------|\n"
