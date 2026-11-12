@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T01:06:25.348687+00:00",
+  "generated_at": "2026-11-12T16:50:31.203711+00:00",
   "model_fingerprint": "38d8e310d6f6316d0951a40c95e0f4ed51eebba2ee04dd34a0c17d27ad09a9ad",
   "calibration": {
     "model": {
@@ -63467,18 +63467,18 @@
       "team_away": "Nott'm Forest",
       "home_win": {
         "prob": 0.48631409685666127,
-        "implied": 0.4812136582745545,
-        "edge": 0.005100438582106792
+        "implied": 0.48258959451825156,
+        "edge": 0.0037245023384097076
       },
       "draw": {
         "prob": 0.23557260886154338,
-        "implied": 0.2643707501582838,
-        "edge": -0.028798141296740437
+        "implied": 0.26367999182947705,
+        "edge": -0.028107382967933664
       },
       "away_win": {
         "prob": 0.2781132942817954,
-        "implied": 0.2544155915662412,
-        "edge": 0.02369770271555416
+        "implied": 0.25373041365148125,
+        "edge": 0.02438288063031413
       },
       "over_2_5": {
         "prob": 0.5769380661697795,
@@ -63506,7 +63506,7 @@
         "over_2_5"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-12T01:00:59.914900Z",
+      "odds_fetched_at": "2026-11-12T16:44:23.416419Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "over_2_5",
@@ -76459,7 +76459,7 @@
         "btts_no"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-12T01:00:59.914900Z",
+      "odds_fetched_at": "2026-11-12T16:44:23.416419Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "btts_no",
@@ -77657,7 +77657,7 @@
         "away_win"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-12T01:00:59.914900Z",
+      "odds_fetched_at": "2026-11-12T16:44:23.416419Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "away_win",
@@ -78275,13 +78275,13 @@
       },
       "over_2_5": {
         "prob": 0.5291641703827489,
-        "implied": 0.5912506709606102,
-        "edge": -0.06208650057786136
+        "implied": 0.5893437296944007,
+        "edge": -0.060179559311651865
       },
       "under_2_5": {
         "prob": 0.4708358296172511,
-        "implied": 0.4087493290388925,
-        "edge": 0.06208650057835863
+        "implied": 0.41065627030510327,
+        "edge": 0.06017955931214786
       },
       "btts_yes_prob": 0.5267431997616274,
       "top_scoreline": "0-1",
@@ -78299,14 +78299,14 @@
         "under_2_5"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-12T01:00:59.914900Z",
+      "odds_fetched_at": "2026-11-12T16:44:23.416419Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "under_2_5",
         "probability": 0.4708358296172511,
-        "implied_probability": 0.4087493290388925,
-        "edge": 0.06208650057835863,
-        "price": 2.3,
+        "implied_probability": 0.41065627030510327,
+        "edge": 0.06017955931214786,
+        "price": 2.28,
         "bookmaker": "BET_PARX"
       },
       "score_grid": [
@@ -78448,8 +78448,8 @@
           "won": null,
           "final_score": null,
           "result_source": null,
-          "closing_price": 2.3,
-          "clv_pct": 0.0
+          "closing_price": 2.28,
+          "clv_pct": 0.8771929824561431
         }
       ]
     },
@@ -78497,7 +78497,7 @@
       "away_2plus_prob": 0.36766452051106496,
       "value_bet_flags": [],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-12T01:00:59.914900Z",
+      "odds_fetched_at": "2026-11-12T16:44:23.416419Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -78671,18 +78671,18 @@
       "team_away": "Fulham",
       "home_win": {
         "prob": 0.684260651942897,
-        "implied": 0.6758127404163576,
-        "edge": 0.008447911526539342
+        "implied": 0.68,
+        "edge": 0.004260651942896931
       },
       "draw": {
         "prob": 0.18941044760961975,
-        "implied": 0.1870291898393869,
-        "edge": 0.0023812577702328475
+        "implied": 0.18,
+        "edge": 0.00941044760961976
       },
       "away_win": {
         "prob": 0.12632890044748327,
-        "implied": 0.13715806974327577,
-        "edge": -0.010829169295792501
+        "implied": 0.14,
+        "edge": -0.013671099552516747
       },
       "over_2_5": {
         "prob": 0.5642174318329654,
@@ -78710,7 +78710,7 @@
         "btts_no"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-12T01:00:59.914900Z",
+      "odds_fetched_at": "2026-11-12T16:44:23.416419Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "btts_no",
@@ -92417,13 +92417,13 @@
         "btts_yes"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-12T01:00:59.914900Z",
+      "odds_fetched_at": "2026-11-12T16:44:23.416419Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "btts_yes",
         "probability": 0.6083768901882118,
-        "implied_probability": 0.5548486178146078,
-        "edge": 0.053528272373604024,
+        "implied_probability": 0.5570528146052981,
+        "edge": 0.05132407558291374,
         "price": 1.72,
         "bookmaker": "BET_MGM"
       },
@@ -92929,28 +92929,28 @@
       "team_away": "Man United",
       "home_win": {
         "prob": 0.39994420555880195,
-        "implied": 0.5561109639026581,
-        "edge": -0.15616675834385618
+        "implied": 0.5522435815533276,
+        "edge": -0.1522993759945257
       },
       "draw": {
         "prob": 0.22992961467332096,
-        "implied": 0.2269318895365719,
-        "edge": 0.002997725136749063
+        "implied": 0.2238782092230598,
+        "edge": 0.006051405450261171
       },
       "away_win": {
         "prob": 0.370126179767877,
-        "implied": 0.2169571465597758,
-        "edge": 0.15316903320810119
+        "implied": 0.2238782092230598,
+        "edge": 0.1462479705448172
       },
       "over_2_5": {
         "prob": 0.641465525028156,
-        "implied": null,
-        "edge": null
+        "implied": 0.6205936920220734,
+        "edge": 0.02087183300608264
       },
       "under_2_5": {
         "prob": 0.35853447497184404,
-        "implied": null,
-        "edge": null
+        "implied": 0.37940630797743463,
+        "edge": -0.02087183300559059
       },
       "btts_yes_prob": 0.653232556229541,
       "top_scoreline": "1-1",
@@ -92968,14 +92968,14 @@
         "away_win"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-12T01:00:59.914900Z",
+      "odds_fetched_at": "2026-11-12T16:44:23.416419Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "away_win",
         "probability": 0.370126179767877,
-        "implied_probability": 0.2169571465597758,
-        "edge": 0.15316903320810119,
-        "price": 4.545454545454546,
+        "implied_probability": 0.2238782092230598,
+        "edge": 0.1462479705448172,
+        "price": 4.3478260869565215,
         "bookmaker": "KALSHI"
       },
       "score_grid": [
@@ -93153,8 +93153,8 @@
           "won": null,
           "final_score": null,
           "result_source": null,
-          "closing_price": 4.545454545454546,
-          "clv_pct": -3.200000000000003
+          "closing_price": 4.3478260869565215,
+          "clv_pct": 1.2000000000000233
         }
       ]
     },
@@ -93913,7 +93913,7 @@
         "btts_no"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-12T01:00:59.914900Z",
+      "odds_fetched_at": "2026-11-12T16:44:23.416419Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "under_2_5",
@@ -94141,7 +94141,7 @@
       "away_2plus_prob": 0.5627523988804164,
       "value_bet_flags": [],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-12T01:00:59.914900Z",
+      "odds_fetched_at": "2026-11-12T16:44:23.416419Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -95314,27 +95314,6 @@
           "expected_saves": 0.0
         },
         {
-          "player_id": 53,
-          "name": "Manzambi",
-          "position": "MID",
-          "anytime_goal_prob": 0.23143278145763835,
-          "anytime_goal_prob_pre_availability": 0.23143278145763835,
-          "anytime_assist_prob": 0.23039042286279277,
-          "anytime_goal_contribution_prob": 0.40850330793609346,
-          "status": "a",
-          "news": "",
-          "confidence": "position_avg",
-          "predicted_starter": true,
-          "confirmed_starter": false,
-          "expected_minutes": 59.08922914466737,
-          "is_penalty_taker": false,
-          "is_set_piece_taker": false,
-          "expected_shots": 0.0,
-          "expected_shots_on_target": 0.0,
-          "anytime_shot_on_target_prob": 0.0,
-          "expected_saves": 0.0
-        },
-        {
           "player_id": 631,
           "name": "Mbaye",
           "position": "MID",
@@ -95348,6 +95327,27 @@
           "predicted_starter": false,
           "confirmed_starter": false,
           "expected_minutes": 48.3260429835651,
+          "is_penalty_taker": false,
+          "is_set_piece_taker": false,
+          "expected_shots": 0.0,
+          "expected_shots_on_target": 0.0,
+          "anytime_shot_on_target_prob": 0.0,
+          "expected_saves": 0.0
+        },
+        {
+          "player_id": 53,
+          "name": "Manzambi",
+          "position": "MID",
+          "anytime_goal_prob": 0.17915455507329736,
+          "anytime_goal_prob_pre_availability": 0.23143278145763835,
+          "anytime_assist_prob": 0.17831975138230327,
+          "anytime_goal_contribution_prob": 0.3255275107359231,
+          "status": "d",
+          "news": "Calf injury - 75% chance of playing",
+          "confidence": "position_avg",
+          "predicted_starter": true,
+          "confirmed_starter": false,
+          "expected_minutes": 44.31692185850053,
           "is_penalty_taker": false,
           "is_set_piece_taker": false,
           "expected_shots": 0.0,
@@ -99590,27 +99590,6 @@
           "expected_saves": 0.0
         },
         {
-          "player_id": 53,
-          "name": "Manzambi",
-          "position": "MID",
-          "anytime_goal_prob": 0.2592683694625121,
-          "anytime_goal_prob_pre_availability": 0.2592683694625121,
-          "anytime_assist_prob": 0.2536993200432467,
-          "anytime_goal_contribution_prob": 0.44719148046439816,
-          "status": "a",
-          "news": "",
-          "confidence": "position_avg",
-          "predicted_starter": true,
-          "confirmed_starter": false,
-          "expected_minutes": 59.08922914466737,
-          "is_penalty_taker": false,
-          "is_set_piece_taker": false,
-          "expected_shots": 0.0,
-          "expected_shots_on_target": 0.0,
-          "anytime_shot_on_target_prob": 0.0,
-          "expected_saves": 0.0
-        },
-        {
           "player_id": 631,
           "name": "Mbaye",
           "position": "MID",
@@ -99624,6 +99603,27 @@
           "predicted_starter": false,
           "confirmed_starter": false,
           "expected_minutes": 48.3260429835651,
+          "is_penalty_taker": false,
+          "is_set_piece_taker": false,
+          "expected_shots": 0.0,
+          "expected_shots_on_target": 0.0,
+          "anytime_shot_on_target_prob": 0.0,
+          "expected_saves": 0.0
+        },
+        {
+          "player_id": 53,
+          "name": "Manzambi",
+          "position": "MID",
+          "anytime_goal_prob": 0.20155378287148695,
+          "anytime_goal_prob_pre_availability": 0.2592683694625121,
+          "anytime_assist_prob": 0.19705577666764473,
+          "anytime_goal_contribution_prob": 0.3588922223150891,
+          "status": "d",
+          "news": "Calf injury - 75% chance of playing",
+          "confidence": "position_avg",
+          "predicted_starter": true,
+          "confirmed_starter": false,
+          "expected_minutes": 44.31692185850053,
           "is_penalty_taker": false,
           "is_set_piece_taker": false,
           "expected_shots": 0.0,
@@ -104036,27 +104036,6 @@
           "expected_saves": 0.0
         },
         {
-          "player_id": 53,
-          "name": "Manzambi",
-          "position": "MID",
-          "anytime_goal_prob": 0.28071931730149,
-          "anytime_goal_prob_pre_availability": 0.28071931730149,
-          "anytime_assist_prob": 0.27477984589429993,
-          "anytime_goal_contribution_prob": 0.47836315244813354,
-          "status": "a",
-          "news": "",
-          "confidence": "position_avg",
-          "predicted_starter": true,
-          "confirmed_starter": false,
-          "expected_minutes": 59.08922914466737,
-          "is_penalty_taker": false,
-          "is_set_piece_taker": false,
-          "expected_shots": 0.0,
-          "expected_shots_on_target": 0.0,
-          "anytime_shot_on_target_prob": 0.0,
-          "expected_saves": 0.0
-        },
-        {
           "player_id": 631,
           "name": "Mbaye",
           "position": "MID",
@@ -104070,6 +104049,27 @@
           "predicted_starter": false,
           "confirmed_starter": false,
           "expected_minutes": 48.3260429835651,
+          "is_penalty_taker": false,
+          "is_set_piece_taker": false,
+          "expected_shots": 0.0,
+          "expected_shots_on_target": 0.0,
+          "anytime_shot_on_target_prob": 0.0,
+          "expected_saves": 0.0
+        },
+        {
+          "player_id": 53,
+          "name": "Manzambi",
+          "position": "MID",
+          "anytime_goal_prob": 0.21895906240675977,
+          "anytime_goal_prob_pre_availability": 0.28071931730149,
+          "anytime_assist_prob": 0.21412694485103378,
+          "anytime_goal_contribution_prob": 0.3862009721771872,
+          "status": "d",
+          "news": "Calf injury - 75% chance of playing",
+          "confidence": "position_avg",
+          "predicted_starter": true,
+          "confirmed_starter": false,
+          "expected_minutes": 44.31692185850053,
           "is_penalty_taker": false,
           "is_set_piece_taker": false,
           "expected_shots": 0.0,
@@ -106942,27 +106942,6 @@
           "expected_saves": 0.0
         },
         {
-          "player_id": 53,
-          "name": "Manzambi",
-          "position": "MID",
-          "anytime_goal_prob": 0.2030120162323702,
-          "anytime_goal_prob_pre_availability": 0.2030120162323702,
-          "anytime_assist_prob": 0.20208030761540774,
-          "anytime_goal_contribution_prob": 0.3640675931579165,
-          "status": "a",
-          "news": "",
-          "confidence": "position_avg",
-          "predicted_starter": true,
-          "confirmed_starter": false,
-          "expected_minutes": 59.08922914466737,
-          "is_penalty_taker": false,
-          "is_set_piece_taker": false,
-          "expected_shots": 0.0,
-          "expected_shots_on_target": 0.0,
-          "anytime_shot_on_target_prob": 0.0,
-          "expected_saves": 0.0
-        },
-        {
           "player_id": 631,
           "name": "Mbaye",
           "position": "MID",
@@ -106976,6 +106955,27 @@
           "predicted_starter": false,
           "confirmed_starter": false,
           "expected_minutes": 48.3260429835651,
+          "is_penalty_taker": false,
+          "is_set_piece_taker": false,
+          "expected_shots": 0.0,
+          "expected_shots_on_target": 0.0,
+          "anytime_shot_on_target_prob": 0.0,
+          "expected_saves": 0.0
+        },
+        {
+          "player_id": 53,
+          "name": "Manzambi",
+          "position": "MID",
+          "anytime_goal_prob": 0.15649272971943662,
+          "anytime_goal_prob_pre_availability": 0.2030120162323702,
+          "anytime_assist_prob": 0.15575326919396382,
+          "anytime_goal_contribution_prob": 0.2878717446545108,
+          "status": "d",
+          "news": "Calf injury - 75% chance of playing",
+          "confidence": "position_avg",
+          "predicted_starter": true,
+          "confirmed_starter": false,
+          "expected_minutes": 44.31692185850053,
           "is_penalty_taker": false,
           "is_set_piece_taker": false,
           "expected_shots": 0.0,
@@ -222278,27 +222278,6 @@
           "expected_saves": 0.0
         },
         {
-          "player_id": 53,
-          "name": "Manzambi",
-          "position": "MID",
-          "anytime_goal_prob": 0.2752600153326501,
-          "anytime_goal_prob_pre_availability": 0.2752600153326501,
-          "anytime_assist_prob": 0.2694133466594869,
-          "anytime_goal_contribution_prob": 0.47051464005982613,
-          "status": "a",
-          "news": "",
-          "confidence": "position_avg",
-          "predicted_starter": true,
-          "confirmed_starter": false,
-          "expected_minutes": 59.08922914466737,
-          "is_penalty_taker": false,
-          "is_set_piece_taker": false,
-          "expected_shots": 0.0,
-          "expected_shots_on_target": 0.0,
-          "anytime_shot_on_target_prob": 0.0,
-          "expected_saves": 0.0
-        },
-        {
           "player_id": 631,
           "name": "Mbaye",
           "position": "MID",
@@ -222312,6 +222291,27 @@
           "predicted_starter": false,
           "confirmed_starter": false,
           "expected_minutes": 48.3260429835651,
+          "is_penalty_taker": false,
+          "is_set_piece_taker": false,
+          "expected_shots": 0.0,
+          "expected_shots_on_target": 0.0,
+          "anytime_shot_on_target_prob": 0.0,
+          "expected_saves": 0.0
+        },
+        {
+          "player_id": 53,
+          "name": "Manzambi",
+          "position": "MID",
+          "anytime_goal_prob": 0.21451722302450738,
+          "anytime_goal_prob_pre_availability": 0.2752600153326501,
+          "anytime_assist_prob": 0.20976947686578162,
+          "anytime_goal_contribution_prob": 0.37928753423773787,
+          "status": "d",
+          "news": "Calf injury - 75% chance of playing",
+          "confidence": "position_avg",
+          "predicted_starter": true,
+          "confirmed_starter": false,
+          "expected_minutes": 44.31692185850053,
           "is_penalty_taker": false,
           "is_set_piece_taker": false,
           "expected_shots": 0.0,
@@ -251063,8 +251063,8 @@
           "name": "Manzambi",
           "team": "Aston Villa",
           "position": "MID",
-          "status": "a",
-          "chance_of_playing": 100,
+          "status": "d",
+          "chance_of_playing": 75,
           "minutes": 461,
           "starts": 6,
           "goals": 2,
@@ -251077,15 +251077,15 @@
           "ict": 47.2,
           "bps": 157,
           "bonus": 7,
-          "news": "",
+          "news": "Calf injury - 75% chance of playing",
           "quality_rating": null,
           "form_rating": 11.2,
           "live_form_rating": 60.8,
           "live_form_vs_quality": null,
           "overall_rating": null,
-          "current_impact_rating": 51.2,
+          "current_impact_rating": 28.8,
           "rating_driver": "Expected goal involvements",
-          "rating_expected_minutes": 75.8,
+          "rating_expected_minutes": 56.8,
           "rating_status": "provisional",
           "rating_evidence_minutes": 0.0,
           "rating_model_source": "data_led_multiseason_role_evidence"
@@ -279582,7 +279582,7 @@
   "fpl": {
     "projections": {
       "gameweek": 11,
-      "generated_at": "2026-11-12T01:06:25.279062+00:00",
+      "generated_at": "2026-11-12T16:50:31.153581+00:00",
       "model_source": "hybrid_match_context_baseline",
       "data_freshness": "live official FPL API + independent pre-match scoreline model",
       "players": [
@@ -280127,38 +280127,6 @@
             "1 fixture",
             "74 expected minutes",
             "form 8.8",
-            "1.76 expected team goals"
-          ]
-        },
-        {
-          "player_id": 53,
-          "name": "Johan Manzambi",
-          "web_name": "Manzambi",
-          "team": "Aston Villa",
-          "team_id": 2,
-          "position": "MID",
-          "price": 6.2,
-          "status": "a",
-          "news": "",
-          "availability": 1.0,
-          "expected_minutes": 75.8,
-          "projected_points": 4.9,
-          "fixture_count": 1,
-          "fixtures": [
-            {
-              "was_home": true,
-              "difficulty": 2,
-              "expected_goals": 1.76,
-              "clean_sheet_probability": 0.265,
-              "expected_minutes": 75.8,
-              "opponent": "Sunderland",
-              "model_source": "independent_scoreline"
-            }
-          ],
-          "drivers": [
-            "1 fixture",
-            "76 expected minutes",
-            "form 5.2",
             "1.76 expected team goals"
           ]
         },
@@ -281344,6 +281312,38 @@
             "62 expected minutes",
             "form 0.8",
             "1.94 expected team goals"
+          ]
+        },
+        {
+          "player_id": 53,
+          "name": "Johan Manzambi",
+          "web_name": "Manzambi",
+          "team": "Aston Villa",
+          "team_id": 2,
+          "position": "MID",
+          "price": 6.2,
+          "status": "d",
+          "news": "Calf injury - 75% chance of playing",
+          "availability": 0.75,
+          "expected_minutes": 56.8,
+          "projected_points": 4.28,
+          "fixture_count": 1,
+          "fixtures": [
+            {
+              "was_home": true,
+              "difficulty": 2,
+              "expected_goals": 1.76,
+              "clean_sheet_probability": 0.265,
+              "expected_minutes": 56.8,
+              "opponent": "Sunderland",
+              "model_source": "independent_scoreline"
+            }
+          ],
+          "drivers": [
+            "1 fixture",
+            "57 expected minutes",
+            "form 5.2",
+            "1.76 expected team goals"
           ]
         },
         {
@@ -301547,38 +301547,6 @@
           ]
         },
         {
-          "player_id": 53,
-          "name": "Johan Manzambi",
-          "web_name": "Manzambi",
-          "team": "Aston Villa",
-          "team_id": 2,
-          "position": "MID",
-          "price": 6.2,
-          "status": "a",
-          "news": "",
-          "availability": 1.0,
-          "expected_minutes": 75.8,
-          "projected_points": 4.9,
-          "fixture_count": 1,
-          "fixtures": [
-            {
-              "was_home": true,
-              "difficulty": 2,
-              "expected_goals": 1.76,
-              "clean_sheet_probability": 0.265,
-              "expected_minutes": 75.8,
-              "opponent": "Sunderland",
-              "model_source": "independent_scoreline"
-            }
-          ],
-          "drivers": [
-            "1 fixture",
-            "76 expected minutes",
-            "form 5.2",
-            "1.76 expected team goals"
-          ]
-        },
-        {
           "player_id": 124,
           "name": "Pascal Gro\u00df",
           "web_name": "Gro\u00df",
@@ -301608,6 +301576,38 @@
             "69 expected minutes",
             "form 4.2",
             "1.80 expected team goals"
+          ]
+        },
+        {
+          "player_id": 426,
+          "name": "Bruno Borges Fernandes",
+          "web_name": "B.Fernandes",
+          "team": "Man Utd",
+          "team_id": 16,
+          "position": "MID",
+          "price": 11.6,
+          "status": "a",
+          "news": "",
+          "availability": 1.0,
+          "expected_minutes": 68.3,
+          "projected_points": 4.82,
+          "fixture_count": 1,
+          "fixtures": [
+            {
+              "was_home": false,
+              "difficulty": 4,
+              "expected_goals": 1.62,
+              "clean_sheet_probability": 0.185,
+              "expected_minutes": 68.3,
+              "opponent": "Liverpool",
+              "model_source": "independent_scoreline"
+            }
+          ],
+          "drivers": [
+            "1 fixture",
+            "68 expected minutes",
+            "form 3.2",
+            "1.62 expected team goals"
           ]
         },
         {
@@ -302066,35 +302066,35 @@
           ]
         },
         {
-          "player_id": 53,
-          "name": "Johan Manzambi",
-          "web_name": "Manzambi",
-          "team": "Aston Villa",
-          "team_id": 2,
+          "player_id": 124,
+          "name": "Pascal Gro\u00df",
+          "web_name": "Gro\u00df",
+          "team": "Brighton",
+          "team_id": 5,
           "position": "MID",
-          "price": 6.2,
+          "price": 6.3,
           "status": "a",
           "news": "",
           "availability": 1.0,
-          "expected_minutes": 75.8,
-          "projected_points": 4.9,
+          "expected_minutes": 69.3,
+          "projected_points": 4.85,
           "fixture_count": 1,
           "fixtures": [
             {
-              "was_home": true,
+              "was_home": false,
               "difficulty": 2,
-              "expected_goals": 1.76,
-              "clean_sheet_probability": 0.265,
-              "expected_minutes": 75.8,
-              "opponent": "Sunderland",
+              "expected_goals": 1.8,
+              "clean_sheet_probability": 0.368,
+              "expected_minutes": 69.3,
+              "opponent": "Hull City",
               "model_source": "independent_scoreline"
             }
           ],
           "drivers": [
             "1 fixture",
-            "76 expected minutes",
-            "form 5.2",
-            "1.76 expected team goals"
+            "69 expected minutes",
+            "form 4.2",
+            "1.80 expected team goals"
           ]
         },
         {
@@ -302131,8 +302131,8 @@
         }
       ],
       "budget": 100.0,
-      "spent": 99.8,
-      "remaining": 0.2,
+      "spent": 99.9,
+      "remaining": 0.1,
       "starting_xi": [
         {
           "player_id": 387,
@@ -302585,35 +302585,35 @@
           ]
         },
         {
-          "player_id": 53,
-          "name": "Johan Manzambi",
-          "web_name": "Manzambi",
-          "team": "Aston Villa",
-          "team_id": 2,
+          "player_id": 124,
+          "name": "Pascal Gro\u00df",
+          "web_name": "Gro\u00df",
+          "team": "Brighton",
+          "team_id": 5,
           "position": "MID",
-          "price": 6.2,
+          "price": 6.3,
           "status": "a",
           "news": "",
           "availability": 1.0,
-          "expected_minutes": 75.8,
-          "projected_points": 4.9,
+          "expected_minutes": 69.3,
+          "projected_points": 4.85,
           "fixture_count": 1,
           "fixtures": [
             {
-              "was_home": true,
+              "was_home": false,
               "difficulty": 2,
-              "expected_goals": 1.76,
-              "clean_sheet_probability": 0.265,
-              "expected_minutes": 75.8,
-              "opponent": "Sunderland",
+              "expected_goals": 1.8,
+              "clean_sheet_probability": 0.368,
+              "expected_minutes": 69.3,
+              "opponent": "Hull City",
               "model_source": "independent_scoreline"
             }
           ],
           "drivers": [
             "1 fixture",
-            "76 expected minutes",
-            "form 5.2",
-            "1.76 expected team goals"
+            "69 expected minutes",
+            "form 4.2",
+            "1.80 expected team goals"
           ]
         },
         {
