@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T15:37:33.749467+00:00",
+  "generated_at": "2026-11-15T17:41:17.928532+00:00",
   "model_fingerprint": "38d8e310d6f6316d0951a40c95e0f4ed51eebba2ee04dd34a0c17d27ad09a9ad",
   "calibration": {
     "model": {
@@ -9528,7 +9528,7 @@
       "away_2plus_prob": 0.39544133248380553,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -9741,7 +9741,7 @@
         "home_win"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "home_win",
@@ -9954,7 +9954,7 @@
       "away_2plus_prob": 0.4126706798227445,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -56146,7 +56146,7 @@
       "away_2plus_prob": 0.45296644389585516,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -56323,7 +56323,7 @@
         "over_2_5"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "over_2_5",
@@ -68972,7 +68972,7 @@
       "away_2plus_prob": 0.48994831087932106,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -69451,7 +69451,7 @@
         "btts_no"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "under_2_5",
@@ -69971,7 +69971,7 @@
       "away_2plus_prob": 0.1992156000209814,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -70182,7 +70182,7 @@
       "away_2plus_prob": 0.4719766755651507,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -70374,7 +70374,7 @@
         "home_win"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "home_win",
@@ -70610,7 +70610,7 @@
         "btts_no"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "btts_no",
@@ -71522,7 +71522,7 @@
         "btts_no"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "btts_no",
@@ -71758,7 +71758,7 @@
         "away_win"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "away_win",
@@ -71992,7 +71992,7 @@
       "away_2plus_prob": 0.630218084593508,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -72203,7 +72203,7 @@
       "away_2plus_prob": 0.358434109326955,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -72414,7 +72414,7 @@
       "away_2plus_prob": 0.28980528245545034,
       "value_bet_flags": [],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -72628,7 +72628,7 @@
         "btts_no"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "home_win",
@@ -73283,7 +73283,7 @@
       "away_2plus_prob": 0.6037670495039033,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -73494,7 +73494,7 @@
       "away_2plus_prob": 0.2666754196657293,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -73707,7 +73707,7 @@
         "btts_no"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "btts_no",
@@ -73922,7 +73922,7 @@
         "away_win"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "away_win",
@@ -74120,7 +74120,7 @@
       "away_2plus_prob": 0.512824938160494,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -74331,7 +74331,7 @@
       "away_2plus_prob": 0.2961437171368556,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -74542,7 +74542,7 @@
       "away_2plus_prob": 0.5358534693136489,
       "value_bet_flags": [],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -74733,7 +74733,7 @@
       "away_2plus_prob": 0.3676645205110649,
       "value_bet_flags": [],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -74946,7 +74946,7 @@
         "btts_no"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "btts_no",
@@ -75180,7 +75180,7 @@
       "away_2plus_prob": 0.3056511673141648,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -88862,7 +88862,7 @@
       "away_2plus_prob": 0.2703035663298245,
       "value_bet_flags": [],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -89037,7 +89037,7 @@
       "away_2plus_prob": 0.48149338449976764,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -89248,7 +89248,7 @@
       "away_2plus_prob": 0.42334863242826287,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -89459,7 +89459,7 @@
       "away_2plus_prob": 0.2634626471589087,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -89634,7 +89634,7 @@
       "away_2plus_prob": 0.6830525594850301,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -89845,7 +89845,7 @@
       "away_2plus_prob": 0.2598987473002872,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -90020,7 +90020,7 @@
       "away_2plus_prob": 0.20752323788345112,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -90195,7 +90195,7 @@
       "away_2plus_prob": 0.425756239526517,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -90370,7 +90370,7 @@
       "away_2plus_prob": 0.3294153620585091,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -90581,7 +90581,7 @@
       "away_2plus_prob": 0.3065320427722588,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -90756,7 +90756,7 @@
       "away_2plus_prob": 0.2913544164725787,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -90970,7 +90970,7 @@
         "btts_yes"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "over_2_5",
@@ -91198,7 +91198,7 @@
       "away_2plus_prob": 0.35439139141910087,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -91409,7 +91409,7 @@
       "away_2plus_prob": 0.27497719637172635,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -91620,7 +91620,7 @@
       "away_2plus_prob": 0.3363396038191691,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -91831,7 +91831,7 @@
       "away_2plus_prob": 0.30020097102954274,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -92380,7 +92380,7 @@
         "away_win"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "away_win",
@@ -93322,7 +93322,7 @@
       "away_2plus_prob": 0.2913022769178545,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -93536,7 +93536,7 @@
         "btts_no"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "under_2_5",
@@ -93764,7 +93764,7 @@
       "away_2plus_prob": 0.41644228270622774,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -93954,7 +93954,7 @@
       "away_2plus_prob": 0.5627523988804164,
       "value_bet_flags": [],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -94165,7 +94165,7 @@
       "away_2plus_prob": 0.38848609440502446,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -94357,7 +94357,7 @@
         "home_win"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-15T15:33:28.651755Z",
+      "odds_fetched_at": "2026-11-15T17:38:14.364824Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "home_win",
@@ -95511,27 +95511,6 @@
           "expected_saves": 0.0
         },
         {
-          "player_id": 558,
-          "name": "Schlager",
-          "position": "MID",
-          "anytime_goal_prob": 0.10817148244912245,
-          "anytime_goal_prob_pre_availability": 0.10817148244912245,
-          "anytime_assist_prob": 0.1723323555222881,
-          "anytime_goal_contribution_prob": 0.2618623916006154,
-          "status": "a",
-          "news": "",
-          "confidence": "current",
-          "predicted_starter": true,
-          "confirmed_starter": false,
-          "expected_minutes": 64.57955801104973,
-          "is_penalty_taker": false,
-          "is_set_piece_taker": false,
-          "expected_shots": 0.0,
-          "expected_shots_on_target": 0.0,
-          "anytime_shot_on_target_prob": 0.0,
-          "expected_saves": 0.0
-        },
-        {
           "player_id": 486,
           "name": "McAtee",
           "position": "MID",
@@ -95566,6 +95545,27 @@
           "predicted_starter": true,
           "confirmed_starter": false,
           "expected_minutes": 52.491294117647065,
+          "is_penalty_taker": false,
+          "is_set_piece_taker": false,
+          "expected_shots": 0.0,
+          "expected_shots_on_target": 0.0,
+          "anytime_shot_on_target_prob": 0.0,
+          "expected_saves": 0.0
+        },
+        {
+          "player_id": 482,
+          "name": "Hudson-Odoi",
+          "position": "MID",
+          "anytime_goal_prob": 0.08280403946088888,
+          "anytime_goal_prob_pre_availability": 0.08280403946088888,
+          "anytime_assist_prob": 0.05488927857286907,
+          "anytime_goal_contribution_prob": 0.13314826404483038,
+          "status": "a",
+          "news": "",
+          "confidence": "prior_season",
+          "predicted_starter": false,
+          "confirmed_starter": false,
+          "expected_minutes": 29.172380952380948,
           "is_penalty_taker": false,
           "is_set_piece_taker": false,
           "expected_shots": 0.0,
@@ -175323,27 +175323,6 @@
           "expected_saves": 0.0
         },
         {
-          "player_id": 558,
-          "name": "Schlager",
-          "position": "MID",
-          "anytime_goal_prob": 0.09209360977195946,
-          "anytime_goal_prob_pre_availability": 0.09209360977195946,
-          "anytime_assist_prob": 0.14753529285606282,
-          "anytime_goal_contribution_prob": 0.22604184494014434,
-          "status": "a",
-          "news": "",
-          "confidence": "current",
-          "predicted_starter": true,
-          "confirmed_starter": false,
-          "expected_minutes": 64.57955801104973,
-          "is_penalty_taker": false,
-          "is_set_piece_taker": false,
-          "expected_shots": 0.0,
-          "expected_shots_on_target": 0.0,
-          "anytime_shot_on_target_prob": 0.0,
-          "expected_saves": 0.0
-        },
-        {
           "player_id": 486,
           "name": "McAtee",
           "position": "MID",
@@ -175378,6 +175357,27 @@
           "predicted_starter": true,
           "confirmed_starter": false,
           "expected_minutes": 52.491294117647065,
+          "is_penalty_taker": false,
+          "is_set_piece_taker": false,
+          "expected_shots": 0.0,
+          "expected_shots_on_target": 0.0,
+          "anytime_shot_on_target_prob": 0.0,
+          "expected_saves": 0.0
+        },
+        {
+          "player_id": 482,
+          "name": "Hudson-Odoi",
+          "position": "MID",
+          "anytime_goal_prob": 0.0703472351160288,
+          "anytime_goal_prob_pre_availability": 0.0703472351160288,
+          "anytime_assist_prob": 0.0465253085212759,
+          "anytime_goal_contribution_prob": 0.11359961681991282,
+          "status": "a",
+          "news": "",
+          "confidence": "prior_season",
+          "predicted_starter": false,
+          "confirmed_starter": false,
+          "expected_minutes": 29.172380952380948,
           "is_penalty_taker": false,
           "is_set_piece_taker": false,
           "expected_shots": 0.0,
@@ -189939,27 +189939,6 @@
           "expected_saves": 0.0
         },
         {
-          "player_id": 558,
-          "name": "Schlager",
-          "position": "MID",
-          "anytime_goal_prob": 0.1198731015503195,
-          "anytime_goal_prob_pre_availability": 0.1198731015503195,
-          "anytime_assist_prob": 0.19019773553780572,
-          "anytime_goal_contribution_prob": 0.2872712446213611,
-          "status": "a",
-          "news": "",
-          "confidence": "current",
-          "predicted_starter": true,
-          "confirmed_starter": false,
-          "expected_minutes": 64.57955801104973,
-          "is_penalty_taker": false,
-          "is_set_piece_taker": false,
-          "expected_shots": 0.0,
-          "expected_shots_on_target": 0.0,
-          "anytime_shot_on_target_prob": 0.0,
-          "expected_saves": 0.0
-        },
-        {
           "player_id": 486,
           "name": "McAtee",
           "position": "MID",
@@ -189994,6 +189973,27 @@
           "predicted_starter": true,
           "confirmed_starter": false,
           "expected_minutes": 52.491294117647065,
+          "is_penalty_taker": false,
+          "is_set_piece_taker": false,
+          "expected_shots": 0.0,
+          "expected_shots_on_target": 0.0,
+          "anytime_shot_on_target_prob": 0.0,
+          "expected_saves": 0.0
+        },
+        {
+          "player_id": 482,
+          "name": "Hudson-Odoi",
+          "position": "MID",
+          "anytime_goal_prob": 0.09190481358398761,
+          "anytime_goal_prob_pre_availability": 0.09190481358398761,
+          "anytime_assist_prob": 0.06102481003500693,
+          "anytime_goal_contribution_prob": 0.1473211498287289,
+          "status": "a",
+          "news": "",
+          "confidence": "prior_season",
+          "predicted_starter": false,
+          "confirmed_starter": false,
+          "expected_minutes": 29.172380952380948,
           "is_penalty_taker": false,
           "is_set_piece_taker": false,
           "expected_shots": 0.0,
@@ -193189,27 +193189,6 @@
           "expected_saves": 0.0
         },
         {
-          "player_id": 558,
-          "name": "Schlager",
-          "position": "MID",
-          "anytime_goal_prob": 0.1332606753172657,
-          "anytime_goal_prob_pre_availability": 0.1332606753172657,
-          "anytime_assist_prob": 0.18637753090447917,
-          "anytime_goal_contribution_prob": 0.2948014105894494,
-          "status": "a",
-          "news": "",
-          "confidence": "current",
-          "predicted_starter": true,
-          "confirmed_starter": false,
-          "expected_minutes": 64.57955801104973,
-          "is_penalty_taker": false,
-          "is_set_piece_taker": false,
-          "expected_shots": 0.0,
-          "expected_shots_on_target": 0.0,
-          "anytime_shot_on_target_prob": 0.0,
-          "expected_saves": 0.0
-        },
-        {
           "player_id": 486,
           "name": "McAtee",
           "position": "MID",
@@ -193244,6 +193223,27 @@
           "predicted_starter": true,
           "confirmed_starter": false,
           "expected_minutes": 52.491294117647065,
+          "is_penalty_taker": false,
+          "is_set_piece_taker": false,
+          "expected_shots": 0.0,
+          "expected_shots_on_target": 0.0,
+          "anytime_shot_on_target_prob": 0.0,
+          "expected_saves": 0.0
+        },
+        {
+          "player_id": 558,
+          "name": "Schlager",
+          "position": "MID",
+          "anytime_goal_prob": 0.10171039101597135,
+          "anytime_goal_prob_pre_availability": 0.1332606753172657,
+          "anytime_assist_prob": 0.1433228164424757,
+          "anytime_goal_contribution_prob": 0.2304557877565726,
+          "status": "d",
+          "news": "Thigh injury - 75% chance of playing",
+          "confidence": "current",
+          "predicted_starter": true,
+          "confirmed_starter": false,
+          "expected_minutes": 48.434668508287295,
           "is_penalty_taker": false,
           "is_set_piece_taker": false,
           "expected_shots": 0.0,
@@ -216787,27 +216787,6 @@
           "expected_saves": 0.0
         },
         {
-          "player_id": 558,
-          "name": "Schlager",
-          "position": "MID",
-          "anytime_goal_prob": 0.11121190440422923,
-          "anytime_goal_prob_pre_availability": 0.11121190440422923,
-          "anytime_assist_prob": 0.1563604742546446,
-          "anytime_goal_contribution_prob": 0.2501832325434664,
-          "status": "a",
-          "news": "",
-          "confidence": "current",
-          "predicted_starter": true,
-          "confirmed_starter": false,
-          "expected_minutes": 64.57955801104973,
-          "is_penalty_taker": false,
-          "is_set_piece_taker": false,
-          "expected_shots": 0.0,
-          "expected_shots_on_target": 0.0,
-          "anytime_shot_on_target_prob": 0.0,
-          "expected_saves": 0.0
-        },
-        {
           "player_id": 486,
           "name": "McAtee",
           "position": "MID",
@@ -216842,6 +216821,27 @@
           "predicted_starter": true,
           "confirmed_starter": false,
           "expected_minutes": 52.491294117647065,
+          "is_penalty_taker": false,
+          "is_set_piece_taker": false,
+          "expected_shots": 0.0,
+          "expected_shots_on_target": 0.0,
+          "anytime_shot_on_target_prob": 0.0,
+          "expected_saves": 0.0
+        },
+        {
+          "player_id": 558,
+          "name": "Schlager",
+          "position": "MID",
+          "anytime_goal_prob": 0.08462579116239954,
+          "anytime_goal_prob_pre_availability": 0.11121190440422923,
+          "anytime_assist_prob": 0.11972637589997426,
+          "anytime_goal_contribution_prob": 0.19422022777883163,
+          "status": "d",
+          "news": "Thigh injury - 75% chance of playing",
+          "confidence": "current",
+          "predicted_starter": true,
+          "confirmed_starter": false,
+          "expected_minutes": 48.434668508287295,
           "is_penalty_taker": false,
           "is_set_piece_taker": false,
           "expected_shots": 0.0,
@@ -249510,8 +249510,8 @@
           "name": "Schlager",
           "team": "Nott'm Forest",
           "position": "MID",
-          "status": "a",
-          "chance_of_playing": null,
+          "status": "d",
+          "chance_of_playing": 75,
           "minutes": 756,
           "starts": 9,
           "goals": 0,
@@ -249524,15 +249524,15 @@
           "ict": 29.3,
           "bps": 142,
           "bonus": 0,
-          "news": "",
+          "news": "Thigh injury - 75% chance of playing",
           "quality_rating": null,
           "form_rating": 5.0,
           "live_form_rating": 50.0,
           "live_form_vs_quality": null,
           "overall_rating": null,
-          "current_impact_rating": 39.7,
+          "current_impact_rating": 22.3,
           "rating_driver": "Expected goal involvements",
-          "rating_expected_minutes": 71.4,
+          "rating_expected_minutes": 53.6,
           "rating_status": "provisional",
           "rating_evidence_minutes": 0.0,
           "rating_model_source": "data_led_multiseason_role_evidence"
@@ -279821,7 +279821,7 @@
   "fpl": {
     "projections": {
       "gameweek": 11,
-      "generated_at": "2026-11-15T15:37:33.708385+00:00",
+      "generated_at": "2026-11-15T17:41:17.886926+00:00",
       "model_source": "hybrid_match_context_baseline",
       "data_freshness": "live official FPL API + independent pre-match scoreline model",
       "players": [
@@ -288242,38 +288242,6 @@
           ]
         },
         {
-          "player_id": 558,
-          "name": "Xaver Schlager",
-          "web_name": "Schlager",
-          "team": "Nott'm Forest",
-          "team_id": 18,
-          "position": "MID",
-          "price": 5.0,
-          "status": "a",
-          "news": "",
-          "availability": 1.0,
-          "expected_minutes": 71.4,
-          "projected_points": 2.91,
-          "fixture_count": 1,
-          "fixtures": [
-            {
-              "was_home": false,
-              "difficulty": 4,
-              "expected_goals": 1.26,
-              "clean_sheet_probability": 0.176,
-              "expected_minutes": 71.4,
-              "opponent": "Bournemouth",
-              "model_source": "independent_scoreline"
-            }
-          ],
-          "drivers": [
-            "1 fixture",
-            "71 expected minutes",
-            "form 4.0",
-            "1.26 expected team goals"
-          ]
-        },
-        {
           "player_id": 313,
           "name": "Jack Clarke",
           "web_name": "Clarke",
@@ -289807,6 +289775,38 @@
             "66 expected minutes",
             "form 0.0",
             "0.80 expected team goals"
+          ]
+        },
+        {
+          "player_id": 558,
+          "name": "Xaver Schlager",
+          "web_name": "Schlager",
+          "team": "Nott'm Forest",
+          "team_id": 18,
+          "position": "MID",
+          "price": 5.0,
+          "status": "d",
+          "news": "Thigh injury - 75% chance of playing",
+          "availability": 0.75,
+          "expected_minutes": 53.6,
+          "projected_points": 2.62,
+          "fixture_count": 1,
+          "fixtures": [
+            {
+              "was_home": false,
+              "difficulty": 4,
+              "expected_goals": 1.26,
+              "clean_sheet_probability": 0.176,
+              "expected_minutes": 53.6,
+              "opponent": "Bournemouth",
+              "model_source": "independent_scoreline"
+            }
+          ],
+          "drivers": [
+            "1 fixture",
+            "54 expected minutes",
+            "form 4.0",
+            "1.26 expected team goals"
           ]
         },
         {
