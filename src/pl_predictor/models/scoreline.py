@@ -350,7 +350,10 @@ def predict_fixtures_batch(
         rows = [
             model.context.build_row(f.team_home, f.team_away, getattr(f, "commence_time", None)) for f in fixtures
         ]
-        X = pd.DataFrame(rows).reindex(columns=model.feature_cols, fill_value=0).fillna(0).astype(float)
+        # No `.fillna(0)` here: `predict_many_from_rows` runs the frame through
+        # `_apply_missing_value_encoding`, whose unexpected-NaN warning a
+        # pre-fill would silence on this, the main serving path.
+        X = pd.DataFrame(rows).reindex(columns=model.feature_cols, fill_value=0)
         grids = model.predict_many_from_rows(X, max_goals=max_goals)
         results = [
             {
