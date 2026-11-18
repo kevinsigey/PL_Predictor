@@ -3,6 +3,7 @@ import { kickoffParts } from "../lib/kickoffTime";
 import { parseKickoff } from "../predictor-ui";
 import { TeamBadge } from "./TeamBadge";
 import { ProbabilityBar } from "./ProbabilityBar";
+import { MarketHeadline } from "./MarketHeadline";
 
 function formatKickoff(iso: string): { day: string; date: string; time: string } {
   const d = parseKickoff(iso);
@@ -53,13 +54,12 @@ export function NextFixtureHero({ fixture, onClick }: { fixture: CurrentGameweek
           {fixture.value_bet_flags.length > 0 && (
             <span
               title={`Model probability beats the live market's implied odds on: ${fixture.value_bet_flags.join(", ")}`}
-              className="rounded bg-pl-pink/20 px-1.5 py-0.5 text-xs font-semibold uppercase text-pl-pink"
+              className="rounded bg-pl-700/60 px-1.5 py-0.5 text-xs font-semibold text-pl-text-dim"
             >
-              Value bet
+              Model differs
             </span>
           )}
-          {!fixture.has_live_odds && <span className="text-pl-text-faint">Model only</span>}
-        </div>
+                  </div>
       </div>
 
       <div className="mt-5 grid grid-cols-[1fr_auto_1fr] items-center gap-4 sm:gap-8">
@@ -84,6 +84,14 @@ export function NextFixtureHero({ fixture, onClick }: { fixture: CurrentGameweek
       </div>
 
       <div className="mx-auto mt-6 max-w-md">
+        <div className="mb-3">
+          <MarketHeadline
+            home={fixture.team_home}
+            away={fixture.team_away}
+            market={fixture.market_probs}
+            model={{ home: fixture.predicted_home_win, draw: fixture.predicted_draw, away: fixture.predicted_away_win }}
+          />
+        </div>
         <ProbabilityBar
           home={fixture.predicted_home_win}
           draw={fixture.predicted_draw}
