@@ -12,6 +12,7 @@ import { ScorelineHeatmap } from "./ScorelineHeatmap";
 import { FormStrip } from "./FormStrip";
 import { InfoTooltip } from "./InfoTooltip";
 import { MarketBar } from "./MarketBar";
+import { MarketHeadline } from "./MarketHeadline";
 import { ModelTopCalls, PlayerScorerList } from "./PlayerScorerList";
 import { GLOSSARY } from "../lib/glossary";
 import { isModelCall } from "../lib/modelCall";
@@ -473,6 +474,17 @@ export function FixtureModal({ eventId, onClose, explain, loadContext, sport = "
               this modal is the evidence for. The flow renders from facts this
               modal already holds, with no request; the AI summary sits behind
               the button and costs nothing until a reader asks. */}
+          {detail && !detail.post_match && (
+            <div className="mb-4 rounded-xl border border-pl-border bg-pl-850/50 px-4 py-3">
+              <MarketHeadline
+                home={detail.team_home}
+                away={detail.team_away}
+                market={detail.has_live_odds && !detail.odds_is_stale && detail.home_win.implied != null && detail.draw.implied != null && detail.away_win.implied != null ? { home: detail.home_win.implied, draw: detail.draw.implied, away: detail.away_win.implied } : null}
+                model={{ home: detail.home_win.prob, draw: detail.draw.prob, away: detail.away_win.prob }}
+                showModel={false}
+              />
+            </div>
+          )}
           {explain && detail && (
             <div className="mb-6">
               <FixtureExplainer

@@ -602,6 +602,14 @@ def _none_if_nan(value):
     return None if value is None or (isinstance(value, float) and pd.isna(value)) else value
 
 
+def _market_probs(row) -> dict[str, float] | None:
+    """The de-vigged live 1X2 for a fixture, or None when any side is missing or the quote is stale. Never defaulted."""
+    sides = {k: _none_if_nan(row.get(f"{s}_implied")) for k, s in (("home", "home_win"), ("draw", "draw"), ("away", "away_win"))}
+    if row.get("odds_is_stale") or any(v is None for v in sides.values()):
+        return None
+    return {k: float(v) for k, v in sides.items()}
+
+
 def _row_to_summary(row: pd.Series) -> FixtureSummary:
     def edge(side: str) -> MarketEdge:
         return MarketEdge(
@@ -1045,6 +1053,7 @@ def current_gameweek_fixtures(gameweek: int | None = None):
                                 vb_row.get("odds_fetched_at"), row["commence_time"]
                             ),
                             "has_live_odds": bool(vb_row["home_win_implied"] is not None and not pd.isna(vb_row["home_win_implied"])),
+                            "market_probs": _market_probs(vb_row),
                             "value_bet_flags": list(vb_row["value_bet_flags"]),
                         }
                     )

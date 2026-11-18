@@ -79,6 +79,8 @@ export interface CurrentGameweekFixture {
   // fail-closed direction (the label is withheld, never invented).
   made_before_kickoff?: boolean;
   has_live_odds: boolean;
+  /** De-vigged live 1X2 probabilities; null/absent when there is no fresh line. */
+  market_probs?: { home: number; draw: number; away: number } | null;
   value_bet_flags: string[];
   home_player_events?: FixturePlayerEvent[];
   away_player_events?: FixturePlayerEvent[];
