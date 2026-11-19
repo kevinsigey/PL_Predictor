@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T19:20:18.321593+00:00",
+  "generated_at": "2026-11-19T01:23:04.158743+00:00",
   "model_fingerprint": "38d8e310d6f6316d0951a40c95e0f4ed51eebba2ee04dd34a0c17d27ad09a9ad",
   "calibration": {
     "model": {
@@ -9706,7 +9706,7 @@
       "away_2plus_prob": 0.39544133248380553,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -9919,7 +9919,7 @@
         "home_win"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "home_win",
@@ -10132,7 +10132,7 @@
       "away_2plus_prob": 0.4126706798227445,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -56324,7 +56324,7 @@
       "away_2plus_prob": 0.45296644389585516,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -56501,7 +56501,7 @@
         "over_2_5"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "over_2_5",
@@ -69152,7 +69152,7 @@
         "away_win"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "away_win",
@@ -69654,7 +69654,7 @@
         "btts_no"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "btts_no",
@@ -70176,7 +70176,7 @@
         "home_win"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "home_win",
@@ -70410,7 +70410,7 @@
       "away_2plus_prob": 0.4719766755651507,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -70602,7 +70602,7 @@
         "home_win"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "home_win",
@@ -70838,7 +70838,7 @@
         "btts_no"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "btts_no",
@@ -71748,7 +71748,7 @@
       "away_2plus_prob": 0.39810405076533384,
       "value_bet_flags": [],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -71977,7 +71977,7 @@
         "away_win"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "away_win",
@@ -72211,7 +72211,7 @@
       "away_2plus_prob": 0.630218084593508,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -72424,7 +72424,7 @@
         "home_win"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "home_win",
@@ -72658,7 +72658,7 @@
       "away_2plus_prob": 0.28980528245545034,
       "value_bet_flags": [],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -72872,7 +72872,7 @@
         "btts_no"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "home_win",
@@ -73529,7 +73529,7 @@
         "away_win"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "away_win",
@@ -73763,7 +73763,7 @@
       "away_2plus_prob": 0.2666754196657293,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -73977,7 +73977,7 @@
         "btts_no"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "btts_no",
@@ -74207,7 +74207,7 @@
         "away_win"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "away_win",
@@ -74405,7 +74405,7 @@
       "away_2plus_prob": 0.512824938160494,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -74616,7 +74616,7 @@
       "away_2plus_prob": 0.2961437171368556,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -74827,7 +74827,7 @@
       "away_2plus_prob": 0.5358534693136489,
       "value_bet_flags": [],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -75018,7 +75018,7 @@
       "away_2plus_prob": 0.3676645205110649,
       "value_bet_flags": [],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -75231,7 +75231,7 @@
         "btts_no"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "btts_no",
@@ -75465,7 +75465,7 @@
       "away_2plus_prob": 0.3056511673141648,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -89147,7 +89147,7 @@
       "away_2plus_prob": 0.2703035663298245,
       "value_bet_flags": [],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -89322,7 +89322,7 @@
       "away_2plus_prob": 0.48149338449976764,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -89533,7 +89533,7 @@
       "away_2plus_prob": 0.42334863242826287,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -89746,7 +89746,7 @@
         "home_win"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "home_win",
@@ -89944,7 +89944,7 @@
       "away_2plus_prob": 0.6830525594850301,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -90155,7 +90155,7 @@
       "away_2plus_prob": 0.2598987473002872,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -90330,7 +90330,7 @@
       "away_2plus_prob": 0.20752323788345112,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -90505,7 +90505,7 @@
       "away_2plus_prob": 0.425756239526517,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -90680,7 +90680,7 @@
       "away_2plus_prob": 0.3294153620585091,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -90891,7 +90891,7 @@
       "away_2plus_prob": 0.3065320427722588,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -91068,7 +91068,7 @@
         "home_win"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "home_win",
@@ -91305,7 +91305,7 @@
         "btts_yes"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "over_2_5",
@@ -91533,7 +91533,7 @@
       "away_2plus_prob": 0.35439139141910087,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -91744,7 +91744,7 @@
       "away_2plus_prob": 0.27497719637172635,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -91957,7 +91957,7 @@
         "home_win"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "home_win",
@@ -92191,7 +92191,7 @@
       "away_2plus_prob": 0.30020097102954274,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -92740,7 +92740,7 @@
         "away_win"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "away_win",
@@ -93682,7 +93682,7 @@
       "away_2plus_prob": 0.2913022769178545,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -93896,7 +93896,7 @@
         "btts_no"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "btts_no",
@@ -94124,7 +94124,7 @@
       "away_2plus_prob": 0.41644228270622774,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -94314,7 +94314,7 @@
       "away_2plus_prob": 0.5627523988804164,
       "value_bet_flags": [],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -94527,7 +94527,7 @@
         "home_win"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "home_win",
@@ -94743,7 +94743,7 @@
         "over_2_5"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-18T19:17:30.864673Z",
+      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "home_win",
@@ -94755,79 +94755,79 @@
       },
       "score_grid": [
         [
-          0.03807267703199213,
-          0.04764604494727193,
-          0.029813317266997985,
-          0.012436623542714041,
-          0.0038909525839917556,
-          0.0009738663848029114
+          0.03838245039038329,
+          0.0477222122582181,
+          0.029667328683488977,
+          0.012295467869368665,
+          0.00382184384730636,
+          0.0009503658127289135
         ],
         [
-          0.0769809043360003,
-          0.09633773913488304,
-          0.060280923312565654,
-          0.02514618361088816,
-          0.00786729675962872,
-          0.0019691054280623213
+          0.07760724939831658,
+          0.09649174533918935,
+          0.059985742252095145,
+          0.02486077443471825,
+          0.007727562612668424,
+          0.0019215885358524684
         ],
         [
-          0.07782562318127527,
-          0.09739486238460775,
-          0.060942391664644845,
-          0.02542211509501504,
-          0.007953625361397577,
-          0.0019907126107495685
+          0.078458841188023,
+          0.09755055851376217,
+          0.06064397155409173,
+          0.02513357409658603,
+          0.0078123578982430405,
+          0.0019426743111249192
         ],
         [
-          0.05245307413829519,
-          0.0656423903660822,
-          0.04107407891492143,
-          0.01713404960118492,
-          0.005360600836794685,
-          0.0013417045940829597
+          0.052879851717400186,
+          0.06574732676455551,
+          0.040872949112892853,
+          0.016939578143535527,
+          0.005265389100411742,
+          0.001309327641754287
         ],
         [
-          0.026514323375371227,
-          0.0331813453051357,
-          0.020762394360803415,
-          0.008661031585254435,
-          0.0027097116119127697,
-          0.0006782136236275322
+          0.026730053700574154,
+          0.03323438924295395,
+          0.02066072595148674,
+          0.008562728879453039,
+          0.002661583359964522,
+          0.0006618475097618691
         ],
         [
-          0.010722107035331996,
-          0.013418178955622499,
-          0.00839608884204426,
-          0.003502427966151674,
-          0.0010957782149099977,
-          0.0002742622907024478
+          0.010809346057231434,
+          0.013439629353236305,
+          0.008354975231435668,
+          0.0034626754098241613,
+          0.0010763156677611662,
+          0.00026764401038143946
         ]
       ],
       "top_scorelines": [
         {
           "home": 2,
           "away": 1,
-          "prob": 0.09739486238460775
+          "prob": 0.09755055851376217
         },
         {
           "home": 1,
           "away": 1,
-          "prob": 0.09633773913488304
+          "prob": 0.09649174533918935
         },
         {
           "home": 2,
           "away": 0,
-          "prob": 0.07782562318127527
+          "prob": 0.078458841188023
         },
         {
           "home": 1,
           "away": 0,
-          "prob": 0.0769809043360003
+          "prob": 0.07760724939831658
         },
         {
           "home": 3,
           "away": 1,
-          "prob": 0.0656423903660822
+          "prob": 0.06574732676455551
         }
       ],
       "corners": {
@@ -225122,10 +225122,10 @@
           "player_id": 411,
           "name": "Haaland",
           "position": "FWD",
-          "anytime_goal_prob": 0.49121541533544866,
-          "anytime_goal_prob_pre_availability": 0.49121541533544866,
-          "anytime_assist_prob": 0.16073121724262118,
-          "anytime_goal_contribution_prob": 0.5729929809428636,
+          "anytime_goal_prob": 0.48939846849709434,
+          "anytime_goal_prob_pre_availability": 0.48939846849709434,
+          "anytime_assist_prob": 0.15977698977928123,
+          "anytime_goal_contribution_prob": 0.5709808441773194,
           "status": "a",
           "news": "",
           "confidence": "current",
@@ -225134,19 +225134,19 @@
           "expected_minutes": 75.61955503512881,
           "is_penalty_taker": true,
           "is_set_piece_taker": false,
-          "expected_shots": 1.0292878449710436,
-          "expected_shots_on_target": 0.4117151379884176,
-          "anytime_shot_on_target_prob": 0.3374870260471259,
+          "expected_shots": 1.022612915666198,
+          "expected_shots_on_target": 0.4090451662664793,
+          "anytime_shot_on_target_prob": 0.3357157715938387,
           "expected_saves": 0.0
         },
         {
           "player_id": 400,
           "name": "Doku",
           "position": "MID",
-          "anytime_goal_prob": 0.1843217812744088,
-          "anytime_goal_prob_pre_availability": 0.1843217812744088,
-          "anytime_assist_prob": 0.11996758271725072,
-          "anytime_goal_contribution_prob": 0.2821767254500309,
+          "anytime_goal_prob": 0.18324337602070784,
+          "anytime_goal_prob_pre_availability": 0.18324337602070784,
+          "anytime_assist_prob": 0.1192379445419064,
+          "anytime_goal_contribution_prob": 0.28063175705498544,
           "status": "a",
           "news": "",
           "confidence": "prior_season",
@@ -225164,10 +225164,10 @@
           "player_id": 237,
           "name": "Ndiaye",
           "position": "MID",
-          "anytime_goal_prob": 0.14510003514444292,
-          "anytime_goal_prob_pre_availability": 0.14510003514444292,
-          "anytime_assist_prob": 0.14100390179211852,
-          "anytime_goal_contribution_prob": 0.2656442658310214,
+          "anytime_goal_prob": 0.14423045196492212,
+          "anytime_goal_prob_pre_availability": 0.14423045196492212,
+          "anytime_assist_prob": 0.14015680574926193,
+          "anytime_goal_contribution_prob": 0.26417237827500817,
           "status": "a",
           "news": "",
           "confidence": "current",
@@ -225176,19 +225176,19 @@
           "expected_minutes": 70.49174193548387,
           "is_penalty_taker": false,
           "is_set_piece_taker": false,
-          "expected_shots": 0.22271217346682334,
-          "expected_shots_on_target": 0.22271217346682334,
-          "anytime_shot_on_target_prob": 0.19965482327664763,
+          "expected_shots": 0.2212678855346547,
+          "expected_shots_on_target": 0.2212678855346547,
+          "anytime_shot_on_target_prob": 0.19849805924725372,
           "expected_saves": 0.0
         },
         {
           "player_id": 155,
           "name": "Enzo",
           "position": "MID",
-          "anytime_goal_prob": 0.1313882611279149,
-          "anytime_goal_prob_pre_availability": 0.1313882611279149,
-          "anytime_assist_prob": 0.13591441577288532,
-          "anytime_goal_contribution_prob": 0.24944511815018444,
+          "anytime_goal_prob": 0.13059444735338177,
+          "anytime_goal_prob_pre_availability": 0.13059444735338177,
+          "anytime_assist_prob": 0.13509543565005788,
+          "anytime_goal_contribution_prob": 0.248047169244756,
           "status": "a",
           "news": "",
           "confidence": "prior_season",
@@ -225206,10 +225206,10 @@
           "player_id": 398,
           "name": "Foden",
           "position": "MID",
-          "anytime_goal_prob": 0.11412571362610124,
-          "anytime_goal_prob_pre_availability": 0.11412571362610124,
-          "anytime_assist_prob": 0.09501562073765679,
-          "anytime_goal_contribution_prob": 0.1982976088414461,
+          "anytime_goal_prob": 0.1134292726068773,
+          "anytime_goal_prob_pre_availability": 0.1134292726068773,
+          "anytime_assist_prob": 0.09442950197685207,
+          "anytime_goal_contribution_prob": 0.1971477048618654,
           "status": "a",
           "news": "",
           "confidence": "prior_season",
@@ -225218,7 +225218,7 @@
           "expected_minutes": 39.74371134020619,
           "is_penalty_taker": false,
           "is_set_piece_taker": false,
-          "expected_shots": 0.6660942886989087,
+          "expected_shots": 0.6617746687702856,
           "expected_shots_on_target": 0.0,
           "anytime_shot_on_target_prob": 0.0,
           "expected_saves": 0.0
@@ -225227,10 +225227,10 @@
           "player_id": 481,
           "name": "Anderson",
           "position": "MID",
-          "anytime_goal_prob": 0.08606755655744935,
-          "anytime_goal_prob_pre_availability": 0.08606755655744935,
-          "anytime_assist_prob": 0.06485881288325812,
-          "anytime_goal_contribution_prob": 0.14534412989462864,
+          "anytime_goal_prob": 0.08553399254572136,
+          "anytime_goal_prob_pre_availability": 0.08553399254572136,
+          "anytime_assist_prob": 0.0644520601496874,
+          "anytime_goal_contribution_prob": 0.144473210663009,
           "status": "a",
           "news": "",
           "confidence": "current",
@@ -225239,19 +225239,19 @@
           "expected_minutes": 76.32037470725996,
           "is_penalty_taker": false,
           "is_set_piece_taker": false,
-          "expected_shots": 0.23499165025419666,
-          "expected_shots_on_target": 0.11749582512709833,
-          "anytime_shot_on_target_prob": 0.11085577619717502,
+          "expected_shots": 0.2334677299433337,
+          "expected_shots_on_target": 0.11673386497166685,
+          "anytime_shot_on_target_prob": 0.11017802554950162,
           "expected_saves": 0.0
         },
         {
           "player_id": 399,
           "name": "Cherki",
           "position": "MID",
-          "anytime_goal_prob": 0.07796778060087595,
-          "anytime_goal_prob_pre_availability": 0.07796778060087595,
-          "anytime_assist_prob": 0.25365719452361646,
-          "anytime_goal_contribution_prob": 0.3118478866340413,
+          "anytime_goal_prob": 0.07748227624580883,
+          "anytime_goal_prob_pre_availability": 0.07748227624580883,
+          "anytime_assist_prob": 0.2525704518115355,
+          "anytime_goal_contribution_prob": 0.3104829945385542,
           "status": "a",
           "news": "",
           "confidence": "prior_season",
@@ -225260,19 +225260,19 @@
           "expected_minutes": 61.3812671594509,
           "is_penalty_taker": false,
           "is_set_piece_taker": true,
-          "expected_shots": 0.39648364428149446,
-          "expected_shots_on_target": 0.39648364428149446,
-          "anytime_shot_on_target_prob": 0.32731872120309835,
+          "expected_shots": 0.3939124487611772,
+          "expected_shots_on_target": 0.3939124487611772,
+          "anytime_shot_on_target_prob": 0.3255869006419154,
           "expected_saves": 0.0
         },
         {
           "player_id": 628,
           "name": "Allan",
           "position": "MID",
-          "anytime_goal_prob": 0.045009869446324235,
-          "anytime_goal_prob_pre_availability": 0.045009869446324235,
-          "anytime_assist_prob": 0.03578013243768263,
-          "anytime_goal_contribution_prob": 0.07917954279421457,
+          "anytime_goal_prob": 0.044724607726418064,
+          "anytime_goal_prob_pre_availability": 0.044724607726418064,
+          "anytime_assist_prob": 0.03555227296137653,
+          "anytime_goal_contribution_prob": 0.07868681922581455,
           "status": "a",
           "news": "",
           "confidence": "position_avg",
@@ -280222,7 +280222,7 @@
   "fpl": {
     "projections": {
       "gameweek": 11,
-      "generated_at": "2026-11-18T19:20:18.282376+00:00",
+      "generated_at": "2026-11-19T01:23:04.110307+00:00",
       "model_source": "hybrid_match_context_baseline",
       "data_freshness": "live official FPL API + independent pre-match scoreline model",
       "players": [
@@ -281033,7 +281033,7 @@
           "team": "Aston Villa",
           "team_id": 2,
           "position": "MID",
-          "price": 5.4,
+          "price": 5.5,
           "status": "a",
           "news": "",
           "availability": 1.0,
@@ -282985,7 +282985,7 @@
           "team": "Brighton",
           "team_id": 5,
           "position": "MID",
-          "price": 5.0,
+          "price": 5.1,
           "status": "a",
           "news": "",
           "availability": 1.0,
@@ -284425,7 +284425,7 @@
           "team": "Aston Villa",
           "team_id": 2,
           "position": "GK",
-          "price": 5.0,
+          "price": 5.1,
           "status": "a",
           "news": "",
           "availability": 1.0,
@@ -286825,7 +286825,7 @@
           "team": "Brighton",
           "team_id": 5,
           "position": "FWD",
-          "price": 5.3,
+          "price": 5.2,
           "status": "a",
           "news": "",
           "availability": 1.0,
@@ -287721,7 +287721,7 @@
           "team": "Fulham",
           "team_id": 10,
           "position": "FWD",
-          "price": 5.9,
+          "price": 5.8,
           "status": "a",
           "news": "",
           "availability": 1.0,
@@ -295273,7 +295273,7 @@
           "team": "Liverpool",
           "team_id": 14,
           "position": "MID",
-          "price": 4.4,
+          "price": 4.3,
           "status": "a",
           "news": "",
           "availability": 1.0,
