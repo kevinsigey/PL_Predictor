@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T01:23:04.158743+00:00",
+  "generated_at": "2026-11-19T17:18:56.559633+00:00",
   "model_fingerprint": "38d8e310d6f6316d0951a40c95e0f4ed51eebba2ee04dd34a0c17d27ad09a9ad",
   "calibration": {
     "model": {
@@ -3925,9 +3925,9 @@
           "made_before_kickoff": true,
           "has_live_odds": true,
           "market_probs": {
-            "home": 0.695763056777088,
-            "draw": 0.17705365126536962,
-            "away": 0.12718329195656952
+            "home": 0.6958179149055442,
+            "draw": 0.17709186048211703,
+            "away": 0.1270902246113641
           },
           "value_bet_flags": [
             "btts_no"
@@ -3977,9 +3977,9 @@
           "made_before_kickoff": true,
           "has_live_odds": true,
           "market_probs": {
-            "home": 0.5253406375412855,
-            "draw": 0.2561603241601964,
-            "away": 0.21849903829752784
+            "home": 0.5375364193169115,
+            "draw": 0.2543995224119717,
+            "away": 0.20806405827069588
           },
           "value_bet_flags": [
             "over_2_5",
@@ -4004,9 +4004,9 @@
           "made_before_kickoff": true,
           "has_live_odds": true,
           "market_probs": {
-            "home": 0.4948060210086964,
-            "draw": 0.2656000945114715,
-            "away": 0.23959388447884714
+            "home": 0.49626007362367514,
+            "draw": 0.266832265043337,
+            "away": 0.23690766133199226
           },
           "value_bet_flags": [
             "over_2_5"
@@ -4030,9 +4030,9 @@
           "made_before_kickoff": true,
           "has_live_odds": true,
           "market_probs": {
-            "home": 0.6312633628999478,
-            "draw": 0.20524948841998053,
-            "away": 0.16348714867928021
+            "home": 0.6359121102677797,
+            "draw": 0.2069800798520812,
+            "away": 0.1571078098791515
           },
           "value_bet_flags": [
             "under_2_5",
@@ -4057,9 +4057,9 @@
           "made_before_kickoff": true,
           "has_live_odds": true,
           "market_probs": {
-            "home": 0.3865336614195024,
-            "draw": 0.26683312932223074,
-            "away": 0.3466332092582669
+            "home": 0.3851614260352236,
+            "draw": 0.2695382865624311,
+            "away": 0.3453002874013538
           },
           "value_bet_flags": [
             "under_2_5",
@@ -4084,9 +4084,9 @@
           "made_before_kickoff": true,
           "has_live_odds": true,
           "market_probs": {
-            "home": 0.1545398338908163,
-            "draw": 0.22419644978327855,
-            "away": 0.6212637163256286
+            "home": 0.15710829506730042,
+            "draw": 0.22693001079448744,
+            "away": 0.6159616941372228
           },
           "value_bet_flags": []
         },
@@ -4132,9 +4132,9 @@
           "made_before_kickoff": true,
           "has_live_odds": true,
           "market_probs": {
-            "home": 0.5461358166313274,
-            "draw": 0.22693209168383913,
-            "away": 0.22693209168383913
+            "home": 0.553296199594901,
+            "draw": 0.221994252285915,
+            "away": 0.22470954811832394
           },
           "value_bet_flags": [
             "away_win"
@@ -4158,9 +4158,9 @@
           "made_before_kickoff": true,
           "has_live_odds": true,
           "market_probs": {
-            "home": 0.4563595612528027,
-            "draw": 0.26683275374702575,
-            "away": 0.2768076849991752
+            "home": 0.4463844299071192,
+            "draw": 0.266832840505625,
+            "away": 0.28678272958625933
           },
           "value_bet_flags": []
         }
@@ -4238,9 +4238,9 @@
           "made_before_kickoff": true,
           "has_live_odds": true,
           "market_probs": {
-            "home": 0.480230901322173,
-            "draw": 0.24816838228822483,
-            "away": 0.2716007163886116
+            "home": 0.48258952241448994,
+            "draw": 0.2437808774104293,
+            "away": 0.2736296001742933
           },
           "value_bet_flags": [
             "home_win",
@@ -4265,9 +4265,9 @@
           "made_before_kickoff": true,
           "has_live_odds": true,
           "market_probs": {
-            "home": 0.280992421333999,
-            "draw": 0.24141591991010428,
-            "away": 0.47759165875490667
+            "home": 0.274325932654334,
+            "draw": 0.24446046615752376,
+            "away": 0.4812136011872231
           },
           "value_bet_flags": [
             "under_2_5",
@@ -4292,9 +4292,9 @@
           "made_before_kickoff": true,
           "has_live_odds": true,
           "market_probs": {
-            "home": 0.2711704706664737,
-            "draw": 0.2689638006543913,
-            "away": 0.4598657286781442
+            "home": 0.27046842247921665,
+            "draw": 0.26054416540366543,
+            "away": 0.46898741211612854
           },
           "value_bet_flags": [
             "home_win"
@@ -4318,9 +4318,9 @@
           "made_before_kickoff": true,
           "has_live_odds": true,
           "market_probs": {
-            "home": 0.36144383854053713,
-            "draw": 0.26979956220585277,
-            "away": 0.36875659925342597
+            "home": 0.35487277063832784,
+            "draw": 0.2729612223853693,
+            "away": 0.3721660069753159
           },
           "value_bet_flags": [
             "btts_no"
@@ -4394,9 +4394,9 @@
           "made_before_kickoff": true,
           "has_live_odds": true,
           "market_probs": {
-            "home": 0.5223918137005333,
-            "draw": 0.24377874060253693,
-            "away": 0.23382944569624625
+            "home": 0.5261855107355893,
+            "draw": 0.2468820560265951,
+            "away": 0.22693243323682072
           },
           "value_bet_flags": [
             "away_win"
@@ -4455,9 +4455,9 @@
           "made_before_kickoff": true,
           "has_live_odds": true,
           "market_probs": {
-            "home": 0.32646402225309,
-            "draw": 0.3470719554943697,
-            "away": 0.32646402225309
+            "home": 0.051257080539097,
+            "draw": 0.9068648554212418,
+            "away": 0.0418780640389301
           },
           "value_bet_flags": [
             "home_win"
@@ -4481,13 +4481,11 @@
           "made_before_kickoff": true,
           "has_live_odds": true,
           "market_probs": {
-            "home": 0.32646402225309,
-            "draw": 0.3470719554943697,
-            "away": 0.32646402225309
+            "home": 0.4928447212102147,
+            "draw": 0.502429465350496,
+            "away": 0.004725813439289283
           },
-          "value_bet_flags": [
-            "home_win"
-          ]
+          "value_bet_flags": []
         },
         {
           "event_id": "AslY-Amct-V2OH",
@@ -4507,9 +4505,9 @@
           "made_before_kickoff": true,
           "has_live_odds": true,
           "market_probs": {
-            "home": 0.32646402225309,
-            "draw": 0.3470719554943697,
-            "away": 0.32646402225309
+            "home": 0.053343469789115125,
+            "draw": 0.9213384855082231,
+            "away": 0.025318044703004645
           },
           "value_bet_flags": [
             "away_win"
@@ -4533,9 +4531,9 @@
           "made_before_kickoff": true,
           "has_live_odds": true,
           "market_probs": {
-            "home": 0.32646402225309,
-            "draw": 0.3470719554943697,
-            "away": 0.32646402225309
+            "home": 0.05092539674198911,
+            "draw": 0.916689576961917,
+            "away": 0.032385026296093876
           },
           "value_bet_flags": [
             "home_win"
@@ -4559,9 +4557,9 @@
           "made_before_kickoff": true,
           "has_live_odds": true,
           "market_probs": {
-            "home": 0.32646402225309,
-            "draw": 0.3470719554943697,
-            "away": 0.32646402225309
+            "home": 0.499168072104543,
+            "draw": 0.499168072104543,
+            "away": 0.0016638557904752973
           },
           "value_bet_flags": [
             "home_win"
@@ -4585,9 +4583,9 @@
           "made_before_kickoff": true,
           "has_live_odds": true,
           "market_probs": {
-            "home": 0.32646402225309,
-            "draw": 0.3470719554943697,
-            "away": 0.32646402225309
+            "home": 0.03860020143261303,
+            "draw": 0.9316878596907029,
+            "away": 0.029711938876080538
           },
           "value_bet_flags": [
             "home_win"
@@ -4611,9 +4609,9 @@
           "made_before_kickoff": true,
           "has_live_odds": true,
           "market_probs": {
-            "home": 0.32646402225309,
-            "draw": 0.3470719554943697,
-            "away": 0.32646402225309
+            "home": 0.0030903157527750113,
+            "draw": 0.6148585044125554,
+            "away": 0.3820511798342018
           },
           "value_bet_flags": [
             "away_win"
@@ -4657,9 +4655,9 @@
           "made_before_kickoff": true,
           "has_live_odds": true,
           "market_probs": {
-            "home": 0.32646402225309,
-            "draw": 0.3470719554943697,
-            "away": 0.32646402225309
+            "home": 0.03860020143261303,
+            "draw": 0.9316878596907029,
+            "away": 0.029711938876080538
           },
           "value_bet_flags": [
             "home_win"
@@ -4681,9 +4679,15 @@
           "hit": null,
           "backfilled": false,
           "made_before_kickoff": true,
-          "has_live_odds": false,
-          "market_probs": null,
-          "value_bet_flags": []
+          "has_live_odds": true,
+          "market_probs": {
+            "home": 0.061154901621391894,
+            "draw": 0.8871985027894125,
+            "away": 0.05164659558997329
+          },
+          "value_bet_flags": [
+            "home_win"
+          ]
         }
       ],
       "is_current": false,
@@ -9706,7 +9710,7 @@
       "away_2plus_prob": 0.39544133248380553,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -9919,7 +9923,7 @@
         "home_win"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "home_win",
@@ -10132,7 +10136,7 @@
       "away_2plus_prob": 0.4126706798227445,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -56324,7 +56328,7 @@
       "away_2plus_prob": 0.45296644389585516,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -56462,28 +56466,28 @@
       "team_away": "Nott'm Forest",
       "home_win": {
         "prob": 0.48631409685666127,
-        "implied": 0.4948060210086964,
-        "edge": -0.008491924152035146
+        "implied": 0.49626007362367514,
+        "edge": -0.009945976767013864
       },
       "draw": {
         "prob": 0.23557260886154338,
-        "implied": 0.2656000945114715,
-        "edge": -0.030027485649928104
+        "implied": 0.266832265043337,
+        "edge": -0.03125965618179363
       },
       "away_win": {
         "prob": 0.2781132942817954,
-        "implied": 0.23959388447884714,
-        "edge": 0.03851940980294824
+        "implied": 0.23690766133199226,
+        "edge": 0.04120563294980312
       },
       "over_2_5": {
         "prob": 0.5769380661697795,
-        "implied": 0.5214324967938859,
-        "edge": 0.05550556937589357
+        "implied": 0.5160975609753741,
+        "edge": 0.060840505194405425
       },
       "under_2_5": {
         "prob": 0.4230619338302206,
-        "implied": 0.4785675032061141,
-        "edge": -0.05550556937589346
+        "implied": 0.4839024390241391,
+        "edge": -0.06084050519391848
       },
       "btts_yes_prob": 0.5908434144024856,
       "top_scoreline": "1-1",
@@ -56501,15 +56505,15 @@
         "over_2_5"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "over_2_5",
         "probability": 0.5769380661697795,
-        "implied_probability": 0.5214324967938859,
-        "edge": 0.05550556937589357,
-        "price": 1.89285714286,
-        "bookmaker": "PROPHET_X"
+        "implied_probability": 0.5160975609753741,
+        "edge": 0.060840505194405425,
+        "price": 1.923076923076923,
+        "bookmaker": "KALSHI"
       },
       "score_grid": [
         [
@@ -56686,8 +56690,8 @@
           "won": null,
           "final_score": null,
           "result_source": null,
-          "closing_price": 1.89285714286,
-          "clv_pct": -2.7924528303354013
+          "closing_price": 1.923076923076923,
+          "clv_pct": -4.3199999999999905
         }
       ]
     },
@@ -69113,18 +69117,18 @@
       "team_away": "Nott'm Forest",
       "home_win": {
         "prob": 0.288438999149971,
-        "implied": 0.32646402225309,
-        "edge": -0.038025023103119004
+        "implied": 0.053343469789115125,
+        "edge": 0.23509552936085587
       },
       "draw": {
         "prob": 0.24275669266991914,
-        "implied": 0.3470719554943697,
-        "edge": -0.10431526282445056
+        "implied": 0.9213384855082231,
+        "edge": -0.6785817928383039
       },
       "away_win": {
         "prob": 0.4688043081801101,
-        "implied": 0.32646402225309,
-        "edge": 0.14234028592702008
+        "implied": 0.025318044703004645,
+        "edge": 0.44348626347710546
       },
       "over_2_5": {
         "prob": 0.5510589144103802,
@@ -69152,16 +69156,9 @@
         "away_win"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
-      "recommended_bet": {
-        "market": "away_win",
-        "probability": 0.4688043081801101,
-        "implied_probability": 0.32646402225309,
-        "edge": 0.14234028592702008,
-        "price": 1.0638297872340425,
-        "bookmaker": "KALSHI"
-      },
+      "recommended_bet": null,
       "score_grid": [
         [
           0.05505278865225823,
@@ -69301,8 +69298,8 @@
           "won": null,
           "final_score": null,
           "result_source": null,
-          "closing_price": 1.0638297872340425,
-          "clv_pct": 0.0
+          "closing_price": 25.0,
+          "clv_pct": -95.74468085106383
         }
       ]
     },
@@ -69614,28 +69611,28 @@
       "team_away": "Crystal Palace",
       "home_win": {
         "prob": 0.4170800617810794,
-        "implied": 0.3865336614195024,
-        "edge": 0.03054640036157702
+        "implied": 0.3851614260352236,
+        "edge": 0.03191863574585585
       },
       "draw": {
         "prob": 0.26802329760301624,
-        "implied": 0.26683312932223074,
-        "edge": 0.0011901682807854974
+        "implied": 0.2695382865624311,
+        "edge": -0.0015149889594148758
       },
       "away_win": {
         "prob": 0.31489664061590433,
-        "implied": 0.3466332092582669,
-        "edge": -0.03173656864236257
+        "implied": 0.3453002874013538,
+        "edge": -0.03040364678544949
       },
       "over_2_5": {
         "prob": 0.45667830420988026,
-        "implied": 0.5650858482711016,
-        "edge": -0.10840754406122138
+        "implied": 0.5644827586198065,
+        "edge": -0.1078044544099262
       },
       "under_2_5": {
         "prob": 0.5433216957901197,
-        "implied": 0.4349141517288984,
-        "edge": 0.10840754406122127
+        "implied": 0.4355172413797428,
+        "edge": 0.1078044544103769
       },
       "btts_yes_prob": 0.506159508347968,
       "top_scoreline": "1-1",
@@ -69654,15 +69651,15 @@
         "btts_no"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
       "recommended_bet": {
-        "market": "btts_no",
-        "probability": 0.49384049165203203,
-        "implied_probability": 0.381500987491468,
-        "edge": 0.11233950416056404,
-        "price": 2.45,
-        "bookmaker": "DRAFT_KINGS"
+        "market": "under_2_5",
+        "probability": 0.5433216957901197,
+        "implied_probability": 0.4355172413797428,
+        "edge": 0.1078044544103769,
+        "price": 2.272727272727273,
+        "bookmaker": "OG_COM"
       },
       "score_grid": [
         [
@@ -69803,8 +69800,8 @@
           "won": null,
           "final_score": null,
           "result_source": null,
-          "closing_price": 2.26,
-          "clv_pct": -7.079646017699104
+          "closing_price": 2.272727272727273,
+          "clv_pct": -7.600000000000007
         },
         {
           "market": "btts_no",
@@ -69818,8 +69815,8 @@
           "won": null,
           "final_score": null,
           "result_source": null,
-          "closing_price": 2.45,
-          "clv_pct": -4.081632653061229
+          "closing_price": 2.5,
+          "clv_pct": -5.999999999999995
         }
       ]
     },
@@ -70137,18 +70134,18 @@
       "team_away": "Leeds",
       "home_win": {
         "prob": 0.7263746151551448,
-        "implied": 0.32646402225309,
-        "edge": 0.3999105929020548
+        "implied": 0.499168072104543,
+        "edge": 0.22720654305060178
       },
       "draw": {
         "prob": 0.1653203466685272,
-        "implied": 0.3470719554943697,
-        "edge": -0.1817516088258425
+        "implied": 0.499168072104543,
+        "edge": -0.3338477254360158
       },
       "away_win": {
         "prob": 0.10830503817632775,
-        "implied": 0.32646402225309,
-        "edge": -0.21815898407676226
+        "implied": 0.0016638557904752973,
+        "edge": 0.10664118238585245
       },
       "over_2_5": {
         "prob": 0.628591226041431,
@@ -70176,14 +70173,14 @@
         "home_win"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "home_win",
         "probability": 0.7263746151551448,
-        "implied_probability": 0.32646402225309,
-        "edge": 0.3999105929020548,
-        "price": 1.0638297872340425,
+        "implied_probability": 0.499168072104543,
+        "edge": 0.22720654305060178,
+        "price": 1.0869565217391304,
         "bookmaker": "KALSHI"
       },
       "score_grid": [
@@ -70361,8 +70358,8 @@
           "won": null,
           "final_score": null,
           "result_source": null,
-          "closing_price": 1.0638297872340425,
-          "clv_pct": 0.0
+          "closing_price": 1.0869565217391304,
+          "clv_pct": -2.127659574468077
         }
       ]
     },
@@ -70410,7 +70407,7 @@
       "away_2plus_prob": 0.4719766755651507,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -70563,28 +70560,28 @@
       "team_away": "Liverpool",
       "home_win": {
         "prob": 0.3440195755253185,
-        "implied": 0.2711704706664737,
-        "edge": 0.07284910485884477
+        "implied": 0.27046842247921665,
+        "edge": 0.07355115304610182
       },
       "draw": {
         "prob": 0.2384424001736483,
-        "implied": 0.2689638006543913,
-        "edge": -0.030521400480743005
+        "implied": 0.26054416540366543,
+        "edge": -0.02210176523001714
       },
       "away_win": {
         "prob": 0.4175380243010333,
-        "implied": 0.4598657286781442,
-        "edge": -0.042327704377110864
+        "implied": 0.46898741211612854,
+        "edge": -0.05144938781509523
       },
       "over_2_5": {
         "prob": 0.594691064089805,
-        "implied": 0.5650609080839466,
-        "edge": 0.029630156005858388
+        "implied": 0.5679197161230936,
+        "edge": 0.026771347966711434
       },
       "under_2_5": {
         "prob": 0.40530893591019507,
-        "implied": 0.43493909191555824,
-        "edge": -0.029630156005363173
+        "implied": 0.4320802838764126,
+        "edge": -0.02677134796621755
       },
       "btts_yes_prob": 0.6158136254761476,
       "top_scoreline": "1-1",
@@ -70602,13 +70599,13 @@
         "home_win"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "home_win",
         "probability": 0.3440195755253185,
-        "implied_probability": 0.2711704706664737,
-        "edge": 0.07284910485884477,
+        "implied_probability": 0.27046842247921665,
+        "edge": 0.07355115304610182,
         "price": 3.571428571428571,
         "bookmaker": "KALSHI"
       },
@@ -70799,28 +70796,28 @@
       "team_away": "Bournemouth",
       "home_win": {
         "prob": 0.3444837859599636,
-        "implied": 0.36144383854053713,
-        "edge": -0.016960052580573537
+        "implied": 0.35487277063832784,
+        "edge": -0.010388984678364244
       },
       "draw": {
         "prob": 0.253772833481946,
-        "implied": 0.26979956220585277,
-        "edge": -0.016026728723906758
+        "implied": 0.2729612223853693,
+        "edge": -0.01918838890342328
       },
       "away_win": {
         "prob": 0.40174338055809017,
-        "implied": 0.36875659925342597,
-        "edge": 0.0329867813046642
+        "implied": 0.3721660069753159,
+        "edge": 0.02957737358277429
       },
       "over_2_5": {
         "prob": 0.5235258543006355,
-        "implied": 0.5543024227232528,
-        "edge": -0.030776568422617334
+        "implied": 0.5549999999997766,
+        "edge": -0.03147414569914109
       },
       "under_2_5": {
         "prob": 0.47647414569936436,
-        "implied": 0.4456975772762516,
-        "edge": 0.03077656842311277
+        "implied": 0.44499999999972445,
+        "edge": 0.03147414569963991
       },
       "btts_yes_prob": 0.5611508818727861,
       "top_scoreline": "1-1",
@@ -70838,7 +70835,7 @@
         "btts_no"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "btts_no",
@@ -71748,7 +71745,7 @@
       "away_2plus_prob": 0.39810405076533384,
       "value_bet_flags": [],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -71953,13 +71950,13 @@
       },
       "over_2_5": {
         "prob": 0.547458548382098,
-        "implied": 0.5424418604651163,
-        "edge": 0.005016687916981621
+        "implied": 0.5352582159622358,
+        "edge": 0.012200332419862181
       },
       "under_2_5": {
         "prob": 0.452541451617902,
-        "implied": 0.45755813953488367,
-        "edge": -0.005016687916981677
+        "implied": 0.4647417840373222,
+        "edge": -0.012200332419420201
       },
       "btts_yes_prob": 0.5782222932028357,
       "top_scoreline": "1-1",
@@ -71977,7 +71974,7 @@
         "away_win"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "away_win",
@@ -71985,7 +71982,7 @@
         "implied_probability": 0.23654840829586224,
         "edge": 0.09325941436713034,
         "price": 4.2,
-        "bookmaker": "BET_RIVERS"
+        "bookmaker": "PROPHET_X"
       },
       "score_grid": [
         [
@@ -72211,7 +72208,7 @@
       "away_2plus_prob": 0.630218084593508,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -72385,18 +72382,18 @@
       "team_away": "Brighton",
       "home_win": {
         "prob": 0.4740137327155409,
-        "implied": 0.32646402225309,
-        "edge": 0.1475497104624509
+        "implied": 0.03860020143261303,
+        "edge": 0.4354135312829279
       },
       "draw": {
         "prob": 0.23961646812144832,
-        "implied": 0.3470719554943697,
-        "edge": -0.10745548737292138
+        "implied": 0.9316878596907029,
+        "edge": -0.6920713915692546
       },
       "away_win": {
         "prob": 0.2863697991630105,
-        "implied": 0.32646402225309,
-        "edge": -0.04009422309007954
+        "implied": 0.029711938876080538,
+        "edge": 0.25665786028692994
       },
       "over_2_5": {
         "prob": 0.5639642744855775,
@@ -72424,16 +72421,9 @@
         "home_win"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
-      "recommended_bet": {
-        "market": "home_win",
-        "probability": 0.4740137327155409,
-        "implied_probability": 0.32646402225309,
-        "edge": 0.1475497104624509,
-        "price": 1.0638297872340425,
-        "bookmaker": "KALSHI"
-      },
+      "recommended_bet": null,
       "score_grid": [
         [
           0.05349720230711093,
@@ -72609,8 +72599,8 @@
           "won": null,
           "final_score": null,
           "result_source": null,
-          "closing_price": 1.0638297872340425,
-          "clv_pct": 0.0
+          "closing_price": 16.666666666666668,
+          "clv_pct": -93.61702127659575
         }
       ]
     },
@@ -72658,7 +72648,7 @@
       "away_2plus_prob": 0.28980528245545034,
       "value_bet_flags": [],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -72832,28 +72822,28 @@
       "team_away": "Brentford",
       "home_win": {
         "prob": 0.6547196285714098,
-        "implied": 0.480230901322173,
-        "edge": 0.17448872724923675
+        "implied": 0.48258952241448994,
+        "edge": 0.17213010615691982
       },
       "draw": {
         "prob": 0.18779128751766286,
-        "implied": 0.24816838228822483,
-        "edge": -0.06037709477056197
+        "implied": 0.2437808774104293,
+        "edge": -0.05598958989276645
       },
       "away_win": {
         "prob": 0.15748908391092728,
-        "implied": 0.2716007163886116,
-        "edge": -0.11411163247768433
+        "implied": 0.2736296001742933,
+        "edge": -0.116140516263366
       },
       "over_2_5": {
         "prob": 0.6428992741816373,
-        "implied": 0.6104287868991811,
-        "edge": 0.03247048728245616
+        "implied": 0.614999999999806,
+        "edge": 0.027899274181831246
       },
       "under_2_5": {
         "prob": 0.35710072581836266,
-        "implied": 0.38957121310032944,
-        "edge": -0.032470487281966776
+        "implied": 0.3849999999996977,
+        "edge": -0.027899274181335032
       },
       "btts_yes_prob": 0.577435729432689,
       "top_scoreline": "2-1",
@@ -72872,13 +72862,13 @@
         "btts_no"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "home_win",
         "probability": 0.6547196285714098,
-        "implied_probability": 0.480230901322173,
-        "edge": 0.17448872724923675,
+        "implied_probability": 0.48258952241448994,
+        "edge": 0.17213010615691982,
         "price": 2.0408163265306123,
         "bookmaker": "KALSHI"
       },
@@ -73490,18 +73480,18 @@
       "team_away": "Arsenal",
       "home_win": {
         "prob": 0.2083757087275548,
-        "implied": 0.32646402225309,
-        "edge": -0.11808831352553523
+        "implied": 0.0030903157527750113,
+        "edge": 0.20528539297477977
       },
       "draw": {
         "prob": 0.21173010915797533,
-        "implied": 0.3470719554943697,
-        "edge": -0.13534184633639437
+        "implied": 0.6148585044125554,
+        "edge": -0.4031283952545801
       },
       "away_win": {
         "prob": 0.5798941821144701,
-        "implied": 0.32646402225309,
-        "edge": 0.25343015986138007
+        "implied": 0.3820511798342018,
+        "edge": 0.1978430022802683
       },
       "over_2_5": {
         "prob": 0.6158204075614395,
@@ -73529,14 +73519,14 @@
         "away_win"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "away_win",
         "probability": 0.5798941821144701,
-        "implied_probability": 0.32646402225309,
-        "edge": 0.25343015986138007,
-        "price": 1.0638297872340425,
+        "implied_probability": 0.3820511798342018,
+        "edge": 0.1978430022802683,
+        "price": 1.5384615384615383,
         "bookmaker": "KALSHI"
       },
       "score_grid": [
@@ -73714,8 +73704,8 @@
           "won": null,
           "final_score": null,
           "result_source": null,
-          "closing_price": 1.0638297872340425,
-          "clv_pct": 0.0
+          "closing_price": 1.5384615384615383,
+          "clv_pct": -30.85106382978723
         }
       ]
     },
@@ -73763,7 +73753,7 @@
       "away_2plus_prob": 0.2666754196657293,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -73937,18 +73927,18 @@
       "team_away": "Aston Villa",
       "home_win": {
         "prob": 0.26482548623609076,
-        "implied": 0.280992421333999,
-        "edge": -0.01616693509790823
+        "implied": 0.274325932654334,
+        "edge": -0.009500446418243269
       },
       "draw": {
         "prob": 0.2409697792881274,
-        "implied": 0.24141591991010428,
-        "edge": -0.00044614062197687043
+        "implied": 0.24446046615752376,
+        "edge": -0.0034906868693963533
       },
       "away_win": {
         "prob": 0.494204734475782,
-        "implied": 0.47759165875490667,
-        "edge": 0.016613075720875337
+        "implied": 0.4812136011872231,
+        "edge": 0.012991133288558887
       },
       "over_2_5": {
         "prob": 0.5428035598207455,
@@ -73977,15 +73967,15 @@
         "btts_no"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "btts_no",
         "probability": 0.4388851095227433,
-        "implied_probability": 0.35986394557801793,
-        "edge": 0.07902116394472536,
-        "price": 2.5,
-        "bookmaker": "BET_PARX"
+        "implied_probability": 0.35217163788562295,
+        "edge": 0.08671347163712034,
+        "price": 2.6,
+        "bookmaker": "DRAFT_KINGS"
       },
       "score_grid": [
         [
@@ -74141,8 +74131,8 @@
           "won": null,
           "final_score": null,
           "result_source": null,
-          "closing_price": 2.5,
-          "clv_pct": 0.0
+          "closing_price": 2.6,
+          "clv_pct": -3.8461538461538547
         },
         {
           "market": "under_2_5",
@@ -74168,28 +74158,28 @@
       "team_away": "Hull",
       "home_win": {
         "prob": 0.33679567720173503,
-        "implied": 0.5223918137005333,
-        "edge": -0.1855961364987983
+        "implied": 0.5261855107355893,
+        "edge": -0.18938983353385425
       },
       "draw": {
         "prob": 0.23983921694978558,
-        "implied": 0.24377874060253693,
-        "edge": -0.003939523652751353
+        "implied": 0.2468820560265951,
+        "edge": -0.007042839076809526
       },
       "away_win": {
         "prob": 0.4233651058484792,
-        "implied": 0.23382944569624625,
-        "edge": 0.18953566015223294
+        "implied": 0.22693243323682072,
+        "edge": 0.19643267261165848
       },
       "over_2_5": {
         "prob": 0.5860554211747462,
-        "implied": 0.5543024227232528,
-        "edge": 0.031752998451493375
+        "implied": 0.5519047619045372,
+        "edge": 0.034150659270208994
       },
       "under_2_5": {
         "prob": 0.41394457882525365,
-        "implied": 0.4456975772762516,
-        "edge": -0.03175299845099794
+        "implied": 0.4480952380949647,
+        "edge": -0.03415065926971106
       },
       "btts_yes_prob": 0.6085259847976624,
       "top_scoreline": "1-1",
@@ -74207,14 +74197,14 @@
         "away_win"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "away_win",
         "probability": 0.4233651058484792,
-        "implied_probability": 0.23382944569624625,
-        "edge": 0.18953566015223294,
-        "price": 4.166666666666667,
+        "implied_probability": 0.22693243323682072,
+        "edge": 0.19643267261165848,
+        "price": 4.3478260869565215,
         "bookmaker": "KALSHI"
       },
       "score_grid": [
@@ -74356,8 +74346,8 @@
           "won": null,
           "final_score": null,
           "result_source": null,
-          "closing_price": 4.166666666666667,
-          "clv_pct": -1.6000000000000125
+          "closing_price": 4.3478260869565215,
+          "clv_pct": -5.700000000000005
         }
       ]
     },
@@ -74405,7 +74395,7 @@
       "away_2plus_prob": 0.512824938160494,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -74616,7 +74606,7 @@
       "away_2plus_prob": 0.2961437171368556,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -74805,13 +74795,13 @@
       },
       "over_2_5": {
         "prob": 0.5291641703827489,
-        "implied": 0.5776086956519658,
-        "edge": -0.04844452526921694
+        "implied": 0.5743987250070264,
+        "edge": -0.0452345546242775
       },
       "under_2_5": {
         "prob": 0.47083582961725123,
-        "implied": 0.4223913043475438,
-        "edge": 0.04844452526970744
+        "implied": 0.42560127499269107,
+        "edge": 0.045234554624560164
       },
       "btts_yes_prob": 0.5267431997616274,
       "top_scoreline": "0-1",
@@ -74827,7 +74817,7 @@
       "away_2plus_prob": 0.5358534693136489,
       "value_bet_flags": [],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -74969,8 +74959,8 @@
           "won": null,
           "final_score": null,
           "result_source": null,
-          "closing_price": 2.3,
-          "clv_pct": 0.0
+          "closing_price": 2.32,
+          "clv_pct": -0.8620689655172376
         }
       ]
     },
@@ -74981,18 +74971,18 @@
       "team_away": "Everton",
       "home_win": {
         "prob": 0.47498861775292156,
-        "implied": 0.4563595612528027,
-        "edge": 0.018629056500118868
+        "implied": 0.4463844299071192,
+        "edge": 0.028604187845802376
       },
       "draw": {
         "prob": 0.23715259307288078,
-        "implied": 0.26683275374702575,
-        "edge": -0.029680160674144973
+        "implied": 0.266832840505625,
+        "edge": -0.029680247432744222
       },
       "away_win": {
         "prob": 0.2878587891741979,
-        "implied": 0.2768076849991752,
-        "edge": 0.011051104175022697
+        "implied": 0.28678272958625933,
+        "edge": 0.0010760595879385493
       },
       "over_2_5": {
         "prob": 0.5761997422165189,
@@ -75018,7 +75008,7 @@
       "away_2plus_prob": 0.3676645205110649,
       "value_bet_flags": [],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -75192,18 +75182,18 @@
       "team_away": "Fulham",
       "home_win": {
         "prob": 0.684260651942897,
-        "implied": 0.695763056777088,
-        "edge": -0.011502404834191071
+        "implied": 0.6958179149055442,
+        "edge": -0.011557262962647252
       },
       "draw": {
         "prob": 0.18941044760961973,
-        "implied": 0.17705365126536962,
-        "edge": 0.012356796344250104
+        "implied": 0.17709186048211703,
+        "edge": 0.012318587127502695
       },
       "away_win": {
         "prob": 0.12632890044748327,
-        "implied": 0.12718329195656952,
-        "edge": -0.0008543915090862553
+        "implied": 0.1270902246113641,
+        "edge": -0.0007613241638808332
       },
       "over_2_5": {
         "prob": 0.5642174318329654,
@@ -75231,15 +75221,15 @@
         "btts_no"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "btts_no",
         "probability": 0.5148960737998988,
-        "implied_probability": 0.43663974199191175,
-        "edge": 0.07825633180798702,
-        "price": 2.15,
-        "bookmaker": "DRAFT_KINGS"
+        "implied_probability": 0.43499999999977884,
+        "edge": 0.07989607380011993,
+        "price": 2.272727272727273,
+        "bookmaker": "OG_COM"
       },
       "score_grid": [
         [
@@ -75416,8 +75406,8 @@
           "won": null,
           "final_score": null,
           "result_source": null,
-          "closing_price": 2.15,
-          "clv_pct": 2.3255813953488413
+          "closing_price": 2.272727272727273,
+          "clv_pct": -3.200000000000003
         }
       ]
     },
@@ -75465,7 +75455,7 @@
       "away_2plus_prob": 0.3056511673141648,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -89125,13 +89115,13 @@
       },
       "over_2_5": {
         "prob": 0.5358424394453336,
-        "implied": 0.5462988944382952,
-        "edge": -0.01045645499296155
+        "implied": 0.5490173410402368,
+        "edge": -0.013174901594903199
       },
       "under_2_5": {
         "prob": 0.46415756055466645,
-        "implied": 0.4537011055612109,
-        "edge": 0.010456454993455544
+        "implied": 0.4509826589592659,
+        "edge": 0.013174901595400523
       },
       "btts_yes_prob": 0.533262088013164,
       "top_scoreline": "1-1",
@@ -89147,7 +89137,7 @@
       "away_2plus_prob": 0.2703035663298245,
       "value_bet_flags": [],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -89322,7 +89312,7 @@
       "away_2plus_prob": 0.48149338449976764,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -89533,7 +89523,7 @@
       "away_2plus_prob": 0.42334863242826287,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -89707,18 +89697,18 @@
       "team_away": "Ipswich",
       "home_win": {
         "prob": 0.508788764371463,
-        "implied": 0.32646402225309,
-        "edge": 0.18232474211837302
+        "implied": 0.051257080539097,
+        "edge": 0.45753168383236603
       },
       "draw": {
         "prob": 0.25203888944115593,
-        "implied": 0.3470719554943697,
-        "edge": -0.09503306605321377
+        "implied": 0.9068648554212418,
+        "edge": -0.6548259659800859
       },
       "away_win": {
         "prob": 0.2391723461873813,
-        "implied": 0.32646402225309,
-        "edge": -0.0872916760657087
+        "implied": 0.0418780640389301,
+        "edge": 0.1972942821484512
       },
       "over_2_5": {
         "prob": 0.4758609837271741,
@@ -89746,16 +89736,9 @@
         "home_win"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
-      "recommended_bet": {
-        "market": "home_win",
-        "probability": 0.508788764371463,
-        "implied_probability": 0.32646402225309,
-        "edge": 0.18232474211837302,
-        "price": 1.0638297872340425,
-        "bookmaker": "KALSHI"
-      },
+      "recommended_bet": null,
       "score_grid": [
         [
           0.07618808240168291,
@@ -89895,8 +89878,8 @@
           "won": null,
           "final_score": null,
           "result_source": null,
-          "closing_price": 1.0638297872340425,
-          "clv_pct": 0.0
+          "closing_price": 14.285714285714285,
+          "clv_pct": -92.5531914893617
         }
       ]
     },
@@ -89944,7 +89927,7 @@
       "away_2plus_prob": 0.6830525594850301,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -90155,7 +90138,7 @@
       "away_2plus_prob": 0.2598987473002872,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -90330,7 +90313,7 @@
       "away_2plus_prob": 0.20752323788345112,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -90505,7 +90488,7 @@
       "away_2plus_prob": 0.425756239526517,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -90680,7 +90663,7 @@
       "away_2plus_prob": 0.3294153620585091,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -90891,7 +90874,7 @@
       "away_2plus_prob": 0.3065320427722588,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -91029,18 +91012,18 @@
       "team_away": "Crystal Palace",
       "home_win": {
         "prob": 0.5215597108335682,
-        "implied": 0.32646402225309,
-        "edge": 0.1950956885804782
+        "implied": 0.05092539674198911,
+        "edge": 0.47063431409157913
       },
       "draw": {
         "prob": 0.23972391609944352,
-        "implied": 0.3470719554943697,
-        "edge": -0.10734803939492618
+        "implied": 0.916689576961917,
+        "edge": -0.6769656608624735
       },
       "away_win": {
         "prob": 0.23871637306698848,
-        "implied": 0.32646402225309,
-        "edge": -0.08774764918610153
+        "implied": 0.032385026296093876,
+        "edge": 0.2063313467708946
       },
       "over_2_5": {
         "prob": 0.5256034239845812,
@@ -91068,16 +91051,9 @@
         "home_win"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
-      "recommended_bet": {
-        "market": "home_win",
-        "probability": 0.5215597108335682,
-        "implied_probability": 0.32646402225309,
-        "edge": 0.1950956885804782,
-        "price": 1.0638297872340425,
-        "bookmaker": "KALSHI"
-      },
+      "recommended_bet": null,
       "score_grid": [
         [
           0.06257768383317668,
@@ -91253,8 +91229,8 @@
           "won": null,
           "final_score": null,
           "result_source": null,
-          "closing_price": 1.0638297872340425,
-          "clv_pct": 0.0
+          "closing_price": 14.285714285714285,
+          "clv_pct": -92.5531914893617
         }
       ]
     },
@@ -91265,28 +91241,28 @@
       "team_away": "Sunderland",
       "home_win": {
         "prob": 0.47707064074974265,
-        "implied": 0.5253406375412855,
-        "edge": -0.04826999679154281
+        "implied": 0.5375364193169115,
+        "edge": -0.06046577856716889
       },
       "draw": {
         "prob": 0.23313880130193684,
-        "implied": 0.2561603241601964,
-        "edge": -0.023021522858259563
+        "implied": 0.2543995224119717,
+        "edge": -0.02126072111003488
       },
       "away_win": {
         "prob": 0.28979055794832065,
-        "implied": 0.21849903829752784,
-        "edge": 0.0712915196507928
+        "implied": 0.20806405827069588,
+        "edge": 0.08172649967762477
       },
       "over_2_5": {
         "prob": 0.5961710819807116,
-        "implied": 0.544774774774205,
-        "edge": 0.051396307206506564
+        "implied": 0.5437556561086344,
+        "edge": 0.05241542587207715
       },
       "under_2_5": {
         "prob": 0.40382891801928844,
-        "implied": 0.4552252252253595,
-        "edge": -0.05139630720607108
+        "implied": 0.4562443438908771,
+        "edge": -0.05241542587158865
       },
       "btts_yes_prob": 0.6083768901882118,
       "top_scoreline": "1-1",
@@ -91305,15 +91281,15 @@
         "btts_yes"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
       "recommended_bet": {
-        "market": "over_2_5",
-        "probability": 0.5961710819807116,
-        "implied_probability": 0.544774774774205,
-        "edge": 0.051396307206506564,
-        "price": 1.81967213115,
-        "bookmaker": "PROPHET_X"
+        "market": "btts_yes",
+        "probability": 0.6083768901882118,
+        "implied_probability": 0.5549999999998209,
+        "edge": 0.05337689018839098,
+        "price": 1.7857142857142856,
+        "bookmaker": "OG_COM"
       },
       "score_grid": [
         [
@@ -91469,8 +91445,8 @@
           "won": null,
           "final_score": null,
           "result_source": null,
-          "closing_price": 1.72,
-          "clv_pct": 0.0
+          "closing_price": 1.7857142857142856,
+          "clv_pct": -3.6799999999999944
         },
         {
           "market": "over_2_5",
@@ -91484,8 +91460,8 @@
           "won": null,
           "final_score": null,
           "result_source": null,
-          "closing_price": 1.81967213115,
-          "clv_pct": -2.1801801803123633
+          "closing_price": 1.82644628099,
+          "clv_pct": -2.5429864252467516
         }
       ]
     },
@@ -91533,7 +91509,7 @@
       "away_2plus_prob": 0.35439139141910087,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -91744,7 +91720,7 @@
       "away_2plus_prob": 0.27497719637172635,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -91918,18 +91894,18 @@
       "team_away": "Everton",
       "home_win": {
         "prob": 0.4772605769824685,
-        "implied": 0.32646402225309,
-        "edge": 0.15079655472937847
+        "implied": 0.03860020143261303,
+        "edge": 0.4386603755498555
       },
       "draw": {
         "prob": 0.24397308912397195,
-        "implied": 0.3470719554943697,
-        "edge": -0.10309886637039775
+        "implied": 0.9316878596907029,
+        "edge": -0.6877147705667309
       },
       "away_win": {
         "prob": 0.2787663338935596,
-        "implied": 0.32646402225309,
-        "edge": -0.04769768835953042
+        "implied": 0.029711938876080538,
+        "edge": 0.24905439501747906
       },
       "over_2_5": {
         "prob": 0.5395724962364122,
@@ -91957,16 +91933,9 @@
         "home_win"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
-      "recommended_bet": {
-        "market": "home_win",
-        "probability": 0.4772605769824685,
-        "implied_probability": 0.32646402225309,
-        "edge": 0.15079655472937847,
-        "price": 1.0638297872340425,
-        "bookmaker": "KALSHI"
-      },
+      "recommended_bet": null,
       "score_grid": [
         [
           0.05823330209598231,
@@ -92142,8 +92111,8 @@
           "won": null,
           "final_score": null,
           "result_source": null,
-          "closing_price": 1.0638297872340425,
-          "clv_pct": 0.0
+          "closing_price": 16.666666666666668,
+          "clv_pct": -93.61702127659575
         }
       ]
     },
@@ -92154,18 +92123,18 @@
       "team_away": "Fulham",
       "home_win": {
         "prob": 0.47568732809313385,
-        "implied": null,
-        "edge": null
+        "implied": 0.061154901621391894,
+        "edge": 0.41453242647174193
       },
       "draw": {
         "prob": 0.2539678361866697,
-        "implied": null,
-        "edge": null
+        "implied": 0.8871985027894125,
+        "edge": -0.6332306666027427
       },
       "away_win": {
         "prob": 0.2703448357201966,
-        "implied": null,
-        "edge": null
+        "implied": 0.05164659558997329,
+        "edge": 0.2186982401302233
       },
       "over_2_5": {
         "prob": 0.4917429633696642,
@@ -92189,9 +92158,11 @@
       "predicted_margin": 0.44492030143737793,
       "home_2plus_prob": 0.4564016046463969,
       "away_2plus_prob": 0.30020097102954274,
-      "value_bet_flags": [],
-      "has_live_odds": false,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "value_bet_flags": [
+        "home_win"
+      ],
+      "has_live_odds": true,
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -92356,7 +92327,23 @@
       },
       "post_match": null,
       "actual_stats": null,
-      "pre_match_value_bets": []
+      "pre_match_value_bets": [
+        {
+          "market": "home_win",
+          "probability": 0.47568732809313385,
+          "implied_probability": 0.061154901621391894,
+          "edge": 0.41453242647174193,
+          "price": 12.5,
+          "bookmaker": "KALSHI",
+          "snapshotted_at": "2026-11-19T17:15:41.189433Z",
+          "resolved": false,
+          "won": null,
+          "final_score": null,
+          "result_source": null,
+          "closing_price": 12.5,
+          "clv_pct": 0.0
+        }
+      ]
     },
     "pTX9-Akkm-pMXx": {
       "event_id": "pTX9-Akkm-pMXx",
@@ -92701,18 +92688,18 @@
       "team_away": "Man United",
       "home_win": {
         "prob": 0.39994420555880195,
-        "implied": 0.5461358166313274,
-        "edge": -0.14619161107252543
+        "implied": 0.553296199594901,
+        "edge": -0.153351994036099
       },
       "draw": {
         "prob": 0.22992961467332096,
-        "implied": 0.22693209168383913,
-        "edge": 0.0029975229894818323
+        "implied": 0.221994252285915,
+        "edge": 0.00793536238740597
       },
       "away_win": {
         "prob": 0.370126179767877,
-        "implied": 0.22693209168383913,
-        "edge": 0.14319408808403786
+        "implied": 0.22470954811832394,
+        "edge": 0.14541663164955304
       },
       "over_2_5": {
         "prob": 0.641465525028156,
@@ -92740,13 +92727,13 @@
         "away_win"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "away_win",
         "probability": 0.370126179767877,
-        "implied_probability": 0.22693209168383913,
-        "edge": 0.14319408808403786,
+        "implied_probability": 0.22470954811832394,
+        "edge": 0.14541663164955304,
         "price": 4.3478260869565215,
         "bookmaker": "POLYMARKET"
       },
@@ -93682,7 +93669,7 @@
       "away_2plus_prob": 0.2913022769178545,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -93856,28 +93843,28 @@
       "team_away": "Ipswich",
       "home_win": {
         "prob": 0.6321288870381014,
-        "implied": 0.6312633628999478,
-        "edge": 0.0008655241381536616
+        "implied": 0.6359121102677797,
+        "edge": -0.0037832232296782786
       },
       "draw": {
         "prob": 0.21287120538499107,
-        "implied": 0.20524948841998053,
-        "edge": 0.007621716965010544
+        "implied": 0.2069800798520812,
+        "edge": 0.00589112553290988
       },
       "away_win": {
         "prob": 0.1549999075769076,
-        "implied": 0.16348714867928021,
-        "edge": -0.008487241102372617
+        "implied": 0.1571078098791515,
+        "edge": -0.0021079023022438914
       },
       "over_2_5": {
         "prob": 0.5237708964665228,
-        "implied": 0.6049999999998742,
-        "edge": -0.08122910353335144
+        "implied": 0.609999999999805,
+        "edge": -0.08622910353328228
       },
       "under_2_5": {
         "prob": 0.4762291035334772,
-        "implied": 0.39499999999980795,
-        "edge": 0.08122910353366924
+        "implied": 0.389999999999698,
+        "edge": 0.08622910353377922
       },
       "btts_yes_prob": 0.4847332812661071,
       "top_scoreline": "1-0",
@@ -93896,15 +93883,15 @@
         "btts_no"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
       "recommended_bet": {
-        "market": "btts_no",
-        "probability": 0.5152667187338928,
-        "implied_probability": 0.4278715296676539,
-        "edge": 0.08739518906623894,
-        "price": 2.2,
-        "bookmaker": "DRAFT_KINGS"
+        "market": "under_2_5",
+        "probability": 0.4762291035334772,
+        "implied_probability": 0.389999999999698,
+        "edge": 0.08622910353377922,
+        "price": 2.5,
+        "bookmaker": "OG_COM"
       },
       "score_grid": [
         [
@@ -94075,8 +94062,8 @@
           "won": null,
           "final_score": null,
           "result_source": null,
-          "closing_price": 2.2,
-          "clv_pct": -2.7272727272727337
+          "closing_price": 2.2222222222222223,
+          "clv_pct": -3.7000000000000033
         }
       ]
     },
@@ -94124,7 +94111,7 @@
       "away_2plus_prob": 0.41644228270622774,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -94277,28 +94264,28 @@
       "team_away": "Arsenal",
       "home_win": {
         "prob": 0.21442970535085057,
-        "implied": 0.1545398338908163,
-        "edge": 0.05988987146003427
+        "implied": 0.15710829506730042,
+        "edge": 0.057321410283550145
       },
       "draw": {
         "prob": 0.2234727581165668,
-        "implied": 0.22419644978327855,
-        "edge": -0.0007236916667117399
+        "implied": 0.22693001079448744,
+        "edge": -0.0034572526779206303
       },
       "away_win": {
         "prob": 0.5620975365325827,
-        "implied": 0.6212637163256286,
-        "edge": -0.05916617979304595
+        "implied": 0.6159616941372228,
+        "edge": -0.05386415760464014
       },
       "over_2_5": {
         "prob": 0.5696997922186847,
-        "implied": 0.5649999999998293,
-        "edge": 0.004699792218855414
+        "implied": 0.56,
+        "edge": 0.009699792218684666
       },
       "under_2_5": {
         "prob": 0.4303002077813152,
-        "implied": 0.43499999999977884,
-        "edge": -0.0046997922184636165
+        "implied": 0.43999999999999995,
+        "edge": -0.009699792218684722
       },
       "btts_yes_prob": 0.5606126651887782,
       "top_scoreline": "1-1",
@@ -94314,7 +94301,7 @@
       "away_2plus_prob": 0.5627523988804164,
       "value_bet_flags": [],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -94488,18 +94475,18 @@
       "team_away": "Sunderland",
       "home_win": {
         "prob": 0.49174428713457574,
-        "implied": 0.32646402225309,
-        "edge": 0.16528026488148573
+        "implied": 0.4928447212102147,
+        "edge": -0.0011004340756389785
       },
       "draw": {
         "prob": 0.22750343522625652,
-        "implied": 0.3470719554943697,
-        "edge": -0.11956852026811318
+        "implied": 0.502429465350496,
+        "edge": -0.27492603012423955
       },
       "away_win": {
         "prob": 0.2807522776391676,
-        "implied": 0.32646402225309,
-        "edge": -0.04571174461392241
+        "implied": 0.004725813439289283,
+        "edge": 0.2760264641998783
       },
       "over_2_5": {
         "prob": 0.6167876352647207,
@@ -94523,20 +94510,11 @@
       "predicted_margin": 0.49732887744903564,
       "home_2plus_prob": 0.5491802507197999,
       "away_2plus_prob": 0.38848609440502446,
-      "value_bet_flags": [
-        "home_win"
-      ],
+      "value_bet_flags": [],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
-      "recommended_bet": {
-        "market": "home_win",
-        "probability": 0.49174428713457574,
-        "implied_probability": 0.32646402225309,
-        "edge": 0.16528026488148573,
-        "price": 1.0638297872340425,
-        "bookmaker": "KALSHI"
-      },
+      "recommended_bet": null,
       "score_grid": [
         [
           0.04105067042586053,
@@ -94691,8 +94669,8 @@
           "won": null,
           "final_score": null,
           "result_source": null,
-          "closing_price": 1.0638297872340425,
-          "clv_pct": 0.0
+          "closing_price": 1.1235955056179776,
+          "clv_pct": -5.319148936170226
         }
       ]
     },
@@ -94743,7 +94721,7 @@
         "over_2_5"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-19T01:18:13.885927Z",
+      "odds_fetched_at": "2026-11-19T17:15:15.354648Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "home_win",
@@ -95295,27 +95273,6 @@
     "0PQf-AlDo-A8kD": {
       "home_players": [
         {
-          "player_id": 552,
-          "name": "Brobbey",
-          "position": "FWD",
-          "anytime_goal_prob": 0.29471675982214285,
-          "anytime_goal_prob_pre_availability": 0.372204663955092,
-          "anytime_assist_prob": 0.13037533344894014,
-          "anytime_goal_contribution_prob": 0.38666829743627995,
-          "status": "d",
-          "news": "Muscular injury - 75% chance of playing",
-          "confidence": "prior_season",
-          "predicted_starter": true,
-          "confirmed_starter": false,
-          "expected_minutes": 44.31692185850053,
-          "is_penalty_taker": false,
-          "is_set_piece_taker": false,
-          "expected_shots": 0.15324862941219475,
-          "expected_shots_on_target": 0.0,
-          "anytime_shot_on_target_prob": 0.0,
-          "expected_saves": 0.0
-        },
-        {
           "player_id": 542,
           "name": "E.Le F\u00e9e",
           "position": "MID",
@@ -95455,6 +95412,27 @@
           "predicted_starter": false,
           "confirmed_starter": false,
           "expected_minutes": 22.604779411764707,
+          "is_penalty_taker": false,
+          "is_set_piece_taker": false,
+          "expected_shots": 0.0,
+          "expected_shots_on_target": 0.0,
+          "anytime_shot_on_target_prob": 0.0,
+          "expected_saves": 0.0
+        },
+        {
+          "player_id": 533,
+          "name": "Mukiele",
+          "position": "DEF",
+          "anytime_goal_prob": 0.06863985884016621,
+          "anytime_goal_prob_pre_availability": 0.06863985884016621,
+          "anytime_assist_prob": 0.05289058361565191,
+          "anytime_goal_contribution_prob": 0.1179000402624657,
+          "status": "a",
+          "news": "",
+          "confidence": "prior_season",
+          "predicted_starter": true,
+          "confirmed_starter": false,
+          "expected_minutes": 59.08922914466737,
           "is_penalty_taker": false,
           "is_set_piece_taker": false,
           "expected_shots": 0.0,
@@ -95637,27 +95615,6 @@
     "0Wl4-Amno-M5RB": {
       "home_players": [
         {
-          "player_id": 552,
-          "name": "Brobbey",
-          "position": "FWD",
-          "anytime_goal_prob": 0.2893480366815079,
-          "anytime_goal_prob_pre_availability": 0.36582476243432493,
-          "anytime_assist_prob": 0.12773287764192487,
-          "anytime_goal_contribution_prob": 0.38012165695806244,
-          "status": "d",
-          "news": "Muscular injury - 75% chance of playing",
-          "confidence": "prior_season",
-          "predicted_starter": true,
-          "confirmed_starter": false,
-          "expected_minutes": 44.31692185850053,
-          "is_penalty_taker": false,
-          "is_set_piece_taker": false,
-          "expected_shots": 0.149920217658124,
-          "expected_shots_on_target": 0.0,
-          "anytime_shot_on_target_prob": 0.0,
-          "expected_saves": 0.0
-        },
-        {
           "player_id": 542,
           "name": "E.Le F\u00e9e",
           "position": "MID",
@@ -95797,6 +95754,27 @@
           "predicted_starter": false,
           "confirmed_starter": false,
           "expected_minutes": 22.604779411764707,
+          "is_penalty_taker": false,
+          "is_set_piece_taker": false,
+          "expected_shots": 0.0,
+          "expected_shots_on_target": 0.0,
+          "anytime_shot_on_target_prob": 0.0,
+          "expected_saves": 0.0
+        },
+        {
+          "player_id": 533,
+          "name": "Mukiele",
+          "position": "DEF",
+          "anytime_goal_prob": 0.06720033266189895,
+          "anytime_goal_prob_pre_availability": 0.06720033266189895,
+          "anytime_assist_prob": 0.05177212026158917,
+          "anytime_goal_contribution_prob": 0.11549334921929755,
+          "status": "a",
+          "news": "",
+          "confidence": "prior_season",
+          "predicted_starter": true,
+          "confirmed_starter": false,
+          "expected_minutes": 59.08922914466737,
           "is_penalty_taker": false,
           "is_set_piece_taker": false,
           "expected_shots": 0.0,
@@ -95954,19 +95932,19 @@
           "expected_saves": 0.0
         },
         {
-          "player_id": 482,
-          "name": "Hudson-Odoi",
+          "player_id": 558,
+          "name": "Schlager",
           "position": "MID",
-          "anytime_goal_prob": 0.08280403946088888,
-          "anytime_goal_prob_pre_availability": 0.08280403946088888,
-          "anytime_assist_prob": 0.05488927857286907,
-          "anytime_goal_contribution_prob": 0.13314826404483038,
-          "status": "a",
-          "news": "",
-          "confidence": "prior_season",
-          "predicted_starter": false,
+          "anytime_goal_prob": 0.08227826693560347,
+          "anytime_goal_prob_pre_availability": 0.10817148244912245,
+          "anytime_assist_prob": 0.13225527270348125,
+          "anytime_goal_contribution_prob": 0.20365180500794666,
+          "status": "d",
+          "news": "Thigh injury - 75% chance of playing",
+          "confidence": "current",
+          "predicted_starter": true,
           "confirmed_starter": false,
-          "expected_minutes": 29.172380952380948,
+          "expected_minutes": 48.434668508287295,
           "is_penalty_taker": false,
           "is_set_piece_taker": false,
           "expected_shots": 0.0,
@@ -175766,19 +175744,19 @@
           "expected_saves": 0.0
         },
         {
-          "player_id": 482,
-          "name": "Hudson-Odoi",
+          "player_id": 558,
+          "name": "Schlager",
           "position": "MID",
-          "anytime_goal_prob": 0.0703472351160288,
-          "anytime_goal_prob_pre_availability": 0.0703472351160288,
-          "anytime_assist_prob": 0.04652530852127601,
-          "anytime_goal_contribution_prob": 0.11359961681991282,
-          "status": "a",
-          "news": "",
-          "confidence": "prior_season",
-          "predicted_starter": false,
+          "anytime_goal_prob": 0.06989751512733622,
+          "anytime_goal_prob_pre_availability": 0.09209360977195957,
+          "anytime_assist_prob": 0.11282906375108459,
+          "anytime_goal_contribution_prob": 0.17484010768807623,
+          "status": "d",
+          "news": "Thigh injury - 75% chance of playing",
+          "confidence": "current",
+          "predicted_starter": true,
           "confirmed_starter": false,
-          "expected_minutes": 29.172380952380948,
+          "expected_minutes": 48.434668508287295,
           "is_penalty_taker": false,
           "is_set_piece_taker": false,
           "expected_shots": 0.0,
@@ -190382,19 +190360,19 @@
           "expected_saves": 0.0
         },
         {
-          "player_id": 482,
-          "name": "Hudson-Odoi",
+          "player_id": 558,
+          "name": "Schlager",
           "position": "MID",
-          "anytime_goal_prob": 0.09156439004976846,
-          "anytime_goal_prob_pre_availability": 0.09156439004976846,
-          "anytime_assist_prob": 0.06079492149539523,
-          "anytime_goal_contribution_prob": 0.14679266164031424,
-          "status": "a",
-          "news": "",
-          "confidence": "prior_season",
-          "predicted_starter": false,
+          "anytime_goal_prob": 0.09098579979533283,
+          "anytime_goal_prob_pre_availability": 0.11943607320919924,
+          "anytime_assist_prob": 0.14581607848852562,
+          "anytime_goal_contribution_prob": 0.22353468575956092,
+          "status": "d",
+          "news": "Thigh injury - 75% chance of playing",
+          "confidence": "current",
+          "predicted_starter": true,
           "confirmed_starter": false,
-          "expected_minutes": 29.172380952380948,
+          "expected_minutes": 48.434668508287295,
           "is_penalty_taker": false,
           "is_set_piece_taker": false,
           "expected_shots": 0.0,
@@ -191729,6 +191707,27 @@
           "expected_saves": 0.0
         },
         {
+          "player_id": 335,
+          "name": "Stach",
+          "position": "MID",
+          "anytime_goal_prob": 0.039228978254237545,
+          "anytime_goal_prob_pre_availability": 0.039228978254237545,
+          "anytime_assist_prob": 0.10280588663277346,
+          "anytime_goal_contribution_prob": 0.13800189499588622,
+          "status": "a",
+          "news": "",
+          "confidence": "prior_season",
+          "predicted_starter": false,
+          "confirmed_starter": false,
+          "expected_minutes": 41.98088414634147,
+          "is_penalty_taker": false,
+          "is_set_piece_taker": true,
+          "expected_shots": 0.09630466779903397,
+          "expected_shots_on_target": 0.032101555933011325,
+          "anytime_shot_on_target_prob": 0.0315917705161437,
+          "expected_saves": 0.0
+        },
+        {
           "player_id": 338,
           "name": "Ampadu",
           "position": "MID",
@@ -191742,27 +191741,6 @@
           "predicted_starter": true,
           "confirmed_starter": false,
           "expected_minutes": 78.52551903114188,
-          "is_penalty_taker": false,
-          "is_set_piece_taker": false,
-          "expected_shots": 0.0,
-          "expected_shots_on_target": 0.0,
-          "anytime_shot_on_target_prob": 0.0,
-          "expected_saves": 0.0
-        },
-        {
-          "player_id": 598,
-          "name": "Elvedi",
-          "position": "DEF",
-          "anytime_goal_prob": 0.033547416555936516,
-          "anytime_goal_prob_pre_availability": 0.033547416555936516,
-          "anytime_assist_prob": 0.028369985417417865,
-          "anytime_goal_contribution_prob": 0.060965662254870434,
-          "status": "a",
-          "news": "",
-          "confidence": "position_avg",
-          "predicted_starter": true,
-          "confirmed_starter": false,
-          "expected_minutes": 64.57955801104973,
           "is_penalty_taker": false,
           "is_set_piece_taker": false,
           "expected_shots": 0.0,
@@ -191945,27 +191923,6 @@
       ],
       "away_players": [
         {
-          "player_id": 552,
-          "name": "Brobbey",
-          "position": "FWD",
-          "anytime_goal_prob": 0.34129322356602465,
-          "anytime_goal_prob_pre_availability": 0.42686599714593376,
-          "anytime_assist_prob": 0.11261936633906044,
-          "anytime_goal_contribution_prob": 0.41547636333126403,
-          "status": "d",
-          "news": "Muscular injury - 75% chance of playing",
-          "confidence": "prior_season",
-          "predicted_starter": true,
-          "confirmed_starter": false,
-          "expected_minutes": 44.31692185850053,
-          "is_penalty_taker": false,
-          "is_set_piece_taker": false,
-          "expected_shots": 0.14075231672988023,
-          "expected_shots_on_target": 0.0,
-          "anytime_shot_on_target_prob": 0.0,
-          "expected_saves": 0.0
-        },
-        {
           "player_id": 553,
           "name": "Isidor",
           "position": "FWD",
@@ -192108,6 +192065,27 @@
           "is_penalty_taker": false,
           "is_set_piece_taker": false,
           "expected_shots": 0.21653837923437946,
+          "expected_shots_on_target": 0.0,
+          "anytime_shot_on_target_prob": 0.0,
+          "expected_saves": 0.0
+        },
+        {
+          "player_id": 646,
+          "name": "Fofana",
+          "position": "MID",
+          "anytime_goal_prob": 0.06563037142313222,
+          "anytime_goal_prob_pre_availability": 0.06563037142313222,
+          "anytime_assist_prob": 0.05227782396907399,
+          "anytime_goal_contribution_prob": 0.11447718238792282,
+          "status": "a",
+          "news": "",
+          "confidence": "position_avg",
+          "predicted_starter": false,
+          "confirmed_starter": false,
+          "expected_minutes": 22.604779411764707,
+          "is_penalty_taker": false,
+          "is_set_piece_taker": false,
+          "expected_shots": 0.0,
           "expected_shots_on_target": 0.0,
           "anytime_shot_on_target_prob": 0.0,
           "expected_saves": 0.0
@@ -194123,6 +194101,27 @@
           "expected_saves": 0.0
         },
         {
+          "player_id": 335,
+          "name": "Stach",
+          "position": "MID",
+          "anytime_goal_prob": 0.06323473246708278,
+          "anytime_goal_prob_pre_availability": 0.06323473246708278,
+          "anytime_assist_prob": 0.13720814490919575,
+          "anytime_goal_contribution_prob": 0.19176655704064083,
+          "status": "a",
+          "news": "",
+          "confidence": "prior_season",
+          "predicted_starter": false,
+          "confirmed_starter": false,
+          "expected_minutes": 41.98088414634147,
+          "is_penalty_taker": false,
+          "is_set_piece_taker": true,
+          "expected_shots": 0.15719631190403993,
+          "expected_shots_on_target": 0.05239877063467998,
+          "anytime_shot_on_target_prob": 0.05104962216169551,
+          "expected_saves": 0.0
+        },
+        {
           "player_id": 338,
           "name": "Ampadu",
           "position": "MID",
@@ -194136,27 +194135,6 @@
           "predicted_starter": true,
           "confirmed_starter": false,
           "expected_minutes": 78.52551903114188,
-          "is_penalty_taker": false,
-          "is_set_piece_taker": false,
-          "expected_shots": 0.0,
-          "expected_shots_on_target": 0.0,
-          "anytime_shot_on_target_prob": 0.0,
-          "expected_saves": 0.0
-        },
-        {
-          "player_id": 598,
-          "name": "Elvedi",
-          "position": "DEF",
-          "anytime_goal_prob": 0.05417565025306592,
-          "anytime_goal_prob_pre_availability": 0.05417565025306592,
-          "anytime_assist_prob": 0.04589100896553744,
-          "anytime_goal_contribution_prob": 0.09758048396712604,
-          "status": "a",
-          "news": "",
-          "confidence": "position_avg",
-          "predicted_starter": true,
-          "confirmed_starter": false,
-          "expected_minutes": 64.57955801104973,
           "is_penalty_taker": false,
           "is_set_piece_taker": false,
           "expected_shots": 0.0,
@@ -216525,6 +216503,27 @@
           "expected_saves": 0.0
         },
         {
+          "player_id": 335,
+          "name": "Stach",
+          "position": "MID",
+          "anytime_goal_prob": 0.11346772466371269,
+          "anytime_goal_prob_pre_availability": 0.11346772466371269,
+          "anytime_assist_prob": 0.18988699355273309,
+          "anytime_goal_contribution_prob": 0.2818086731147841,
+          "status": "a",
+          "news": "",
+          "confidence": "prior_season",
+          "predicted_starter": false,
+          "confirmed_starter": false,
+          "expected_minutes": 41.98088414634147,
+          "is_penalty_taker": false,
+          "is_set_piece_taker": true,
+          "expected_shots": 0.27013612862048897,
+          "expected_shots_on_target": 0.09004537620682965,
+          "anytime_shot_on_target_prob": 0.08611028451838476,
+          "expected_saves": 0.0
+        },
+        {
           "player_id": 648,
           "name": "Bahoya",
           "position": "MID",
@@ -216538,27 +216537,6 @@
           "predicted_starter": false,
           "confirmed_starter": false,
           "expected_minutes": 20.44454248366013,
-          "is_penalty_taker": false,
-          "is_set_piece_taker": false,
-          "expected_shots": 0.0,
-          "expected_shots_on_target": 0.0,
-          "anytime_shot_on_target_prob": 0.0,
-          "expected_saves": 0.0
-        },
-        {
-          "player_id": 598,
-          "name": "Elvedi",
-          "position": "DEF",
-          "anytime_goal_prob": 0.09625276133991434,
-          "anytime_goal_prob_pre_availability": 0.09625276133991434,
-          "anytime_assist_prob": 0.07980828098437787,
-          "anytime_goal_contribution_prob": 0.16837927490175408,
-          "status": "a",
-          "news": "",
-          "confidence": "position_avg",
-          "predicted_starter": true,
-          "confirmed_starter": false,
-          "expected_minutes": 64.57955801104973,
           "is_penalty_taker": false,
           "is_set_piece_taker": false,
           "expected_shots": 0.0,
@@ -218235,6 +218213,27 @@
           "expected_saves": 0.0
         },
         {
+          "player_id": 335,
+          "name": "Stach",
+          "position": "MID",
+          "anytime_goal_prob": 0.1217916965765321,
+          "anytime_goal_prob_pre_availability": 0.1217916965765321,
+          "anytime_assist_prob": 0.20022305672418506,
+          "anytime_goal_contribution_prob": 0.2976292475285395,
+          "status": "a",
+          "news": "",
+          "confidence": "prior_season",
+          "predicted_starter": false,
+          "confirmed_starter": false,
+          "expected_minutes": 41.98088414634147,
+          "is_penalty_taker": false,
+          "is_set_piece_taker": true,
+          "expected_shots": 0.29129551169355333,
+          "expected_shots_on_target": 0.09709850389785109,
+          "anytime_shot_on_target_prob": 0.0925333872679781,
+          "expected_saves": 0.0
+        },
+        {
           "player_id": 648,
           "name": "Bahoya",
           "position": "MID",
@@ -218248,27 +218247,6 @@
           "predicted_starter": false,
           "confirmed_starter": false,
           "expected_minutes": 20.44454248366013,
-          "is_penalty_taker": false,
-          "is_set_piece_taker": false,
-          "expected_shots": 0.0,
-          "expected_shots_on_target": 0.0,
-          "anytime_shot_on_target_prob": 0.0,
-          "expected_saves": 0.0
-        },
-        {
-          "player_id": 598,
-          "name": "Elvedi",
-          "position": "DEF",
-          "anytime_goal_prob": 0.10338870540887424,
-          "anytime_goal_prob_pre_availability": 0.10338870540887424,
-          "anytime_assist_prob": 0.08578369993277135,
-          "anytime_goal_contribution_prob": 0.180303339660413,
-          "status": "a",
-          "news": "",
-          "confidence": "position_avg",
-          "predicted_starter": true,
-          "confirmed_starter": false,
-          "expected_minutes": 64.57955801104973,
           "is_penalty_taker": false,
           "is_set_piece_taker": false,
           "expected_shots": 0.0,
@@ -219431,6 +219409,27 @@
           "expected_saves": 0.0
         },
         {
+          "player_id": 335,
+          "name": "Stach",
+          "position": "MID",
+          "anytime_goal_prob": 0.05937950119240876,
+          "anytime_goal_prob_pre_availability": 0.05937950119240876,
+          "anytime_assist_prob": 0.1317153045939934,
+          "anytime_goal_contribution_prob": 0.1832736167002046,
+          "status": "a",
+          "news": "",
+          "confidence": "prior_season",
+          "predicted_starter": false,
+          "confirmed_starter": false,
+          "expected_minutes": 41.98088414634147,
+          "is_penalty_taker": false,
+          "is_set_piece_taker": true,
+          "expected_shots": 0.1473129023894126,
+          "expected_shots_on_target": 0.049104300796470865,
+          "anytime_shot_on_target_prob": 0.04791817837266177,
+          "expected_saves": 0.0
+        },
+        {
           "player_id": 338,
           "name": "Ampadu",
           "position": "MID",
@@ -219444,27 +219443,6 @@
           "predicted_starter": true,
           "confirmed_starter": false,
           "expected_minutes": 78.52551903114188,
-          "is_penalty_taker": false,
-          "is_set_piece_taker": false,
-          "expected_shots": 0.0,
-          "expected_shots_on_target": 0.0,
-          "anytime_shot_on_target_prob": 0.0,
-          "expected_saves": 0.0
-        },
-        {
-          "player_id": 598,
-          "name": "Elvedi",
-          "position": "DEF",
-          "anytime_goal_prob": 0.05085763532903109,
-          "anytime_goal_prob_pre_availability": 0.05085763532903109,
-          "anytime_assist_prob": 0.043068777493416976,
-          "anytime_goal_contribution_prob": 0.09173603664262064,
-          "status": "a",
-          "news": "",
-          "confidence": "position_avg",
-          "predicted_starter": true,
-          "confirmed_starter": false,
-          "expected_minutes": 64.57955801104973,
           "is_penalty_taker": false,
           "is_set_piece_taker": false,
           "expected_shots": 0.0,
@@ -220331,27 +220309,6 @@
       ],
       "away_players": [
         {
-          "player_id": 552,
-          "name": "Brobbey",
-          "position": "FWD",
-          "anytime_goal_prob": 0.29490091297861587,
-          "anytime_goal_prob_pre_availability": 0.3724232153205381,
-          "anytime_assist_prob": 0.0951649611366786,
-          "anytime_goal_contribution_prob": 0.36200164019251346,
-          "status": "d",
-          "news": "Muscular injury - 75% chance of playing",
-          "confidence": "prior_season",
-          "predicted_starter": true,
-          "confirmed_starter": false,
-          "expected_minutes": 44.31692185850053,
-          "is_penalty_taker": false,
-          "is_set_piece_taker": false,
-          "expected_shots": 0.11780593291240367,
-          "expected_shots_on_target": 0.0,
-          "anytime_shot_on_target_prob": 0.0,
-          "expected_saves": 0.0
-        },
-        {
           "player_id": 542,
           "name": "E.Le F\u00e9e",
           "position": "MID",
@@ -220494,6 +220451,27 @@
           "is_penalty_taker": false,
           "is_set_piece_taker": false,
           "expected_shots": 0.18123684476186339,
+          "expected_shots_on_target": 0.0,
+          "anytime_shot_on_target_prob": 0.0,
+          "expected_saves": 0.0
+        },
+        {
+          "player_id": 646,
+          "name": "Fofana",
+          "position": "MID",
+          "anytime_goal_prob": 0.05523248973918382,
+          "anytime_goal_prob_pre_availability": 0.05523248973918382,
+          "anytime_assist_prob": 0.04394548845813795,
+          "anytime_goal_contribution_prob": 0.0967507594569742,
+          "status": "a",
+          "news": "",
+          "confidence": "position_avg",
+          "predicted_starter": false,
+          "confirmed_starter": false,
+          "expected_minutes": 22.604779411764707,
+          "is_penalty_taker": false,
+          "is_set_piece_taker": false,
+          "expected_shots": 0.0,
           "expected_shots_on_target": 0.0,
           "anytime_shot_on_target_prob": 0.0,
           "expected_saves": 0.0
@@ -224777,27 +224755,6 @@
       ],
       "away_players": [
         {
-          "player_id": 552,
-          "name": "Brobbey",
-          "position": "FWD",
-          "anytime_goal_prob": 0.29749457653886413,
-          "anytime_goal_prob_pre_availability": 0.3754993301295355,
-          "anytime_assist_prob": 0.09611879195035,
-          "anytime_goal_contribution_prob": 0.36501854918051746,
-          "status": "d",
-          "news": "Muscular injury - 75% chance of playing",
-          "confidence": "prior_season",
-          "predicted_starter": true,
-          "confirmed_starter": false,
-          "expected_minutes": 44.31692185850053,
-          "is_penalty_taker": false,
-          "is_set_piece_taker": false,
-          "expected_shots": 0.11904840513500242,
-          "expected_shots_on_target": 0.0,
-          "anytime_shot_on_target_prob": 0.0,
-          "expected_saves": 0.0
-        },
-        {
           "player_id": 542,
           "name": "E.Le F\u00e9e",
           "position": "MID",
@@ -224940,6 +224897,27 @@
           "is_penalty_taker": false,
           "is_set_piece_taker": false,
           "expected_shots": 0.1831483082999137,
+          "expected_shots_on_target": 0.0,
+          "anytime_shot_on_target_prob": 0.0,
+          "expected_saves": 0.0
+        },
+        {
+          "player_id": 646,
+          "name": "Fofana",
+          "position": "MID",
+          "anytime_goal_prob": 0.05579845280874007,
+          "anytime_goal_prob_pre_availability": 0.05579845280874007,
+          "anytime_assist_prob": 0.04439852755694562,
+          "anytime_goal_contribution_prob": 0.09771961122102191,
+          "status": "a",
+          "news": "",
+          "confidence": "position_avg",
+          "predicted_starter": false,
+          "confirmed_starter": false,
+          "expected_minutes": 22.604779411764707,
+          "is_penalty_taker": false,
+          "is_set_piece_taker": false,
+          "expected_shots": 0.0,
           "expected_shots_on_target": 0.0,
           "anytime_shot_on_target_prob": 0.0,
           "expected_saves": 0.0
@@ -239676,9 +239654,9 @@
         }
       ],
       "value_bets": {
-        "n_flagged": 123,
+        "n_flagged": 124,
         "n_resolved": 93,
-        "n_pending": 30,
+        "n_pending": 31,
         "wins": 40,
         "losses": 53,
         "win_rate": 43.01075268817204,
@@ -239688,7 +239666,7 @@
         "n_staked": 77,
         "staking": "kelly",
         "first_flagged_at": "2026-10-10T11:30:00",
-        "last_flagged_at": "2026-12-02T20:15:00"
+        "last_flagged_at": "2026-12-03T20:00:00"
       }
     },
     "teams": {
@@ -246455,8 +246433,8 @@
           "name": "Hudson-Odoi",
           "team": "Nott'm Forest",
           "position": "MID",
-          "status": "a",
-          "chance_of_playing": 100,
+          "status": "i",
+          "chance_of_playing": 0,
           "minutes": 45,
           "starts": 0,
           "goals": 0,
@@ -246469,15 +246447,15 @@
           "ict": 2.2,
           "bps": 15,
           "bonus": 0,
-          "news": "",
+          "news": "Unspecified injury - Unknown return date",
           "quality_rating": 51.4,
           "form_rating": 0.0,
           "live_form_rating": 16.7,
           "live_form_vs_quality": -34.7,
           "overall_rating": 51.4,
-          "current_impact_rating": 14.3,
+          "current_impact_rating": 0.0,
           "rating_driver": "Expected goal involvements",
-          "rating_expected_minutes": 25.0,
+          "rating_expected_minutes": 0.0,
           "rating_status": "established",
           "rating_evidence_minutes": 5874.0,
           "rating_model_source": "data_led_multiseason_role_evidence"
@@ -249687,8 +249665,8 @@
           "name": "Xhaka",
           "team": "Sunderland",
           "position": "MID",
-          "status": "d",
-          "chance_of_playing": 75,
+          "status": "i",
+          "chance_of_playing": 0,
           "minutes": 813,
           "starts": 10,
           "goals": 0,
@@ -249701,15 +249679,15 @@
           "ict": 48.9,
           "bps": 185,
           "bonus": 5,
-          "news": "Calf injury - 75% chance of playing",
+          "news": "Calf injury - Unknown return date",
           "quality_rating": null,
           "form_rating": 6.3,
           "live_form_rating": 38.3,
           "live_form_vs_quality": null,
           "overall_rating": null,
-          "current_impact_rating": 17.5,
+          "current_impact_rating": 0.0,
           "rating_driver": "Bonus Point System",
-          "rating_expected_minutes": 54.7,
+          "rating_expected_minutes": 0.0,
           "rating_status": "limited",
           "rating_evidence_minutes": 2901.0,
           "rating_model_source": "data_led_multiseason_role_evidence"
@@ -250488,7 +250466,7 @@
           "team": "Coventry",
           "position": "DEF",
           "status": "d",
-          "chance_of_playing": 50,
+          "chance_of_playing": 75,
           "minutes": 676,
           "starts": 8,
           "goals": 0,
@@ -250501,15 +250479,15 @@
           "ict": 27.4,
           "bps": 103,
           "bonus": 3,
-          "news": "Calf injury - 50% chance of playing",
+          "news": "Calf injury - 75% chance of playing",
           "quality_rating": null,
           "form_rating": 5.4,
           "live_form_rating": 21.2,
           "live_form_vs_quality": null,
           "overall_rating": null,
-          "current_impact_rating": 4.2,
+          "current_impact_rating": 9.4,
           "rating_driver": "Bps",
-          "rating_expected_minutes": 35.6,
+          "rating_expected_minutes": 53.4,
           "rating_status": "provisional",
           "rating_evidence_minutes": 0.0,
           "rating_model_source": "data_led_multiseason_role_evidence"
@@ -250519,8 +250497,8 @@
           "name": "Stach",
           "team": "Leeds",
           "position": "MID",
-          "status": "d",
-          "chance_of_playing": 50,
+          "status": "a",
+          "chance_of_playing": 100,
           "minutes": 676,
           "starts": 7,
           "goals": 1,
@@ -250533,15 +250511,15 @@
           "ict": 39.7,
           "bps": 123,
           "bonus": 3,
-          "news": "Foot injury - 50% chance of playing",
+          "news": "",
           "quality_rating": null,
           "form_rating": 6.0,
           "live_form_rating": 20.3,
           "live_form_vs_quality": null,
           "overall_rating": null,
-          "current_impact_rating": 3.7,
+          "current_impact_rating": 14.7,
           "rating_driver": "Expected goal involvements",
-          "rating_expected_minutes": 32.7,
+          "rating_expected_minutes": 65.4,
           "rating_status": "limited",
           "rating_evidence_minutes": 2369.0,
           "rating_model_source": "data_led_multiseason_role_evidence"
@@ -250839,8 +250817,8 @@
           "name": "Gudmundsson",
           "team": "Leeds",
           "position": "DEF",
-          "status": "d",
-          "chance_of_playing": 75,
+          "status": "a",
+          "chance_of_playing": 100,
           "minutes": 631,
           "starts": 8,
           "goals": 0,
@@ -250853,15 +250831,15 @@
           "ict": 20.7,
           "bps": 120,
           "bonus": 0,
-          "news": "Hamstring injury - 75% chance of playing",
+          "news": "",
           "quality_rating": null,
           "form_rating": 6.5,
           "live_form_rating": 45.5,
           "live_form_vs_quality": null,
           "overall_rating": null,
-          "current_impact_rating": 21.2,
+          "current_impact_rating": 37.6,
           "rating_driver": "Bonus Point System",
-          "rating_expected_minutes": 55.8,
+          "rating_expected_minutes": 74.4,
           "rating_status": "limited",
           "rating_evidence_minutes": 2637.0,
           "rating_model_source": "data_led_multiseason_role_evidence"
@@ -250935,8 +250913,8 @@
           "name": "Brobbey",
           "team": "Sunderland",
           "position": "FWD",
-          "status": "d",
-          "chance_of_playing": 75,
+          "status": "i",
+          "chance_of_playing": 0,
           "minutes": 619,
           "starts": 8,
           "goals": 3,
@@ -250949,15 +250927,15 @@
           "ict": 39.5,
           "bps": 130,
           "bonus": 3,
-          "news": "Muscular injury - 75% chance of playing",
+          "news": "Muscular injury - Unknown return date",
           "quality_rating": null,
           "form_rating": 10.8,
           "live_form_rating": 38.3,
           "live_form_vs_quality": null,
           "overall_rating": null,
-          "current_impact_rating": 18.0,
+          "current_impact_rating": 0.0,
           "rating_driver": "Expected goals",
-          "rating_expected_minutes": 56.6,
+          "rating_expected_minutes": 0.0,
           "rating_status": "limited",
           "rating_evidence_minutes": 1920.0,
           "rating_model_source": "data_led_multiseason_role_evidence"
@@ -252248,7 +252226,7 @@
           "team": "Coventry",
           "position": "MID",
           "status": "d",
-          "chance_of_playing": 50,
+          "chance_of_playing": 75,
           "minutes": 379,
           "starts": 4,
           "goals": 0,
@@ -252261,15 +252239,15 @@
           "ict": 7.8,
           "bps": 53,
           "bonus": 0,
-          "news": "Groin injury - 50% chance of playing",
+          "news": "Groin injury - 75% chance of playing",
           "quality_rating": null,
           "form_rating": 2.2,
           "live_form_rating": 16.7,
           "live_form_vs_quality": null,
           "overall_rating": null,
-          "current_impact_rating": 3.1,
+          "current_impact_rating": 6.9,
           "rating_driver": "Goal Contributions",
-          "rating_expected_minutes": 33.1,
+          "rating_expected_minutes": 49.6,
           "rating_status": "limited",
           "rating_evidence_minutes": 1258.0,
           "rating_model_source": "data_led_multiseason_role_evidence"
@@ -259365,7 +259343,7 @@
           "ict": 0.0,
           "bps": 0,
           "bonus": 0,
-          "news": "Thigh injury - Unknown return date",
+          "news": "Lack of match fitness - Unknown return date",
           "quality_rating": null,
           "form_rating": 0.0,
           "live_form_rating": 14.0,
@@ -280222,7 +280200,7 @@
   "fpl": {
     "projections": {
       "gameweek": 11,
-      "generated_at": "2026-11-19T01:23:04.110307+00:00",
+      "generated_at": "2026-11-19T17:18:56.522969+00:00",
       "model_source": "hybrid_match_context_baseline",
       "data_freshness": "live official FPL API + independent pre-match scoreline model",
       "players": [
@@ -284739,6 +284717,38 @@
           ]
         },
         {
+          "player_id": 331,
+          "name": "Gabriel Gudmundsson",
+          "web_name": "Gudmundsson",
+          "team": "Leeds",
+          "team_id": 13,
+          "position": "DEF",
+          "price": 4.5,
+          "status": "a",
+          "news": "",
+          "availability": 1.0,
+          "expected_minutes": 74.4,
+          "projected_points": 3.5,
+          "fixture_count": 1,
+          "fixtures": [
+            {
+              "was_home": false,
+              "difficulty": 4,
+              "expected_goals": 1.33,
+              "clean_sheet_probability": 0.215,
+              "expected_minutes": 74.4,
+              "opponent": "Chelsea",
+              "model_source": "independent_scoreline"
+            }
+          ],
+          "drivers": [
+            "1 fixture",
+            "74 expected minutes",
+            "form 3.0",
+            "1.33 expected team goals"
+          ]
+        },
+        {
           "player_id": 372,
           "name": "Alexis Mac Allister",
           "web_name": "Mac Allister",
@@ -284800,38 +284810,6 @@
             "69 expected minutes",
             "form 5.3",
             "1.08 expected team goals"
-          ]
-        },
-        {
-          "player_id": 552,
-          "name": "Brian Brobbey",
-          "web_name": "Brobbey",
-          "team": "Sunderland",
-          "team_id": 20,
-          "position": "FWD",
-          "price": 5.7,
-          "status": "d",
-          "news": "Muscular injury - 75% chance of playing",
-          "availability": 0.75,
-          "expected_minutes": 56.6,
-          "projected_points": 3.48,
-          "fixture_count": 1,
-          "fixtures": [
-            {
-              "was_home": false,
-              "difficulty": 3,
-              "expected_goals": 1.33,
-              "clean_sheet_probability": 0.172,
-              "expected_minutes": 56.6,
-              "opponent": "Aston Villa",
-              "model_source": "independent_scoreline"
-            }
-          ],
-          "drivers": [
-            "1 fixture",
-            "57 expected minutes",
-            "form 2.7",
-            "1.33 expected team goals"
           ]
         },
         {
@@ -285955,6 +285933,38 @@
           ]
         },
         {
+          "player_id": 173,
+          "name": "Bobby Thomas",
+          "web_name": "Thomas",
+          "team": "Coventry City",
+          "team_id": 7,
+          "position": "DEF",
+          "price": 4.0,
+          "status": "d",
+          "news": "Calf injury - 75% chance of playing",
+          "availability": 0.75,
+          "expected_minutes": 53.4,
+          "projected_points": 3.27,
+          "fixture_count": 1,
+          "fixtures": [
+            {
+              "was_home": true,
+              "difficulty": 2,
+              "expected_goals": 1.36,
+              "clean_sheet_probability": 0.319,
+              "expected_minutes": 53.4,
+              "opponent": "Crystal Palace",
+              "model_source": "independent_scoreline"
+            }
+          ],
+          "drivers": [
+            "1 fixture",
+            "53 expected minutes",
+            "form 0.3",
+            "1.36 expected team goals"
+          ]
+        },
+        {
           "player_id": 419,
           "name": "Lisandro Mart\u00ednez",
           "web_name": "Martinez",
@@ -286144,38 +286154,6 @@
             "68 expected minutes",
             "form 3.3",
             "1.00 expected team goals"
-          ]
-        },
-        {
-          "player_id": 331,
-          "name": "Gabriel Gudmundsson",
-          "web_name": "Gudmundsson",
-          "team": "Leeds",
-          "team_id": 13,
-          "position": "DEF",
-          "price": 4.5,
-          "status": "d",
-          "news": "Hamstring injury - 75% chance of playing",
-          "availability": 0.75,
-          "expected_minutes": 55.8,
-          "projected_points": 3.24,
-          "fixture_count": 1,
-          "fixtures": [
-            {
-              "was_home": false,
-              "difficulty": 4,
-              "expected_goals": 1.33,
-              "clean_sheet_probability": 0.215,
-              "expected_minutes": 55.8,
-              "opponent": "Chelsea",
-              "model_source": "independent_scoreline"
-            }
-          ],
-          "drivers": [
-            "1 fixture",
-            "56 expected minutes",
-            "form 3.0",
-            "1.33 expected team goals"
           ]
         },
         {
@@ -287811,6 +287789,38 @@
           ]
         },
         {
+          "player_id": 335,
+          "name": "Anton Stach",
+          "web_name": "Stach",
+          "team": "Leeds",
+          "team_id": 13,
+          "position": "MID",
+          "price": 6.0,
+          "status": "a",
+          "news": "",
+          "availability": 1.0,
+          "expected_minutes": 65.4,
+          "projected_points": 3.02,
+          "fixture_count": 1,
+          "fixtures": [
+            {
+              "was_home": false,
+              "difficulty": 4,
+              "expected_goals": 1.33,
+              "clean_sheet_probability": 0.215,
+              "expected_minutes": 65.4,
+              "opponent": "Chelsea",
+              "model_source": "independent_scoreline"
+            }
+          ],
+          "drivers": [
+            "1 fixture",
+            "65 expected minutes",
+            "form 0.7",
+            "1.33 expected team goals"
+          ]
+        },
+        {
           "player_id": 71,
           "name": "Lewis Cook",
           "web_name": "Cook",
@@ -289312,38 +289322,6 @@
             "64 expected minutes",
             "form 0.0",
             "1.28 expected team goals"
-          ]
-        },
-        {
-          "player_id": 544,
-          "name": "Granit Xhaka",
-          "web_name": "Xhaka",
-          "team": "Sunderland",
-          "team_id": 20,
-          "position": "MID",
-          "price": 5.3,
-          "status": "d",
-          "news": "Calf injury - 75% chance of playing",
-          "availability": 0.75,
-          "expected_minutes": 54.7,
-          "projected_points": 2.78,
-          "fixture_count": 1,
-          "fixtures": [
-            {
-              "was_home": false,
-              "difficulty": 3,
-              "expected_goals": 1.33,
-              "clean_sheet_probability": 0.172,
-              "expected_minutes": 54.7,
-              "opponent": "Aston Villa",
-              "model_source": "independent_scoreline"
-            }
-          ],
-          "drivers": [
-            "1 fixture",
-            "55 expected minutes",
-            "form 2.7",
-            "1.33 expected team goals"
           ]
         },
         {
@@ -291011,18 +290989,18 @@
           ]
         },
         {
-          "player_id": 173,
-          "name": "Bobby Thomas",
-          "web_name": "Thomas",
+          "player_id": 104,
+          "name": "Frank Onyeka",
+          "web_name": "Onyeka",
           "team": "Coventry City",
           "team_id": 7,
-          "position": "DEF",
-          "price": 4.0,
+          "position": "MID",
+          "price": 4.8,
           "status": "d",
-          "news": "Calf injury - 50% chance of playing",
-          "availability": 0.5,
-          "expected_minutes": 35.6,
-          "projected_points": 2.19,
+          "news": "Groin injury - 75% chance of playing",
+          "availability": 0.75,
+          "expected_minutes": 49.6,
+          "projected_points": 2.14,
           "fixture_count": 1,
           "fixtures": [
             {
@@ -291030,14 +291008,14 @@
               "difficulty": 2,
               "expected_goals": 1.36,
               "clean_sheet_probability": 0.319,
-              "expected_minutes": 35.6,
+              "expected_minutes": 49.6,
               "opponent": "Crystal Palace",
               "model_source": "independent_scoreline"
             }
           ],
           "drivers": [
             "1 fixture",
-            "36 expected minutes",
+            "50 expected minutes",
             "form 0.3",
             "1.36 expected team goals"
           ]
@@ -291875,38 +291853,6 @@
           ]
         },
         {
-          "player_id": 335,
-          "name": "Anton Stach",
-          "web_name": "Stach",
-          "team": "Leeds",
-          "team_id": 13,
-          "position": "MID",
-          "price": 6.0,
-          "status": "d",
-          "news": "Foot injury - 50% chance of playing",
-          "availability": 0.5,
-          "expected_minutes": 32.7,
-          "projected_points": 1.65,
-          "fixture_count": 1,
-          "fixtures": [
-            {
-              "was_home": false,
-              "difficulty": 4,
-              "expected_goals": 1.33,
-              "clean_sheet_probability": 0.215,
-              "expected_minutes": 32.7,
-              "opponent": "Chelsea",
-              "model_source": "independent_scoreline"
-            }
-          ],
-          "drivers": [
-            "1 fixture",
-            "33 expected minutes",
-            "form 0.7",
-            "1.33 expected team goals"
-          ]
-        },
-        {
           "player_id": 614,
           "name": "Jaouen Hadjam",
           "web_name": "Hadjam",
@@ -292351,38 +292297,6 @@
             "1 fixture",
             "25 expected minutes",
             "form 0.7",
-            "1.36 expected team goals"
-          ]
-        },
-        {
-          "player_id": 104,
-          "name": "Frank Onyeka",
-          "web_name": "Onyeka",
-          "team": "Coventry City",
-          "team_id": 7,
-          "position": "MID",
-          "price": 4.8,
-          "status": "d",
-          "news": "Groin injury - 50% chance of playing",
-          "availability": 0.5,
-          "expected_minutes": 33.1,
-          "projected_points": 1.44,
-          "fixture_count": 1,
-          "fixtures": [
-            {
-              "was_home": true,
-              "difficulty": 2,
-              "expected_goals": 1.36,
-              "clean_sheet_probability": 0.319,
-              "expected_minutes": 33.1,
-              "opponent": "Crystal Palace",
-              "model_source": "independent_scoreline"
-            }
-          ],
-          "drivers": [
-            "1 fixture",
-            "33 expected minutes",
-            "form 0.3",
             "1.36 expected team goals"
           ]
         },
@@ -293376,38 +293290,6 @@
             "25 expected minutes",
             "form 0.3",
             "1.69 expected team goals"
-          ]
-        },
-        {
-          "player_id": 482,
-          "name": "Callum Hudson-Odoi",
-          "web_name": "Hudson-Odoi",
-          "team": "Nott'm Forest",
-          "team_id": 18,
-          "position": "MID",
-          "price": 5.7,
-          "status": "a",
-          "news": "",
-          "availability": 1.0,
-          "expected_minutes": 25.0,
-          "projected_points": 1.3,
-          "fixture_count": 1,
-          "fixtures": [
-            {
-              "was_home": false,
-              "difficulty": 4,
-              "expected_goals": 1.26,
-              "clean_sheet_probability": 0.176,
-              "expected_minutes": 25.0,
-              "opponent": "Bournemouth",
-              "model_source": "independent_scoreline"
-            }
-          ],
-          "drivers": [
-            "1 fixture",
-            "25 expected minutes",
-            "form 0.3",
-            "1.26 expected team goals"
           ]
         },
         {
@@ -296355,6 +296237,70 @@
           ]
         },
         {
+          "player_id": 544,
+          "name": "Granit Xhaka",
+          "web_name": "Xhaka",
+          "team": "Sunderland",
+          "team_id": 20,
+          "position": "MID",
+          "price": 5.3,
+          "status": "i",
+          "news": "Calf injury - Unknown return date",
+          "availability": 0.0,
+          "expected_minutes": 0.0,
+          "projected_points": 0.34,
+          "fixture_count": 1,
+          "fixtures": [
+            {
+              "was_home": false,
+              "difficulty": 3,
+              "expected_goals": 1.33,
+              "clean_sheet_probability": 0.172,
+              "expected_minutes": 0.0,
+              "opponent": "Aston Villa",
+              "model_source": "independent_scoreline"
+            }
+          ],
+          "drivers": [
+            "1 fixture",
+            "0 expected minutes",
+            "form 2.7",
+            "1.33 expected team goals"
+          ]
+        },
+        {
+          "player_id": 552,
+          "name": "Brian Brobbey",
+          "web_name": "Brobbey",
+          "team": "Sunderland",
+          "team_id": 20,
+          "position": "FWD",
+          "price": 5.7,
+          "status": "i",
+          "news": "Muscular injury - Unknown return date",
+          "availability": 0.0,
+          "expected_minutes": 0.0,
+          "projected_points": 0.34,
+          "fixture_count": 1,
+          "fixtures": [
+            {
+              "was_home": false,
+              "difficulty": 3,
+              "expected_goals": 1.33,
+              "clean_sheet_probability": 0.172,
+              "expected_minutes": 0.0,
+              "opponent": "Aston Villa",
+              "model_source": "independent_scoreline"
+            }
+          ],
+          "drivers": [
+            "1 fixture",
+            "0 expected minutes",
+            "form 2.7",
+            "1.33 expected team goals"
+          ]
+        },
+        {
           "player_id": 103,
           "name": "Josh Dasilva",
           "web_name": "Dasilva",
@@ -296608,6 +296554,38 @@
             "0 expected minutes",
             "form 0.3",
             "0.80 expected team goals"
+          ]
+        },
+        {
+          "player_id": 482,
+          "name": "Callum Hudson-Odoi",
+          "web_name": "Hudson-Odoi",
+          "team": "Nott'm Forest",
+          "team_id": 18,
+          "position": "MID",
+          "price": 5.7,
+          "status": "i",
+          "news": "Unspecified injury - Unknown return date",
+          "availability": 0.0,
+          "expected_minutes": 0.0,
+          "projected_points": 0.04,
+          "fixture_count": 1,
+          "fixtures": [
+            {
+              "was_home": false,
+              "difficulty": 4,
+              "expected_goals": 1.26,
+              "clean_sheet_probability": 0.176,
+              "expected_minutes": 0.0,
+              "opponent": "Bournemouth",
+              "model_source": "independent_scoreline"
+            }
+          ],
+          "drivers": [
+            "1 fixture",
+            "0 expected minutes",
+            "form 0.3",
+            "1.26 expected team goals"
           ]
         },
         {
@@ -298379,7 +298357,7 @@
           "position": "FWD",
           "price": 5.3,
           "status": "i",
-          "news": "Thigh injury - Unknown return date",
+          "news": "Lack of match fitness - Unknown return date",
           "availability": 0.0,
           "expected_minutes": 0.0,
           "projected_points": 0.0,
