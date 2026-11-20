@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T17:00:31.265771+00:00",
+  "generated_at": "2026-11-20T19:05:53.101395+00:00",
   "model_fingerprint": "38d8e310d6f6316d0951a40c95e0f4ed51eebba2ee04dd34a0c17d27ad09a9ad",
   "calibration": {
     "model": {
@@ -242212,7 +242212,7 @@
           "ict": 35.1,
           "bps": 154,
           "bonus": 4,
-          "news": "Unspecified injury - 75% chance of playing",
+          "news": "Hip injury - 75% chance of playing",
           "quality_rating": 72.1,
           "form_rating": 8.4,
           "live_form_rating": 18.5,
@@ -251748,7 +251748,7 @@
           "ict": 17.8,
           "bps": 72,
           "bonus": 2,
-          "news": "Unspecified injury - Unknown return date",
+          "news": "Back injury - Unknown return date",
           "quality_rating": null,
           "form_rating": 8.5,
           "live_form_rating": 36.5,
@@ -253142,8 +253142,8 @@
           "name": "Heaven",
           "team": "Man United",
           "position": "DEF",
-          "status": "a",
-          "chance_of_playing": 100,
+          "status": "d",
+          "chance_of_playing": 75,
           "minutes": 224,
           "starts": 2,
           "goals": 0,
@@ -253156,15 +253156,15 @@
           "ict": 5.4,
           "bps": 12,
           "bonus": 0,
-          "news": "",
+          "news": "Unspecified injury - 75% chance of playing",
           "quality_rating": null,
           "form_rating": 0.0,
           "live_form_rating": 18.5,
           "live_form_vs_quality": null,
           "overall_rating": null,
-          "current_impact_rating": 12.3,
+          "current_impact_rating": 6.9,
           "rating_driver": "Bonus Point System",
-          "rating_expected_minutes": 59.8,
+          "rating_expected_minutes": 44.9,
           "rating_status": "limited",
           "rating_evidence_minutes": 1089.0,
           "rating_model_source": "data_led_multiseason_role_evidence"
@@ -261878,8 +261878,8 @@
           "name": "Darlow",
           "team": "Man United",
           "position": "GK",
-          "status": "a",
-          "chance_of_playing": 100,
+          "status": "d",
+          "chance_of_playing": 75,
           "minutes": 0,
           "starts": 0,
           "goals": 0,
@@ -261892,15 +261892,15 @@
           "ict": 0.0,
           "bps": 0,
           "bonus": 0,
-          "news": "",
+          "news": "Unspecified injury - 75% chance of playing",
           "quality_rating": null,
           "form_rating": 0.0,
           "live_form_rating": 18.5,
           "live_form_vs_quality": null,
           "overall_rating": null,
-          "current_impact_rating": 5.1,
+          "current_impact_rating": 2.9,
           "rating_driver": "Bonus Point System",
-          "rating_expected_minutes": 25.0,
+          "rating_expected_minutes": 18.8,
           "rating_status": "limited",
           "rating_evidence_minutes": 1980.0,
           "rating_model_source": "data_led_multiseason_role_evidence"
@@ -279901,7 +279901,7 @@
   "fpl": {
     "projections": {
       "gameweek": 11,
-      "generated_at": "2026-11-20T17:00:31.212297+00:00",
+      "generated_at": "2026-11-20T19:05:53.053114+00:00",
       "model_source": "hybrid_match_context_baseline",
       "data_freshness": "live official FPL API + independent pre-match scoreline model",
       "players": [
@@ -281354,7 +281354,7 @@
           "position": "DEF",
           "price": 6.0,
           "status": "d",
-          "news": "Unspecified injury - 75% chance of playing",
+          "news": "Hip injury - 75% chance of playing",
           "availability": 0.75,
           "expected_minutes": 55.3,
           "projected_points": 4.37,
@@ -287874,38 +287874,6 @@
           ]
         },
         {
-          "player_id": 421,
-          "name": "Ayden Heaven",
-          "web_name": "Heaven",
-          "team": "Man Utd",
-          "team_id": 16,
-          "position": "DEF",
-          "price": 4.3,
-          "status": "a",
-          "news": "",
-          "availability": 1.0,
-          "expected_minutes": 59.8,
-          "projected_points": 2.98,
-          "fixture_count": 1,
-          "fixtures": [
-            {
-              "was_home": false,
-              "difficulty": 4,
-              "expected_goals": 1.62,
-              "clean_sheet_probability": 0.185,
-              "expected_minutes": 59.8,
-              "opponent": "Liverpool",
-              "model_source": "independent_scoreline"
-            }
-          ],
-          "drivers": [
-            "1 fixture",
-            "60 expected minutes",
-            "form 0.0",
-            "1.62 expected team goals"
-          ]
-        },
-        {
           "player_id": 186,
           "name": "Ephron Mason-Clark",
           "web_name": "Mason-Clark",
@@ -290690,6 +290658,38 @@
           ]
         },
         {
+          "player_id": 421,
+          "name": "Ayden Heaven",
+          "web_name": "Heaven",
+          "team": "Man Utd",
+          "team_id": 16,
+          "position": "DEF",
+          "price": 4.3,
+          "status": "d",
+          "news": "Unspecified injury - 75% chance of playing",
+          "availability": 0.75,
+          "expected_minutes": 44.9,
+          "projected_points": 2.24,
+          "fixture_count": 1,
+          "fixtures": [
+            {
+              "was_home": false,
+              "difficulty": 4,
+              "expected_goals": 1.62,
+              "clean_sheet_probability": 0.185,
+              "expected_minutes": 44.9,
+              "opponent": "Liverpool",
+              "model_source": "independent_scoreline"
+            }
+          ],
+          "drivers": [
+            "1 fixture",
+            "45 expected minutes",
+            "form 0.0",
+            "1.62 expected team goals"
+          ]
+        },
+        {
           "player_id": 104,
           "name": "Frank Onyeka",
           "web_name": "Onyeka",
@@ -293282,38 +293282,6 @@
           ]
         },
         {
-          "player_id": 325,
-          "name": "Karl Darlow",
-          "web_name": "Darlow",
-          "team": "Man Utd",
-          "team_id": 16,
-          "position": "GK",
-          "price": 4.5,
-          "status": "a",
-          "news": "",
-          "availability": 1.0,
-          "expected_minutes": 25.0,
-          "projected_points": 1.24,
-          "fixture_count": 1,
-          "fixtures": [
-            {
-              "was_home": false,
-              "difficulty": 4,
-              "expected_goals": 1.62,
-              "clean_sheet_probability": 0.185,
-              "expected_minutes": 25.0,
-              "opponent": "Liverpool",
-              "model_source": "independent_scoreline"
-            }
-          ],
-          "drivers": [
-            "1 fixture",
-            "25 expected minutes",
-            "form 0.0",
-            "1.62 expected team goals"
-          ]
-        },
-        {
           "player_id": 414,
           "name": "Tom Heaton",
           "web_name": "Heaton",
@@ -295522,6 +295490,38 @@
           ]
         },
         {
+          "player_id": 325,
+          "name": "Karl Darlow",
+          "web_name": "Darlow",
+          "team": "Man Utd",
+          "team_id": 16,
+          "position": "GK",
+          "price": 4.5,
+          "status": "d",
+          "news": "Unspecified injury - 75% chance of playing",
+          "availability": 0.75,
+          "expected_minutes": 18.8,
+          "projected_points": 0.93,
+          "fixture_count": 1,
+          "fixtures": [
+            {
+              "was_home": false,
+              "difficulty": 4,
+              "expected_goals": 1.62,
+              "clean_sheet_probability": 0.185,
+              "expected_minutes": 18.8,
+              "opponent": "Liverpool",
+              "model_source": "independent_scoreline"
+            }
+          ],
+          "drivers": [
+            "1 fixture",
+            "19 expected minutes",
+            "form 0.0",
+            "1.62 expected team goals"
+          ]
+        },
+        {
           "player_id": 270,
           "name": "Harrison Reed",
           "web_name": "Reed",
@@ -296010,7 +296010,7 @@
           "position": "DEF",
           "price": 4.5,
           "status": "i",
-          "news": "Unspecified injury - Unknown return date",
+          "news": "Back injury - Unknown return date",
           "availability": 0.0,
           "expected_minutes": 0.0,
           "projected_points": 0.25,
