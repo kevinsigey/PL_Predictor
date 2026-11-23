@@ -11780,17 +11780,17 @@
       "team_home": "Coventry",
       "team_away": "Crystal Palace",
       "home_win": {
-        "prob": 0.4795378008679576,
+        "prob": 0.3286060542719048,
         "implied": null,
         "edge": null
       },
       "draw": {
-        "prob": 0.2628069646127994,
+        "prob": 0.2738117854686001,
         "implied": null,
         "edge": null
       },
       "away_win": {
-        "prob": 0.257655234519243,
+        "prob": 0.39758216025949517,
         "implied": null,
         "edge": null
       },
@@ -14091,6 +14091,219 @@
       },
       "away_context": {
         "rest_days": 44,
+        "xg_for_last_5": 1.3658732,
+        "xg_against_last_5": 1.925214,
+        "corners_last_5": 4.2,
+        "cards_last_5": 1.8,
+        "set_piece_xg_share_last_5": 0.4568325107873913
+      },
+      "post_match": null,
+      "actual_stats": null,
+      "pre_match_value_bets": []
+    },
+    "560649": {
+      "event_id": "560649",
+      "commence_time": "2026-11-23T20:00:00Z",
+      "team_home": "Brentford",
+      "team_away": "Everton",
+      "home_win": {
+        "prob": 0.47498861775292156,
+        "implied": null,
+        "edge": null
+      },
+      "draw": {
+        "prob": 0.23715259307288078,
+        "implied": null,
+        "edge": null
+      },
+      "away_win": {
+        "prob": 0.2878587891741979,
+        "implied": null,
+        "edge": null
+      },
+      "over_2_5": {
+        "prob": 0.5761997422165189,
+        "implied": null,
+        "edge": null
+      },
+      "under_2_5": {
+        "prob": 0.42380025778348135,
+        "implied": null,
+        "edge": null
+      },
+      "btts_yes_prob": 0.592766980856096,
+      "top_scoreline": "1-1",
+      "predicted_result": "home_win",
+      "draw_signal": false,
+      "draw_risk": false,
+      "draw_risk_flag": false,
+      "is_fallback_prediction": false,
+      "data_confidence": "established",
+      "predicted_total_goals": 2.9972816705703735,
+      "predicted_margin": 0.42834389209747314,
+      "expected_home_goals": 1.7128127813339233,
+      "expected_away_goals": 1.2844688892364502,
+      "home_2plus_prob": 0.5107221742953233,
+      "away_2plus_prob": 0.36766452051106496,
+      "value_bet_flags": [],
+      "has_live_odds": false,
+      "odds_fetched_at": null,
+      "odds_is_stale": false,
+      "recommended_bet": null,
+      "score_grid": [
+        [
+          0.050039185526961925,
+          0.06427377705211343,
+          0.0412788335085797,
+          0.01767379247524724,
+          0.005675359147319089,
+          0.0014579644519949748
+        ],
+        [
+          0.08570775653811985,
+          0.11008894683946689,
+          0.07070291363205033,
+          0.030271897646246795,
+          0.00972082768618853,
+          0.0024972201481075016
+        ],
+        [
+          0.07340067042897391,
+          0.09428087761511487,
+          0.060550427073262164,
+          0.025925046601861915,
+          0.008324978953024193,
+          0.0021386352937415617
+        ],
+        [
+          0.041907202156408495,
+          0.053828497404849386,
+          0.03457051513543703,
+          0.014801583725448897,
+          0.004753043451691914,
+          0.001221027288577459
+        ],
+        [
+          0.017944797870860254,
+          0.02304953458875648,
+          0.01480320504531859,
+          0.006338085447233262,
+          0.0020352683935733543,
+          0.000522847786558244
+        ],
+        [
+          0.006147215830332644,
+          0.007895907489484095,
+          0.0050710237612657015,
+          0.002171190752641534,
+          0.0006972067435914807,
+          0.0001791080743018223
+        ]
+      ],
+      "top_scorelines": [
+        {
+          "home": 1,
+          "away": 1,
+          "prob": 0.11008894683946689
+        },
+        {
+          "home": 2,
+          "away": 1,
+          "prob": 0.09428087761511487
+        },
+        {
+          "home": 1,
+          "away": 0,
+          "prob": 0.08570775653811985
+        },
+        {
+          "home": 2,
+          "away": 0,
+          "prob": 0.07340067042897391
+        },
+        {
+          "home": 1,
+          "away": 2,
+          "prob": 0.07070291363205033
+        }
+      ],
+      "corners": {
+        "lambda_": 10.344498634338379,
+        "line": 9.5,
+        "over": 0.5843631790032008,
+        "under": 0.4156368209967992
+      },
+      "cards": {
+        "lambda_": 4.963044166564941,
+        "line": 3.5,
+        "over": 0.729748061896257,
+        "under": 0.27025193810374304
+      },
+      "home_shots": 14.698904991149902,
+      "away_shots": 11.832725524902344,
+      "home_shots_on_target": 4.991513729095459,
+      "away_shots_on_target": 3.6103672981262207,
+      "head_to_head": [
+        {
+          "date": "2026-04-11",
+          "team_home": "Brentford",
+          "team_away": "Everton",
+          "goals_home": 2,
+          "goals_away": 2
+        },
+        {
+          "date": "2026-01-04",
+          "team_home": "Everton",
+          "team_away": "Brentford",
+          "goals_home": 2,
+          "goals_away": 4
+        },
+        {
+          "date": "2025-02-26",
+          "team_home": "Brentford",
+          "team_away": "Everton",
+          "goals_home": 1,
+          "goals_away": 1
+        },
+        {
+          "date": "2024-11-23",
+          "team_home": "Everton",
+          "team_away": "Brentford",
+          "goals_home": 0,
+          "goals_away": 0
+        },
+        {
+          "date": "2024-04-27",
+          "team_home": "Everton",
+          "team_away": "Brentford",
+          "goals_home": 1,
+          "goals_away": 0
+        }
+      ],
+      "home_recent_form": [
+        "L",
+        "W",
+        "D",
+        "L",
+        "D"
+      ],
+      "away_recent_form": [
+        "W",
+        "W",
+        "L",
+        "L",
+        "D"
+      ],
+      "home_context": {
+        "rest_days": 15,
+        "xg_for_last_5": 1.9983575999999998,
+        "xg_against_last_5": 2.1402658000000003,
+        "corners_last_5": 3.4,
+        "cards_last_5": 3.2,
+        "set_piece_xg_share_last_5": 0.5660301760461861
+      },
+      "away_context": {
+        "rest_days": 17,
         "xg_for_last_5": 1.3658732,
         "xg_against_last_5": 1.925214,
         "corners_last_5": 4.2,
