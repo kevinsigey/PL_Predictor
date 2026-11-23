@@ -1249,6 +1249,16 @@ def fixture_detail(event_id: str, read_only: bool = False):
             raise HTTPException(status_code=404, detail=f"No fixture with event_id={event_id}")
         return cached
 
+    # A finished fixture can still sit in the odds table (or the live FPL
+    # window), but its odds there are recomputed from today's model state —
+    # which already saw the result. Prefer the honestly pre-kickoff-recorded
+    # probabilities whenever that kickoff is in the past (#129).
+    recorded = tracking_store.get_fixture_prediction(event_id)
+    if recorded is not None and pd.to_datetime(recorded["commence_time"], utc=True) < pd.Timestamp.now(tz="UTC"):
+        return _build_fixture_detail(
+            _recorded_fixture_to_summary(recorded), recorded["team_home"], recorded["team_away"], read_only=read_only
+        )
+
     table = _value_bet_table()
     matches = table[table["event_id"].astype(str) == event_id] if not table.empty else table
     if not matches.empty:
@@ -1292,7 +1302,6 @@ def fixture_detail(event_id: str, read_only: bool = False):
     # sections below still come from a live recompute either way, same as
     # every other path through this function — those are descriptive
     # current-model context, not "the prediction" itself.
-    recorded = tracking_store.get_fixture_prediction(event_id)
     if recorded is not None:
         return _build_fixture_detail(
             _recorded_fixture_to_summary(recorded), recorded["team_home"], recorded["team_away"], read_only=read_only

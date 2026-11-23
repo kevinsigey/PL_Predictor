@@ -181,7 +181,26 @@ def build_snapshot(previous: dict | None = None) -> dict:
         # reached the feed at the last snapshot run.
         if not isinstance(detail, dict) or "actual_stats" not in detail:
             return False
-        return detail.get("actual_stats") is None
+        if detail.get("actual_stats") is None:
+            return True
+        # A finished row whose frozen "Match result" verdict disagrees with
+        # the probs it displays was built before the recorded-fixture-first
+        # lookup (#129). Rebuild it so the next snapshot self-heals instead
+        # of carrying the recomputed post-kickoff odds forward forever.
+        post_match = detail.get("post_match") or {}
+        verdict = next(
+            (v.get("prediction") for v in post_match.get("verdicts", []) if v.get("label") == "Match result"),
+            None,
+        )
+        if verdict is not None:
+            probs = {
+                side: detail.get(side, {}).get("prob")
+                for side in ("home_win", "draw", "away_win")
+                if isinstance(detail.get(side), dict) and isinstance(detail[side].get("prob"), (int, float))
+            }
+            if probs and max(probs, key=probs.get) != verdict:
+                return True
+        return False
 
     reusable_ids = {
         event_id
@@ -249,6 +268,11 @@ def build_snapshot(previous: dict | None = None) -> dict:
                 fixture_detail_by_event_id[event_id] = routes.fixture_detail(event_id, read_only=True)
             except Exception as exc:  # noqa: BLE001 - one bad fixture shouldn't kill the whole snapshot
                 print(f"    ! skipped detail: {exc}")
+                # A transient failure must not silently drop a row the last
+                # snapshot had — 560649 disappearing flipped the export
+                # between 379 and 380 rows (#129).
+                if event_id in previous_detail:
+                    fixture_detail_by_event_id[event_id] = previous_detail[event_id]
                 continue
         if not reused_players:
             try:
