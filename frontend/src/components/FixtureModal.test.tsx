@@ -175,6 +175,18 @@ describe("FixtureModal and the plain-English panel", () => {
     expect(screen.getByText("Predicted margin")).toBeInTheDocument();
     expect(screen.getByText("Tottenham to score 2+")).toBeInTheDocument();
   });
+
+  it("renders Expected goals with the home value to one decimal when expected_home_goals is set", async () => {
+    mockApi();
+    vi.mocked(api.fixtureDetail).mockResolvedValue({
+      ...detail,
+      expected_home_goals: 1.237,
+      expected_away_goals: 0.842,
+    } as unknown as FixtureDetail);
+    render(<FixtureModal eventId="e1" onClose={() => {}} />);
+    await screen.findByRole("heading", { name: /Scoreline/i });
+    expect(screen.getByText(/Expected goals: Tottenham 1\.2/)).toBeInTheDocument();
+  });
 });
 
 // 30 of the 380 rows in data/public_snapshot.json are backfilled finished
