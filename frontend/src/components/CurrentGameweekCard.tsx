@@ -3,6 +3,7 @@ import { kickoffParts } from "../lib/kickoffTime";
 import { TeamBadge } from "./TeamBadge";
 import { ProbabilityBar } from "./ProbabilityBar";
 import { FinishedFixtureCard } from "./FinishedFixtureCard";
+import { MarketHeadline } from "./MarketHeadline";
 import { pickCall } from "../lib/pick";
 
 function formatKickoff(iso: string): { date: string; time: string } {
@@ -50,6 +51,12 @@ export function CurrentGameweekCard({ fixture, onClick }: { fixture: CurrentGame
             <span className="text-xs font-semibold leading-tight text-pr-text">{fixture.team_away}</span>
           </div>
         </div>
+        <MarketHeadline
+          home={fixture.team_home}
+          away={fixture.team_away}
+          market={fixture.market_probs}
+          model={{ home: fixture.predicted_home_win, draw: fixture.predicted_draw, away: fixture.predicted_away_win }}
+        />
         <p className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-0.5 text-sm">
           <span className="font-semibold text-pr-text">
             {call.tossUp ? call.text : `Pick: ${call.text}`}

@@ -53,7 +53,20 @@ def fit_dixon_coles(df: pd.DataFrame, xi: float = 0.0018) -> pb.models.DixonCole
     goals_home, goals_away, team_home, team_away = _writable_inputs(df)
     weights = np.asarray(pb.models.dixon_coles_weights(df["date"], xi=xi), dtype=np.float64)
     model = pb.models.DixonColesGoalModel(goals_home, goals_away, team_home, team_away, weights=weights)
-    model.fit()
+    try:
+        model.fit()
+    except ValueError as exc:
+        msg = str(exc).lower()
+        if "negative" not in msg and "goal-matrix" not in msg:
+            raise
+        # Retry once from rho=0 (independent Poisson, always a feasible start).
+        # penaltyblog starts the optimiser from model._params, so this moves the
+        # restart point off the infeasible region. A second failure propagates.
+        # The fitted rho is never clipped: penaltyblog bounds it to (-2.5, 2.5)
+        # and negative rho is a normal Dixon-Coles fit, so clipping it to 0
+        # would silently change every scoreline probability.
+        model._params[-1] = 0.0
+        model.fit()
     return model
 
 
@@ -337,7 +350,10 @@ def predict_fixtures_batch(
         rows = [
             model.context.build_row(f.team_home, f.team_away, getattr(f, "commence_time", None)) for f in fixtures
         ]
-        X = pd.DataFrame(rows).reindex(columns=model.feature_cols, fill_value=0).fillna(0).astype(float)
+        # No `.fillna(0)` here: `predict_many_from_rows` runs the frame through
+        # `_apply_missing_value_encoding`, whose unexpected-NaN warning a
+        # pre-fill would silence on this, the main serving path.
+        X = pd.DataFrame(rows).reindex(columns=model.feature_cols, fill_value=0)
         grids = model.predict_many_from_rows(X, max_goals=max_goals)
         results = [
             {

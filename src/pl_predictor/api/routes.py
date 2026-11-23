@@ -603,6 +603,14 @@ def _none_if_nan(value):
     return None if value is None or (isinstance(value, float) and pd.isna(value)) else value
 
 
+def _market_probs(row) -> dict[str, float] | None:
+    """The de-vigged live 1X2 for a fixture, or None when any side is missing or the quote is stale. Never defaulted."""
+    sides = {k: _none_if_nan(row.get(f"{s}_implied")) for k, s in (("home", "home_win"), ("draw", "draw"), ("away", "away_win"))}
+    if row.get("odds_is_stale") or any(v is None for v in sides.values()):
+        return None
+    return {k: float(v) for k, v in sides.items()}
+
+
 def _row_to_summary(row: pd.Series) -> FixtureSummary:
     def edge(side: str) -> MarketEdge:
         return MarketEdge(
@@ -1046,6 +1054,7 @@ def current_gameweek_fixtures(gameweek: int | None = None):
                                 vb_row.get("odds_fetched_at"), row["commence_time"]
                             ),
                             "has_live_odds": bool(vb_row["home_win_implied"] is not None and not pd.isna(vb_row["home_win_implied"])),
+                            "market_probs": _market_probs(vb_row),
                             "value_bet_flags": list(vb_row["value_bet_flags"]),
                         }
                     )
@@ -1885,6 +1894,23 @@ def get_manifest_history():
     return {"history": manifest_lib.score_change_history(manifest_lib.load_manifest_history())}
 
 
+@router.get("/snapshot-meta")
+def get_snapshot_meta():
+    """Snapshot freshness for cross-service consumers (the hub's
+    stale-while-revalidate cache gates refetching on this, as it does for
+    every other sport). Same shape as the other sports' snapshot-meta:
+    `generated_at` + `source`, plus PL's model fingerprint."""
+    if PUBLIC_MODE:
+        snapshot = _public_snapshot()
+        return {
+            "generated_at": snapshot.get("generated_at"),
+            "source": "public_snapshot",
+            "model_fingerprint": snapshot.get("model_fingerprint"),
+        }
+    manifest = manifest_lib.load_manifest() if manifest_lib.MANIFEST_PATH.exists() else {}
+    return {"generated_at": manifest.get("trained_at"), "source": "manifest"}
+
+
 @router.get("/calibration")
 def get_calibration():
     if PUBLIC_MODE:
@@ -1893,14 +1919,25 @@ def get_calibration():
         # the heavy live-serving computation PUBLIC_MODE exists to avoid --
         # it was reachable unguarded here and firing on every Model-tab
         # visit, the same football-data.co.uk scrape the snapshot system
-        # was built to keep off this host. Baking this into
+        # was built to keep off this host. Baking THAT computation into
         # public_snapshot.py was tried and reverted -- confirmed live it
         # made the snapshot build hang indefinitely partway through
         # (build_training_frame appears to stall on GitHub's runners in a
         # way it never did locally) twice in a row, which is worse than an
-        # empty Model tab. Needs a real root-cause investigation, not a
-        # second guess, before trying again.
-        return {"model": [], "bookmaker": [], "naive": [], "season": None}
+        # empty Model tab.
+        #
+        # What the snapshot bakes instead (public_snapshot.py) is computed
+        # from the tracking store's counted recorded picks -- data the
+        # build already has locally, no training frame involved. The
+        # question it answers is how well calibrated the picks this site
+        # actually published are; the holdout-season question stays with
+        # the live path. The bookmaker series there is scored from the
+        # prices stored with each recorded pick since 2026-11, so it
+        # stays null until enough recorded picks carry odds — it is never
+        # reconstructed for picks recorded without them.
+        return _public_snapshot().get(
+            "calibration", {"model": [], "bookmaker": [], "naive": [], "season": None}
+        )
     trained_at = manifest_lib.load_manifest().get("trained_at", "untrained") if manifest_lib.MANIFEST_PATH.exists() else "untrained"
 
     def build():
@@ -2342,7 +2379,7 @@ def get_projected_table():
 def get_hub_track_record():
     if PUBLIC_MODE:
         return _public_snapshot().get("hub", {}).get(
-            "track_record", {"summary": {}, "biggest_upsets": [], "gameweeks": []}
+            "track_record", {"summary": {}, "biggest_upsets": [], "gameweeks": [], "value_bets": None}
         )
     summary = tracking_store.get_track_record()
     summary["calibration"] = tracking_store.get_calibration()
@@ -2350,6 +2387,9 @@ def get_hub_track_record():
         "summary": summary,
         "biggest_upsets": tracking_store.get_biggest_upsets(),
         "gameweeks": tracking_store.get_results_by_gameweek(),
+        # The against-the-odds block: the value-bet ledger's own graded
+        # record (see tracking/value_bet_ledger.py::get_value_bet_summary).
+        "value_bets": value_bet_ledger.get_value_bet_summary(),
     }
 
 

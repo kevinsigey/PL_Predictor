@@ -447,6 +447,69 @@ def get_value_bet_track_record(
     }
 
 
+def get_value_bet_summary() -> dict:
+    """The compact "against the odds" block the track-record page renders:
+    every value bet the app has flagged, and how the settled ones did.
+
+    The population is the whole ledger — no filtering beyond the ledger's
+    own flagging rule. Strike rate and average odds cover SETTLED bets
+    only (a pending flag is an open position, not a result); the return is
+    `get_value_bet_track_record`'s replay under the ledger's default
+    staking (tenth-Kelly, the same rule as the offline backtest), reported
+    as None until that replay actually stakes a bet, so an empty or
+    all-pending ledger reads as "nothing to grade yet" rather than a
+    fabricated 0%. Averages and the return describe slightly different
+    subsets — the replay skips prices above its max-odds cutoff — so
+    `n_staked` travels with the return to keep that visible.
+    """
+    with _connect() as conn:
+        df = pd.read_sql(
+            "SELECT commence_time, price, resolved, won FROM value_bets ORDER BY commence_time ASC",
+            conn,
+            parse_dates=["commence_time"],
+        )
+
+    summary = {
+        "n_flagged": int(len(df)),
+        "n_resolved": 0,
+        "n_pending": int(len(df)),
+        "wins": 0,
+        "losses": 0,
+        "win_rate": None,
+        "average_odds": None,
+        "roi_pct": None,
+        "profit_units": None,
+        "n_staked": 0,
+        "staking": "kelly",
+        "first_flagged_at": None,
+        "last_flagged_at": None,
+    }
+    if df.empty:
+        return summary
+
+    summary["first_flagged_at"] = df["commence_time"].min().isoformat()
+    summary["last_flagged_at"] = df["commence_time"].max().isoformat()
+
+    resolved = df[df["resolved"] == 1]
+    summary["n_resolved"] = int(len(resolved))
+    summary["n_pending"] = int(len(df) - len(resolved))
+    if resolved.empty:
+        return summary
+
+    wins = int(resolved["won"].sum())
+    summary["wins"] = wins
+    summary["losses"] = int(len(resolved) - wins)
+    summary["win_rate"] = wins / len(resolved) * 100
+    summary["average_odds"] = float(resolved["price"].mean())
+
+    results = get_value_bet_track_record().get("results")
+    if results and results.get("Total Bets"):
+        summary["roi_pct"] = float(results["ROI"])
+        summary["profit_units"] = float(results["Profit"])
+        summary["n_staked"] = int(results["Total Bets"])
+    return summary
+
+
 def _clv_pct(bet: pd.Series) -> float | None:
     """Closing-line value: how the entry price compares to the closing price
     captured by `update_closing_lines` for the same bet. Positive means the

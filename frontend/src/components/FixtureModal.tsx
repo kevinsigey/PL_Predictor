@@ -13,6 +13,7 @@ import { FormStrip } from "./FormStrip";
 import { GlossaryDisclosure } from "./GlossaryDisclosure";
 import { PickSparkline } from "./PickSparkline";
 import { MarketBar } from "./MarketBar";
+import { MarketHeadline } from "./MarketHeadline";
 import { ModelTopCalls, PlayerScorerList } from "./PlayerScorerList";
 import { GLOSSARY } from "../lib/glossary";
 import { isModelCall } from "../lib/modelCall";
@@ -556,6 +557,19 @@ export function FixtureModal({ eventId, onClose, explain, loadContext, sport = "
           </div>
 
           <div className="px-3 py-5 sm:px-6 sm:py-6">
+            {/* The market's 1X2 is the headline; the model number is already
+                printed by the pick line below, so it stays off this line. */}
+            {detail && !detail.post_match && (
+              <div className="mb-4 rounded-pr border border-pr-rule bg-pr-panel px-4 py-3">
+                <MarketHeadline
+                  home={detail.team_home}
+                  away={detail.team_away}
+                  market={detail.has_live_odds && !detail.odds_is_stale && detail.home_win.implied != null && detail.draw.implied != null && detail.away_win.implied != null ? { home: detail.home_win.implied, draw: detail.draw.implied, away: detail.away_win.implied } : null}
+                  model={{ home: detail.home_win.prob, draw: detail.draw.prob, away: detail.away_win.prob }}
+                  showModel={false}
+                />
+              </div>
+            )}
             {error && <div className="text-sm text-loss">{error}</div>}
             {!detail && !error && <div className="flex h-64 items-center justify-center text-pr-text-faint">Loading…</div>}
 

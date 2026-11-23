@@ -3,6 +3,7 @@ import { kickoffParts } from "../lib/kickoffTime";
 import { parseKickoff } from "../predictor-ui";
 import { TeamBadge } from "./TeamBadge";
 import { ProbabilityBar } from "./ProbabilityBar";
+import { MarketHeadline } from "./MarketHeadline";
 import { pickCall } from "../lib/pick";
 
 function formatKickoff(iso: string): { day: string; date: string; time: string } {
@@ -85,6 +86,14 @@ export function NextFixtureHero({ fixture, onClick }: { fixture: CurrentGameweek
       </div>
 
       <div className="mx-auto mt-6 max-w-md">
+        <div className="mb-3">
+          <MarketHeadline
+            home={fixture.team_home}
+            away={fixture.team_away}
+            market={fixture.market_probs}
+            model={{ home: fixture.predicted_home_win, draw: fixture.predicted_draw, away: fixture.predicted_away_win }}
+          />
+        </div>
         <ProbabilityBar
           home={fixture.predicted_home_win}
           draw={fixture.predicted_draw}

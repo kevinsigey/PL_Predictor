@@ -66,7 +66,7 @@ def test_hub_routes_degrade_gracefully_when_no_snapshot_exists(monkeypatch):
 
     assert routes.get_power_rankings() == {"rankings": [], "ratings_history": {}, "season": None}
     assert routes.get_projected_table() == {"table": [], "season": None}
-    assert routes.get_hub_track_record() == {"summary": {}, "biggest_upsets": [], "gameweeks": []}
+    assert routes.get_hub_track_record() == {"summary": {}, "biggest_upsets": [], "gameweeks": [], "value_bets": None}
     assert routes.get_team_hub() == {}
     assert routes.get_player_hub() == {}
 
@@ -216,6 +216,11 @@ def test_calibration_disabled_in_public_mode(monkeypatch):
     monkeypatch.setattr(routes, "_get_models", _explode)
     monkeypatch.setattr(routes, "build_training_frame", _explode)
     monkeypatch.setattr(routes, "chronological_split", _explode)
+    # A snapshot with no calibration baked degrades to the honest empty
+    # state. (The committed snapshot legitimately carries baked metrics
+    # since the recorded-picks calibration landed, so the empty-cache case
+    # is the one this degradation contract can still pin.)
+    monkeypatch.setattr(routes, "_public_snapshot_cache", {})
 
     assert routes.get_calibration() == {"model": [], "bookmaker": [], "naive": [], "season": None}
 
