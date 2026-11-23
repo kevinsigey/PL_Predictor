@@ -15,6 +15,7 @@ vi.mock("../api/client", () => ({
   api: {
     fixtureDetail: vi.fn(),
     fixturePlayers: vi.fn(),
+    pickHistory: vi.fn(),
     fixturePlayerReview: vi.fn(),
     trackRecord: vi.fn(),
   },
@@ -51,6 +52,7 @@ const detail = {
 function mockApi(over: Record<string, unknown> = {}) {
   vi.mocked(api.fixtureDetail).mockResolvedValue(detail);
   vi.mocked(api.fixturePlayers).mockResolvedValue({ home_players: [], away_players: [] });
+  vi.mocked(api.pickHistory).mockResolvedValue({ event_id: "", points: [] });
   vi.mocked(api.fixturePlayerReview).mockResolvedValue(null);
   // Unresolved on purpose: this file is about the panel and its request, and a
   // record strip belongs to neither. The strip's own arithmetic is pinned in
@@ -223,6 +225,7 @@ describe("FixtureModal when the fixture carries no prediction of its own", () =>
   async function renderDetail(fixtureDetail: FixtureDetail) {
     vi.mocked(api.fixtureDetail).mockResolvedValue(fixtureDetail);
     vi.mocked(api.fixturePlayers).mockResolvedValue({ home_players: [], away_players: [] });
+    vi.mocked(api.pickHistory).mockResolvedValue({ event_id: "", points: [] });
     vi.mocked(api.fixturePlayerReview).mockResolvedValue(null);
     render(<FixtureModal eventId="backfill" onClose={() => {}} />);
     // A heading that only renders once the detail has landed and survived

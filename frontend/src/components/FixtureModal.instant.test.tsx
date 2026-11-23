@@ -19,6 +19,7 @@ vi.mock("../api/client", () => ({
   api: {
     fixtureDetail: vi.fn(),
     fixturePlayers: vi.fn(),
+    pickHistory: vi.fn(),
     fixturePlayerReview: vi.fn(),
     trackRecord: vi.fn(),
   },
@@ -97,6 +98,7 @@ const trackRecord = (
 function mockApi(over: Record<string, unknown> = {}) {
   vi.mocked(api.fixtureDetail).mockResolvedValue(detail);
   vi.mocked(api.fixturePlayers).mockResolvedValue({ home_players: [], away_players: [] });
+  vi.mocked(api.pickHistory).mockResolvedValue({ event_id: "", points: [] });
   vi.mocked(api.fixturePlayerReview).mockResolvedValue(null);
   vi.mocked(api.trackRecord).mockResolvedValue(trackRecord(71, 0.535));
   Object.assign(api, over);
@@ -202,6 +204,7 @@ describe("FixtureModal's instant block, before any request", () => {
   });
 
   it("carries the record as hits over settled picks made before kickoff", async () => {
+    mockApi();
     // Headline 71 at 53.5% (every counted pick); the pre-kickoff subset is 12 at
     // 50%. The strip must show the SUBSET -- 6/12 -- because its label says
     // "made before kickoff". Reading the headline would print 38/71 under that
@@ -223,6 +226,7 @@ describe("FixtureModal's instant block, before any request", () => {
   });
 
   it("shows no record strip when the payload predates the pre_kickoff field", async () => {
+    mockApi();
     // `pre_kickoff` is optional in the type, so a public_snapshot.json baked
     // before the reversal can be live for minutes after a deploy. Falling back
     // to the headline here would print every counted pick under a heading
@@ -417,7 +421,8 @@ describe("FixtureModal's instant block, before any request", () => {
 
     expect(within(screen.getByTestId("instant-block")).getByText("Tottenham is the pick.")).toBeInTheDocument();
     expect(screen.queryByText(/No pick was made/i)).toBeNull();
-    expect(screen.getByText(/the model's pick was right/i)).toBeInTheDocument();
+    expect(screen.getByText("Called it: Tottenham was the pick; it finished 1–0.")).toBeInTheDocument();
+    expect(screen.queryByText(/the model's pick was right/i)).toBeNull();
 
     // And where the two records disagree, the review's side is the pick. The
     // scoreline model promotes a draw the tracked pick was not

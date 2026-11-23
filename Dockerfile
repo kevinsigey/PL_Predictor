@@ -52,6 +52,8 @@ COPY models/ ./models/
 # this image. Must exist before building — run that command once if this
 # COPY fails on a fresh checkout.
 COPY data/public_snapshot.json ./data/public_snapshot.json
+# Per-fixture probability history for the fixture sparkline (scripts/build_pick_history.py).
+COPY data/pick_history.json ./data/pick_history.json
 COPY --from=frontend-build /app/frontend/dist ./frontend/dist
 
 EXPOSE 8000
