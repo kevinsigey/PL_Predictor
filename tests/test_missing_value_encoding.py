@@ -1449,3 +1449,51 @@ def test_build_row_no_longer_claims_xgboost_handles_missing_natively(monkeypatch
         "features/build.py still claims XGBoost handles missing values natively; "
         f"manifest.train_all fits on fillna(0), so it never sees one. Lines: {offending}"
     )
+
+
+# --------------------------------------------------------------------------
+# The batch serving path (`scoreline.predict_fixtures_batch`)
+# --------------------------------------------------------------------------
+
+
+def _batch_setup(monkeypatch, synthetic):
+    _stub_loaders(monkeypatch, synthetic, xg=True, serving_continuity=True)
+    ctx = FixtureFeatureContext(synthetic)
+    home_m, away_m, cols = _tiny_models(synthetic)
+    model = ml_scoreline.MLScorelineModel(
+        home_model=home_m, away_model=away_m, feature_cols=list(cols), teams=[], context=ctx
+    )
+    fixtures = pd.DataFrame({"team_home": ["T0", "T2"], "team_away": ["T1", "T3"]})
+    return model, ctx, fixtures
+
+
+def test_batch_path_warns_on_nan_outside_the_contract(monkeypatch, synthetic):
+    """`predict_fixtures_batch` used to `.fillna(0)` before the shared helper,
+    so the unexpected-NaN warning could never fire on the main serving path."""
+    from pl_predictor.models import scoreline
+
+    model, ctx, fixtures = _batch_setup(monkeypatch, synthetic)
+    real_build_row = ctx.build_row
+
+    def _nan_row(*args, **kwargs):
+        return {**real_build_row(*args, **kwargs), "home_last_10_shots_on_target_for": float("nan")}
+
+    monkeypatch.setattr(ctx, "build_row", _nan_row)
+    with pytest.warns(UserWarning, match="home_last_10_shots_on_target_for"):
+        results = scoreline.predict_fixtures_batch(model, fixtures)
+    assert len(results) == 2 and np.isfinite(results[0]["home_win"])
+
+
+def test_batch_path_output_is_unchanged_for_fully_populated_rows(monkeypatch, synthetic):
+    """Byte-identical to the old `reindex(...).fillna(0).astype(float)` build."""
+    from pl_predictor.models import scoreline
+
+    model, ctx, fixtures = _batch_setup(monkeypatch, synthetic)
+    rows = [ctx.build_row(f.team_home, f.team_away, None) for f in fixtures.itertuples(index=False)]
+    old_X = pd.DataFrame(rows).reindex(columns=model.feature_cols, fill_value=0).fillna(0).astype(float)
+    old = model.predict_many_from_rows(old_X)
+    with warnings.catch_warnings():
+        warnings.simplefilter("error")  # populated rows must not warn
+        new = scoreline.predict_fixtures_batch(model, fixtures)
+    for g, r in zip(old, new):
+        np.testing.assert_array_equal(g.grid, r["grid"])

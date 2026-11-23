@@ -2,6 +2,7 @@ import type { CurrentGameweekFixture } from "../types";
 import { kickoffParts } from "../lib/kickoffTime";
 import { TeamBadge } from "./TeamBadge";
 import { ProbabilityBar } from "./ProbabilityBar";
+import { MarketHeadline } from "./MarketHeadline";
 import { FinishedFixtureCard } from "./FinishedFixtureCard";
 
 function formatKickoff(iso: string): { date: string; time: string } {
@@ -30,7 +31,7 @@ export function CurrentGameweekCard({ fixture, onClick }: { fixture: CurrentGame
           onClick();
         }}
         className={`clip-corner flex cursor-pointer flex-col gap-3 rounded-xl border bg-pl-850/70 p-4 transition hover:border-pl-pink/40 ${
-          fixture.value_bet_flags.length > 0 ? "border-pl-pink/40 ring-1 ring-pl-pink/20" : "border-pl-border"
+"border-pl-border"
         }`}
       >
         <div className="flex flex-wrap items-center justify-between gap-1.5 text-xs font-medium uppercase tracking-wide text-pl-text-faint">
@@ -49,14 +50,9 @@ export function CurrentGameweekCard({ fixture, onClick }: { fixture: CurrentGame
             {fixture.value_bet_flags.length > 0 && (
               <span
                 title={`Model probability beats the live market's implied odds on: ${fixture.value_bet_flags.join(", ")}`}
-                className="rounded bg-pl-pink/20 px-1.5 py-0.5 font-semibold text-pl-pink"
+                className="rounded bg-pl-700/60 px-1.5 py-0.5 font-semibold text-pl-text-dim"
               >
-                Value bet
-              </span>
-            )}
-            {!fixture.has_live_odds && (
-              <span title="No live bookmaker line for this fixture yet — model-only prediction." className="text-pl-text-faint">
-                Model only
+                Model differs
               </span>
             )}
             <span className="rounded bg-pl-700/60 px-1.5 py-0.5 text-pl-text-dim">Upcoming</span>
@@ -78,6 +74,12 @@ export function CurrentGameweekCard({ fixture, onClick }: { fixture: CurrentGame
             <span className="text-xs font-semibold leading-tight text-pl-text">{fixture.team_away}</span>
           </div>
         </div>
+        <MarketHeadline
+          home={fixture.team_home}
+          away={fixture.team_away}
+          market={fixture.market_probs}
+          model={{ home: fixture.predicted_home_win, draw: fixture.predicted_draw, away: fixture.predicted_away_win }}
+        />
         <ProbabilityBar home={fixture.predicted_home_win} draw={fixture.predicted_draw} away={fixture.predicted_away_win} />
       </div>
     );

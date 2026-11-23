@@ -9,8 +9,8 @@
 //
 // The adapter lives in `lib/recordModel.ts`; the backend contract is unchanged.
 
-import { useState } from "react";
-import type { TrackRecordByMarket, TrackRecordResponse } from "../types";
+import { useEffect, useState } from "react";
+import type { TrackRecordByMarket, TrackRecordResponse, ValueBetSummary } from "../types";
 import { InfoTooltip } from "./InfoTooltip";
 import { MissesTable } from "./MissesTable";
 import { GameweekResultsGrid } from "./GameweekResultsGrid";
@@ -30,6 +30,76 @@ import { toRecordModel } from "../lib/recordModel";
 
 const n0 = (x: number) => x.toLocaleString("en-US");
 
+function shortDate(iso: string | null): string | null {
+  if (!iso) return null;
+  const d = new Date(iso);
+  return Number.isNaN(d.getTime()) ? null : d.toLocaleDateString(undefined, { dateStyle: "medium" });
+}
+
+/**
+ * "Against the odds": the value-bet ledger's own record — every bet the app
+ * flagged as value, recorded at the bookmaker price shown when it was
+ * flagged and graded when the match finished. Strike rate and average odds
+ * cover settled bets only; the return is the ledger's staking replay
+ * (tenth-Kelly, the offline backtest's rule) and is labelled a simulation,
+ * because that is what it is. An empty ledger says so rather than vanishing.
+ */
+function AgainstTheOdds({ bets }: { bets: ValueBetSummary }) {
+  const since = shortDate(bets.first_flagged_at);
+  return (
+    <RecordBlock
+      id="tr-odds"
+      title="Against the odds"
+      caption="Every bet the app flagged as value against the bookmaker's price, recorded at that price and graded when the match finished."
+    >
+      {bets.n_flagged === 0 ? (
+        <p className="text-sm text-pl-text-dim" data-testid="odds-empty">
+          No value bets have been flagged yet. When the model's price beats the bookmaker's by enough to flag, the
+          bet is recorded here at the price shown and graded when the match finishes.
+        </p>
+      ) : (
+        <>
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
+            <StatTile
+              label="Value bets recorded"
+              value={n0(bets.n_flagged)}
+              sub={bets.n_pending > 0 ? `${n0(bets.n_pending)} still to settle` : "All settled"}
+            />
+            <StatTile
+              label="Strike rate"
+              value={bets.win_rate != null ? `${bets.win_rate.toFixed(0)}%` : "—"}
+              sub={
+                bets.n_resolved > 0
+                  ? `${n0(bets.wins)} won · ${n0(bets.losses)} lost of ${n0(bets.n_resolved)} settled`
+                  : "Nothing settled yet"
+              }
+            />
+            <StatTile
+              label="Average odds"
+              value={bets.average_odds != null ? bets.average_odds.toFixed(2) : "—"}
+              sub="Settled bets, at the flagged price"
+            />
+            <StatTile
+              label="Simulated return"
+              value={bets.roi_pct != null ? `${bets.roi_pct >= 0 ? "+" : ""}${bets.roi_pct.toFixed(1)}%` : "—"}
+              sub={
+                bets.roi_pct != null
+                  ? `Tenth-Kelly staking on ${n0(bets.n_staked)} settled bets`
+                  : "No settled bet has been staked yet"
+              }
+            />
+          </div>
+          <p className="mt-3 max-w-prose text-xs text-pl-text-faint">
+            {since ? `Flagged since ${since}. ` : ""}The return replays the settled bets at tenth-Kelly stakes on a
+            100-unit bankroll — the same staking rule as the offline backtest. It is a simulation of the flags, not a
+            betting record.
+          </p>
+        </>
+      )}
+    </RecordBlock>
+  );
+}
+
 function StatCard({ label, value, info }: { label: string; value: string; info?: string }) {
   return (
     <div className="clip-corner rounded-xl border border-pl-border bg-pl-850/70 p-4">
@@ -43,12 +113,28 @@ function StatCard({ label, value, info }: { label: string; value: string; info?:
 }
 
 export function TrackRecordPanel({ data }: { data: TrackRecordResponse }) {
-  const { summary, biggest_upsets, gameweeks } = data;
+  const { summary, biggest_upsets, gameweeks, value_bets } = data;
   const model = toRecordModel(data);
   const moment = momentFor("pl");
 
   const [selected, setSelected] = useState<string | null>(null);
   const [refreshing, setRefreshing] = useState(false);
+  // The record's freshness stamp, from the snapshot's own metadata. It is a
+  // courtesy line in HowCounted: if the read fails, the block simply goes
+  // unstamped rather than failing with it.
+  const [asOf, setAsOf] = useState<string | null>(null);
+  useEffect(() => {
+    let live = true;
+    api
+      .snapshotMeta()
+      .then((meta) => {
+        if (live) setAsOf(meta.generated_at);
+      })
+      .catch(() => {});
+    return () => {
+      live = false;
+    };
+  }, []);
 
   const load = async (force = false) => {
     setRefreshing(true);
@@ -138,6 +224,8 @@ export function TrackRecordPanel({ data }: { data: TrackRecordResponse }) {
         />
       </div>
 
+      {value_bets && <AgainstTheOdds bets={value_bets} />}
+
       <RecordBlock id="tr-week" title="By gameweek">
         <WeekStrip weeks={model.weeks ?? []} />
       </RecordBlock>
@@ -189,7 +277,7 @@ export function TrackRecordPanel({ data }: { data: TrackRecordResponse }) {
 
       {selected && <FixtureModal eventId={selected} onClose={() => setSelected(null)} explain={api.explain} loadContext={api.loadContext} />}
 
-      <HowCounted moment={moment} headline={model.headline} />
+      <HowCounted moment={moment} headline={model.headline} asOf={asOf} />
     </section>
   );
 }

@@ -97,3 +97,50 @@ def test_required_edge_multiplier_defaults_to_flat_when_confidence_unknown():
     assert scoreline.required_edge_multiplier(None) == pytest.approx(1.0)
     # An unrecognized string must not crash or over/under-penalize silently.
     assert scoreline.required_edge_multiplier("some-future-tier") == pytest.approx(1.0)
+
+
+def _tiny_matches():
+    return pd.DataFrame({
+        "date": pd.to_datetime(["2024-01-01", "2024-01-08", "2024-01-15"]),
+        "team_home": ["A", "B", "A"],
+        "team_away": ["B", "A", "C"],
+        "goals_home": [1, 0, 2],
+        "goals_away": [0, 0, 1],
+    })
+
+
+def test_fitted_negative_rho_is_kept_not_clipped(monkeypatch):
+    # A successful fit's rho is used as penaltyblog returned it. Negative rho is
+    # a normal Dixon-Coles value; clipping it to [0, 1] changed the predictions.
+    def fake_fit(self, *args, **kwargs):
+        self._params[-1] = -0.3
+
+    monkeypatch.setattr(pb.models.DixonColesGoalModel, "fit", fake_fit)
+    model = scoreline.fit_dixon_coles(_tiny_matches())
+    assert model._params[-1] == pytest.approx(-0.3)
+
+
+def test_goal_matrix_error_retries_once_from_rho_zero(monkeypatch):
+    seen_rho = []
+
+    def fake_fit(self, *args, **kwargs):
+        seen_rho.append(self._params[-1])
+        if len(seen_rho) == 1:
+            self._params[-1] = -2.0
+            raise ValueError("score matrix has negative cells (goal-matrix)")
+        self._params[-1] = -0.1
+
+    monkeypatch.setattr(pb.models.DixonColesGoalModel, "fit", fake_fit)
+    model = scoreline.fit_dixon_coles(_tiny_matches())
+    assert len(seen_rho) == 2
+    assert seen_rho[1] == 0.0  # the retry starts from rho=0, not the infeasible value
+    assert model._params[-1] == pytest.approx(-0.1)
+
+
+def test_unrelated_fit_error_propagates(monkeypatch):
+    def fake_fit(self, *args, **kwargs):
+        raise ValueError("something else entirely")
+
+    monkeypatch.setattr(pb.models.DixonColesGoalModel, "fit", fake_fit)
+    with pytest.raises(ValueError, match="something else"):
+        scoreline.fit_dixon_coles(_tiny_matches())

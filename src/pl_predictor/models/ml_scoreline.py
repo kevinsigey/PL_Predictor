@@ -205,13 +205,25 @@ def train_goal_regressors(
     return home_model, away_model
 
 
-def predict_grid(home_model: xgb.XGBRegressor, away_model: xgb.XGBRegressor, x_row: pd.DataFrame, max_goals: int = 10):
+def _grid(lam_home: float, lam_away: float, rho: float, max_goals: int):
+    """Dixon-Coles grid with `rho` clamped into the range penaltyblog accepts for
+    these lambdas (it raises outside it), so one fitted scalar is safe for every row."""
+    lo = max(-1.0 / lam_home, -1.0 / lam_away)
+    hi = min(1.0, 1.0 / (lam_home * lam_away))
+    return pb.models.create_dixon_coles_grid(lam_home, lam_away, rho=min(max(rho, lo), hi), max_goals=max_goals)
+
+
+def predict_grid(
+    home_model: xgb.XGBRegressor, away_model: xgb.XGBRegressor, x_row: pd.DataFrame, max_goals: int = 10, rho: float = 0.0
+):
     lam_home = max(float(home_model.predict(x_row)[0]), MIN_LAMBDA)
     lam_away = max(float(away_model.predict(x_row)[0]), MIN_LAMBDA)
-    return pb.models.create_dixon_coles_grid(lam_home, lam_away, rho=0.0, max_goals=max_goals)
+    return _grid(lam_home, lam_away, rho, max_goals)
 
 
-def predict_grids_batch(home_model: xgb.XGBRegressor, away_model: xgb.XGBRegressor, X: pd.DataFrame, max_goals: int = 10) -> list:
+def predict_grids_batch(
+    home_model: xgb.XGBRegressor, away_model: xgb.XGBRegressor, X: pd.DataFrame, max_goals: int = 10, rho: float = 0.0
+) -> list:
     """Same result as calling `predict_grid` once per row, but one XGBoost
     `.predict()` call for the whole batch instead of one call per row.
     XGBoost has fixed per-call overhead (booster/DMatrix setup) that's
@@ -222,10 +234,21 @@ def predict_grids_batch(home_model: xgb.XGBRegressor, away_model: xgb.XGBRegress
     live calibration, backtesting)."""
     lam_home = np.maximum(home_model.predict(X), MIN_LAMBDA)
     lam_away = np.maximum(away_model.predict(X), MIN_LAMBDA)
-    return [
-        pb.models.create_dixon_coles_grid(float(h), float(a), rho=0.0, max_goals=max_goals)
-        for h, a in zip(lam_home, lam_away)
-    ]
+    return [_grid(float(h), float(a), rho, max_goals) for h, a in zip(lam_home, lam_away)]
+
+
+def fit_rho(lam_home, lam_away, goals_home, goals_away, bound: float = 0.3) -> float:
+    """Scalar Dixon-Coles rho maximising the exact-score log-likelihood of
+    out-of-fold lambdas (never the rows the lambdas were trained on)."""
+    from scipy.optimize import minimize_scalar
+
+    def nll(rho):
+        return -sum(
+            np.log(max(_grid(float(h), float(a), rho, 10).exact_score(int(gh), int(ga)), 1e-6))
+            for h, a, gh, ga in zip(lam_home, lam_away, goals_home, goals_away)
+        )
+
+    return float(minimize_scalar(nll, bounds=(-bound, bound), method="bounded", options={"xatol": 1e-3}).x)
 
 
 def evaluate_on_holdout(home_model, away_model, X_val: pd.DataFrame, val_df: pd.DataFrame) -> dict:

@@ -186,7 +186,9 @@ def test_draw_signal_present_on_both_finished_and_upcoming_fixtures(monkeypatch)
 
     by_team = {(f["team_home"], f["team_away"]): f["draw_signal"] for f in result["fixtures"]}
     assert by_team[("Crystal Palace", "Man City")] is False
-    assert by_team[("Chelsea", "Brighton")] is True
+    # PL-UI-1: the pick is the highest 1X2 probability. 38% home beats 32% draw, so a 1-1 modal scoreline no
+    # longer promotes it to "draw" (the old True here was exactly that promotion, the bug Kevin reported).
+    assert by_team[("Chelsea", "Brighton")] is False
 
 
 def _stub_gameweek(monkeypatch, fixture_feed, tracked_rows):
@@ -297,3 +299,13 @@ def test_a_cached_live_odds_row_keeps_its_own_capture_time(monkeypatch):
         f"got {fixtures}. This row was captured five hours before kickoff, an hour before the "
         f"match started. It is a pre-kickoff prediction and the flag has to say so."
     )
+
+
+def test_market_probs_are_the_devigged_1x2_or_none_never_defaulted():
+    from pl_predictor.api.routes import _market_probs
+
+    row = {"home_win_implied": 0.5, "draw_implied": 0.25, "away_win_implied": 0.25, "odds_is_stale": False}
+    assert _market_probs(row) == {"home": 0.5, "draw": 0.25, "away": 0.25}
+    assert _market_probs({**row, "odds_is_stale": True}) is None
+    assert _market_probs({**row, "draw_implied": float("nan")}) is None
+    assert _market_probs({**row, "home_win_implied": None}) is None
