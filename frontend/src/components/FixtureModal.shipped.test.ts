@@ -84,14 +84,15 @@ describe("the pick, over the shipped snapshot itself", () => {
     // The independent check, and scoped to the reviewed rows on purpose.
     //
     // Measured on the shipped snapshot: the review's "Match result" verdict equals
-    // the plain argmax on all 50 finished fixtures. That is the rule this rule set
+    // the plain argmax on 108 of the 109 finished fixtures — 105 is the stale row
+    // PL#129 fixes, and the next snapshot run repairs it. That is the rule this rule set
     // exists to match — `matchPick` and `_fixture_hit_table` both judge the argmax,
     // so the review and the track record can never disagree.
     //
     // It is NOT asserted across all 380 rows, because that would be false and the
-    // reason is the whole point of the two-source pick. On the 330 unreviewed rows
+    // reason is the whole point of the two-source pick. On the 270 unreviewed rows
     // `predicted_result` is deliberately the scoreline model's draw-promoted
-    // variant and disagrees with the argmax on 229 of them: that is the display
+    // variant and disagrees with the argmax on 162 of them: that is the display
     // variant doing its job on a fixture with no review and therefore no record to
     // contradict. Reading the argmax there would make the block contradict the
     // scoreline model the rest of that row shows.
@@ -110,26 +111,27 @@ describe("the pick, over the shipped snapshot itself", () => {
 
   it("still takes the display variant where there is no review to override it", () => {
     // The other half, and the control on the test above: if `shippedPick` read the
-    // argmax everywhere, the 50 reviewed rows would agree for the wrong reason.
-    // Measured on the snapshot: 330 unreviewed rows, of which 229 carry a
+    // argmax everywhere, the reviewed rows would agree for the wrong reason.
+    // Measured on the snapshot: 270 unreviewed rows, of which 162 carry a
     // draw-promoted `predicted_result` the argmax does not share. Those rows must
     // name the model's displayed pick, or the block would contradict the scoreline
-    // figures printed directly beneath it.
+    // figures printed directly beneath it. The bound is a floor, not the current
+    // count — the promoted set shrinks as the season gets reviewed.
     const unreviewed = details.filter(([, d]) => !d.post_match);
     expect(unreviewed.length).toBeGreaterThan(200);
     const drawPromoted = unreviewed.filter(([, d]) => d.predicted_result === "draw" && argmax(d) !== "draw");
-    expect(drawPromoted.length).toBeGreaterThan(200);
+    expect(drawPromoted.length).toBeGreaterThan(100);
     for (const [id, d] of drawPromoted) {
       expect(shippedPick(d), id).toBe("draw");
     }
   });
 
-  it("still disagrees with the display variant on 17 of the 20 renderable finished rows", () => {
+  it("still disagrees with the display variant on the renderable finished rows", () => {
     // The measurement that makes the rule above worth anything. If `predicted_result`
     // and the tracked argmax had always agreed, preferring the review would be
     // free and this test would prove nothing. On the shipped snapshot the display
-    // variant disagrees with the review's side on 17 of the 20 finished fixtures
-    // whose shots fields are present — and on 17 of the 50 finished fixtures
+    // variant disagrees with the review's side on 39 of the 79 finished fixtures
+    // whose shots fields are present — and on 39 of the 109 finished fixtures
     // overall, because the other 30 are exactly the rows carrying no
     // `predicted_result` at all.
     //
