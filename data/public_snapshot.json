@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T18:41:31.026325+00:00",
+  "generated_at": "2026-11-25T20:27:30.476326+00:00",
   "model_fingerprint": "38d8e310d6f6316d0951a40c95e0f4ed51eebba2ee04dd34a0c17d27ad09a9ad",
   "calibration": {
     "model": {
@@ -9998,7 +9998,7 @@
         "away_win"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "away_win",
@@ -10236,7 +10236,7 @@
         "home_win"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "home_win",
@@ -10451,7 +10451,7 @@
       "away_2plus_prob": 0.40715336372841693,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -14111,7 +14111,7 @@
       "away_2plus_prob": 0.24163729392373046,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -14288,7 +14288,7 @@
       "away_2plus_prob": 0.34477756144666083,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -58234,7 +58234,7 @@
       "away_2plus_prob": 0.47443112800017884,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -61064,7 +61064,7 @@
       "away_2plus_prob": 0.2365775022630538,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -71021,7 +71021,7 @@
         "over_2_5"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "home_win",
@@ -71847,7 +71847,7 @@
         "btts_no"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "home_win",
@@ -72098,7 +72098,7 @@
       "away_2plus_prob": 0.47103456077582556,
       "value_bet_flags": [],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -72309,7 +72309,7 @@
         "over_2_5"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "home_win",
@@ -72560,7 +72560,7 @@
       "away_2plus_prob": 0.2254422656611903,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -72737,7 +72737,7 @@
       "away_2plus_prob": 0.4470259316031002,
       "value_bet_flags": [],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -73642,7 +73642,7 @@
       "away_2plus_prob": 0.42634950864566507,
       "value_bet_flags": [],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -73871,7 +73871,7 @@
       "away_2plus_prob": 0.3106612930340443,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -74086,7 +74086,7 @@
         "away_win"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -74317,7 +74317,7 @@
         "home_win"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "home_win",
@@ -74553,7 +74553,7 @@
       "away_2plus_prob": 0.2862911028045436,
       "value_bet_flags": [],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -74768,7 +74768,7 @@
         "home_win"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "home_win",
@@ -75428,7 +75428,7 @@
         "btts_yes"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "over_2_5",
@@ -75694,7 +75694,7 @@
       "away_2plus_prob": 0.31117906447103516,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -75909,7 +75909,7 @@
         "btts_no"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "btts_no",
@@ -76141,7 +76141,7 @@
         "away_win"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "away_win",
@@ -76341,7 +76341,7 @@
       "away_2plus_prob": 0.4639323904033027,
       "value_bet_flags": [],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -76556,7 +76556,7 @@
         "home_win"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "home_win",
@@ -76792,7 +76792,7 @@
       "away_2plus_prob": 0.36971273747032674,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -77007,7 +77007,7 @@
         "home_win"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "home_win",
@@ -90716,7 +90716,7 @@
         "under_2_5"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "under_2_5",
@@ -90918,7 +90918,7 @@
         "away_win"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "away_win",
@@ -91156,7 +91156,7 @@
         "away_win"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "away_win",
@@ -91396,7 +91396,7 @@
         "btts_no"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "btts_no",
@@ -91626,7 +91626,7 @@
       "away_2plus_prob": 0.6127044112930989,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -91841,7 +91841,7 @@
         "home_win"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "home_win",
@@ -92043,7 +92043,7 @@
         "home_win"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "home_win",
@@ -92243,7 +92243,7 @@
       "away_2plus_prob": 0.40463119322796537,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -92420,7 +92420,7 @@
       "away_2plus_prob": 0.28238189790002605,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -92635,7 +92635,7 @@
         "home_win"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "home_win",
@@ -92837,7 +92837,7 @@
         "btts_no"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "btts_no",
@@ -93088,7 +93088,7 @@
       "away_2plus_prob": 0.35596336369406734,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -93301,7 +93301,7 @@
       "away_2plus_prob": 0.29229034774633356,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -93514,7 +93514,7 @@
       "away_2plus_prob": 0.35068137113997416,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -93727,7 +93727,7 @@
       "away_2plus_prob": 0.30795820373086885,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -93919,7 +93919,7 @@
       "away_2plus_prob": 0.32166965894368255,
       "value_bet_flags": [],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -94148,7 +94148,7 @@
       "away_2plus_prob": 0.2960572805054172,
       "value_bet_flags": [],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -95134,7 +95134,7 @@
       "away_2plus_prob": 0.33886891672651576,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -95347,7 +95347,7 @@
       "away_2plus_prob": 0.32396528544606257,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -95847,7 +95847,7 @@
       "away_2plus_prob": 0.2939344513695312,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -96060,7 +96060,7 @@
       "away_2plus_prob": 0.4161413780869929,
       "value_bet_flags": [],
       "has_live_odds": false,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": null,
       "score_grid": [
@@ -96254,7 +96254,7 @@
         "btts_yes"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "btts_yes",
@@ -96501,7 +96501,7 @@
         "over_2_5"
       ],
       "has_live_odds": true,
-      "odds_fetched_at": "2026-11-25T18:35:25.391586Z",
+      "odds_fetched_at": "2026-11-25T20:25:18.733501Z",
       "odds_is_stale": false,
       "recommended_bet": {
         "market": "over_2_5",
@@ -248361,8 +248361,8 @@
           "name": "Shaw",
           "team": "Man United",
           "position": "DEF",
-          "status": "d",
-          "chance_of_playing": 75,
+          "status": "a",
+          "chance_of_playing": 100,
           "minutes": 425,
           "starts": 5,
           "goals": 0,
@@ -248375,15 +248375,15 @@
           "ict": 23.1,
           "bps": 59,
           "bonus": 0,
-          "news": "Unspecified injury - 75% chance of playing",
+          "news": "",
           "quality_rating": 57.2,
           "form_rating": 4.0,
           "live_form_rating": 18.5,
           "live_form_vs_quality": -38.7,
           "overall_rating": 61.2,
-          "current_impact_rating": 27.1,
+          "current_impact_rating": 48.2,
           "rating_driver": "Clean sheets",
-          "rating_expected_minutes": 53.2,
+          "rating_expected_minutes": 70.9,
           "rating_status": "established",
           "rating_evidence_minutes": 4526.0,
           "rating_model_source": "data_led_multiseason_role_evidence"
@@ -265577,8 +265577,8 @@
           "name": "Darlow",
           "team": "Man United",
           "position": "GK",
-          "status": "d",
-          "chance_of_playing": 75,
+          "status": "a",
+          "chance_of_playing": 100,
           "minutes": 0,
           "starts": 0,
           "goals": 0,
@@ -265591,15 +265591,15 @@
           "ict": 0.0,
           "bps": 0,
           "bonus": 0,
-          "news": "Unspecified injury - 75% chance of playing",
+          "news": "",
           "quality_rating": null,
           "form_rating": 0.0,
           "live_form_rating": 18.5,
           "live_form_vs_quality": null,
           "overall_rating": null,
-          "current_impact_rating": 2.9,
+          "current_impact_rating": 5.1,
           "rating_driver": "Bonus Point System",
-          "rating_expected_minutes": 18.8,
+          "rating_expected_minutes": 25.0,
           "rating_status": "limited",
           "rating_evidence_minutes": 1980.0,
           "rating_model_source": "data_led_multiseason_role_evidence"
@@ -283062,7 +283062,7 @@
   "fpl": {
     "projections": {
       "gameweek": 12,
-      "generated_at": "2026-11-25T18:41:30.984973+00:00",
+      "generated_at": "2026-11-25T20:27:30.444777+00:00",
       "model_source": "hybrid_match_context_baseline",
       "data_freshness": "live official FPL API + independent pre-match scoreline model",
       "players": [
@@ -285336,6 +285336,38 @@
             "69 expected minutes",
             "form 9.0",
             "1.49 expected team goals"
+          ]
+        },
+        {
+          "player_id": 423,
+          "name": "Luke Shaw",
+          "web_name": "Shaw",
+          "team": "Man Utd",
+          "team_id": 16,
+          "position": "DEF",
+          "price": 4.2,
+          "status": "a",
+          "news": "",
+          "availability": 1.0,
+          "expected_minutes": 70.9,
+          "projected_points": 4.03,
+          "fixture_count": 1,
+          "fixtures": [
+            {
+              "was_home": true,
+              "difficulty": 3,
+              "expected_goals": 2.13,
+              "clean_sheet_probability": 0.328,
+              "expected_minutes": 70.9,
+              "opponent": "Brentford",
+              "model_source": "independent_scoreline"
+            }
+          ],
+          "drivers": [
+            "1 fixture",
+            "71 expected minutes",
+            "form 0.0",
+            "2.13 expected team goals"
           ]
         },
         {
@@ -288120,38 +288152,6 @@
             "59 expected minutes",
             "form 0.7",
             "1.88 expected team goals"
-          ]
-        },
-        {
-          "player_id": 423,
-          "name": "Luke Shaw",
-          "web_name": "Shaw",
-          "team": "Man Utd",
-          "team_id": 16,
-          "position": "DEF",
-          "price": 4.2,
-          "status": "d",
-          "news": "Unspecified injury - 75% chance of playing",
-          "availability": 0.75,
-          "expected_minutes": 53.2,
-          "projected_points": 3.48,
-          "fixture_count": 1,
-          "fixtures": [
-            {
-              "was_home": true,
-              "difficulty": 3,
-              "expected_goals": 2.13,
-              "clean_sheet_probability": 0.328,
-              "expected_minutes": 53.2,
-              "opponent": "Brentford",
-              "model_source": "independent_scoreline"
-            }
-          ],
-          "drivers": [
-            "1 fixture",
-            "53 expected minutes",
-            "form 0.0",
-            "2.13 expected team goals"
           ]
         },
         {
@@ -294779,6 +294779,38 @@
           ]
         },
         {
+          "player_id": 325,
+          "name": "Karl Darlow",
+          "web_name": "Darlow",
+          "team": "Man Utd",
+          "team_id": 16,
+          "position": "GK",
+          "price": 4.5,
+          "status": "a",
+          "news": "",
+          "availability": 1.0,
+          "expected_minutes": 25.0,
+          "projected_points": 1.5,
+          "fixture_count": 1,
+          "fixtures": [
+            {
+              "was_home": true,
+              "difficulty": 3,
+              "expected_goals": 2.13,
+              "clean_sheet_probability": 0.328,
+              "expected_minutes": 25.0,
+              "opponent": "Brentford",
+              "model_source": "independent_scoreline"
+            }
+          ],
+          "drivers": [
+            "1 fixture",
+            "25 expected minutes",
+            "form 0.0",
+            "2.13 expected team goals"
+          ]
+        },
+        {
           "player_id": 414,
           "name": "Tom Heaton",
           "web_name": "Heaton",
@@ -297080,38 +297112,6 @@
             "25 expected minutes",
             "form 0.7",
             "1.30 expected team goals"
-          ]
-        },
-        {
-          "player_id": 325,
-          "name": "Karl Darlow",
-          "web_name": "Darlow",
-          "team": "Man Utd",
-          "team_id": 16,
-          "position": "GK",
-          "price": 4.5,
-          "status": "d",
-          "news": "Unspecified injury - 75% chance of playing",
-          "availability": 0.75,
-          "expected_minutes": 18.8,
-          "projected_points": 1.13,
-          "fixture_count": 1,
-          "fixtures": [
-            {
-              "was_home": true,
-              "difficulty": 3,
-              "expected_goals": 2.13,
-              "clean_sheet_probability": 0.328,
-              "expected_minutes": 18.8,
-              "opponent": "Brentford",
-              "model_source": "independent_scoreline"
-            }
-          ],
-          "drivers": [
-            "1 fixture",
-            "19 expected minutes",
-            "form 0.0",
-            "2.13 expected team goals"
           ]
         },
         {
